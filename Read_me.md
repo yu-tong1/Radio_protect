@@ -265,9 +265,9 @@ Result files are saved in the `Compound screening results` directory, named in t
 
 - **Contact**: Professor 马家骅 Email: jiahuama@swust.edu.cn
 - **Developers**:
-            马家骅 (PhD, Professor, School of Life Science and Agronomy, Southwest University of Science and Technology);
-            柒世龙 (Master's student, School of Life Science and Agronomy, Southwest University of Science and Technology);
-            周阳 (Undergraduate student, School of Life Science and Agronomy, Southwest University of Science and Technology).
+            马家骅 (PhD, Professor, College of Life Sciences and Agri-forestry, Southwest University of Science and Technology);
+            柒世龙 (Master's student, College of Life Sciences and Agri-forestry, Southwest University of Science and Technology);
+            周阳 (Undergraduate student, College of Life Sciences and Agri-forestry, Southwest University of Science and Technology).
 - **Institution**: College of Life Sciences and Agri-forestry, Southwest University of Science and Technology
 - **Project**: Radiation Protection TCM Component Screening System
 
