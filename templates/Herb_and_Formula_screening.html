@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herb and Formula Screening</title>
+    <link href="./web_database_files/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4A7A4A;
+            --secondary: #6B8E6E;
+            --accent: #B8D9B0;
+            --dark: #1F3B2C;
+            --light: #E9F3E6;
+        }
+        
+        body {
+            background-color: var(--light);
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--dark);
+        }
+        
+        .bg-primary {
+            background-color: var(--primary) !important;
+        }
+        
+        .bg-secondary {
+            background-color: var(--secondary) !important;
+        }
+        
+        .bg-accent {
+            background-color: var(--accent) !important;
+        }
+        
+        .bg-light {
+            background-color: var(--light) !important;
+        }
+        
+        .text-primary {
+            color: var(--primary) !important;
+        }
+        
+        .text-secondary {
+            color: var(--secondary) !important;
+        }
+        
+        .text-accent {
+            color: var(--accent) !important;
+        }
+        
+        .text-dark {
+            color: var(--dark) !important;
+        }
+        
+        .border-accent {
+            border-color: var(--accent) !important;
+        }
+        
+        .shadow-md {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .shadow-lg {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .shadow-inner {
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+        }
+        
+        .rounded-xl {
+            border-radius: 0.75rem !important;
+        }
+        
+        .rounded-2xl {
+            border-radius: 1rem !important;
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        
+        .transform {
+            transform: none;
+        }
+        
+        .hover\:scale-105:hover {
+            transform: scale(1.05);
+        }
+        
+        .hover\:bg-secondary:hover {
+            background-color: var(--secondary) !important;
+        }
+        
+        .hover\:bg-primary:hover {
+            background-color: var(--primary) !important;
+        }
+        
+        .table-container {
+            max-height: 400px;
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+        
+        .scrollbar-thin::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+        
+        .scrollbar-thin::-webkit-scrollbar-track {
+            background: #d4e6d4;
+        }
+        
+        .scrollbar-thin::-webkit-scrollbar-thumb {
+            background: #5a7e5a;
+            border-radius: 10px;
+        }
+        
+        .bg-subtle-pattern {
+            background-color: #e9f3e6;
+            background-image: radial-gradient(circle at 10% 20%, rgba(160, 200, 140, 0.2) 0%, transparent 30%),
+                              radial-gradient(circle at 90% 70%, rgba(120, 160, 110, 0.15) 0%, transparent 35%);
+        }
+    </style>
+</head>
+<body class="bg-light font-sans text-dark antialiased">
+
+    <header class="bg-primary text-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <h1 class="text-xl font-bold tracking-tight">RadioProtect<span class="text-accent font-light"> TCM</span></h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-sm md:text-base">
+                    <li><a href="./index.html" class="hover:text-accent transition-colors">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-subtle-pattern text-dark border-b border-accent">
+        <div class="container mx-auto px-4 py-12 md:py-16 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Herb and Formula Screening</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto opacity-80">Screen and identify potential radioprotective herbs and formulas based on target matching</p>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 py-12 max-w-6xl">
+        <section class="mb-12">
+            <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-6 md:p-8 border border-accent">
+                <h3 class="text-2xl font-semibold mb-6 text-primary flex items-center gap-3">
+                    Start Screening
+                </h3>
+                <div class="text-center">
+                    <button id="runBtn" class="bg-secondary hover:bg-primary text-white font-semibold py-4 px-12 rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg mx-auto transform hover:scale-105">
+                        Run Herb and Formula Screening
+                    </button>
+                </div>
+
+                <div id="outputArea" class="hidden pt-8 mt-8 border-t border-accent/50">
+                    <h4 class="text-xl font-semibold mb-6 text-primary">Screening Results</h4>
+                    
+                    <!-- Herbs Results -->
+                    <div class="mb-8">
+                        <h5 class="font-semibold text-lg mb-4 text-primary">Matched Herbs</h5>
+                        <i>已知辐射防护功效中药：黄芩、虎杖、大黄、甘草、穿心莲、黄芪、麦冬、枸杞子、人参、刺五加、白术、灵芝、红景天、砂仁、姜黄、西红花、丹参、山莨菪、黄精</i>
+                        <br><i>文献佐证</i>
+                        <li>
+                            1.HE L, EDI S, MA J, et al. Prevention and treatment of radiation injury by traditional Chinese medicine: A review [J]. Chinese herbal medicines, 2025, 17(2): 220-34.
+                            <br>
+                            2.Wenjing Li, Libing Yu, Bo Fu, Jian Chu, Chun Chen, Xijian Li, Jiahua Ma*, Wei Tang*. Protective effects of Polygonatum kingianum polysaccharides and aqueous extract on uranium-induced toxicity in human kidney (HK-2) cells[J]. Int J Biol Macromol, 2022,202:68-79.
+                        </li>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div class="bg-light/80 rounded-xl p-6 border border-accent shadow-inner">
+                                <h6 class="font-semibold text-base mb-4 flex items-center gap-2 text-dark">
+                                    Normal Model Herbs
+                                    <span id="herbNormalCount" class="ml-auto text-sm bg-primary/20 px-3 py-1 rounded-full">0</span>
+                                </h6>
+                                <div id="herbNormalResults" class="max-h-48 overflow-y-auto scrollbar-thin p-3 bg-white/50 rounded-lg text-sm"></div>
+                            </div>
+
+                            <div class="bg-light/80 rounded-xl p-6 border border-accent shadow-inner">
+                                <h6 class="font-semibold text-base mb-4 flex items-center gap-2 text-dark">
+                                    Cancer Model Herbs
+                                    <span id="herbCancerCount" class="ml-auto text-sm bg-primary/20 px-3 py-1 rounded-full">0</span>
+                                </h6>
+                                <div id="herbCancerResults" class="max-h-48 overflow-y-auto scrollbar-thin p-3 bg-white/50 rounded-lg text-sm"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formula Results -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="bg-light/80 rounded-xl p-6 border border-accent shadow-inner">
+                            <h5 class="font-semibold text-lg mb-4 flex items-center gap-2 text-dark">
+                                Normal Model Results
+                                <span id="normalCount" class="ml-auto text-sm bg-primary/20 px-3 py-1 rounded-full">0</span>
+                            </h5>
+                            <div class="table-container scrollbar-thin">
+                                <table class="min-w-full text-sm">
+                                    <thead class="bg-accent/40 text-dark/80 text-xs uppercase tracking-wider">
+                                        <tr>
+                                            <th class="px-4 py-3 text-left">方剂名称</th>
+                                            <th class="px-4 py-3 text-left">有效中药数目</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="normalResults" class="divide-y divide-accent/30"></tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="bg-light/80 rounded-xl p-6 border border-accent shadow-inner">
+                            <h5 class="font-semibold text-lg mb-4 flex items-center gap-2 text-dark">
+                                Cancer Model Results
+                                <span id="cancerCount" class="ml-auto text-sm bg-primary/20 px-3 py-1 rounded-full">0</span>
+                            </h5>
+                            <div class="table-container scrollbar-thin">
+                                <table class="min-w-full text-sm">
+                                    <thead class="bg-accent/40 text-dark/80 text-xs uppercase tracking-wider">
+                                        <tr>
+                                            <th class="px-4 py-3 text-left">Formula Name</th>
+                                            <th class="px-4 py-3 text-left">Count</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cancerResults" class="divide-y divide-accent/30"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-6 md:p-8 border border-accent">
+                <h3 class="text-2xl font-semibold mb-6 text-primary flex items-center gap-3">
+                    看药识方
+                </h3>
+                <p class="text-gray-600 mb-6">输入中药名称，查询对应的方剂信息（数据来源：herbformula.cn）</p>
+                
+                <div class="mb-6">
+                    <label for="herbInput" class="block text-sm font-medium text-gray-700 mb-2">输入中药名称（用中文顿号、分隔）</label>
+                    <div class="flex gap-3">
+                        <input type="text" id="herbInput" 
+                               class="flex-1 px-4 py-3 border border-accent rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                               placeholder="例如：人参、麦冬、五味子">
+                        <button id="searchBtn" 
+                                class="bg-secondary hover:bg-primary text-white font-semibold py-3 px-8 rounded-xl transition-all shadow-lg">
+                            查询
+                        </button>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-2">提示：输入多个中药名称时，请使用中文顿号（、）分隔</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center gap-2">
+                        <h3 class="text-lg font-semibold">RadioProtect TCM · Screening platform</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-1">Linking traditional herbs to radiation science</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-6 pt-4 text-center text-gray-400 text-sm">
+                &copy; 2026 Mengxiang Research Group. All rights reserved. Developer: Jiahua Ma, Shilong Qi,Yang Zhou.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            function escapeHtml(unsafe) {
+                if (unsafe === null || unsafe === undefined) {
+                    return '';
+                }
+                const str = String(unsafe);
+                return str.replace(/[&<>"']/g, function(m) {
+                    if (m === '&') return '&amp;';
+                    if (m === '<') return '&lt;';
+                    if (m === '>') return '&gt;';
+                    if (m === '"') return '&quot;';
+                    return '&#039;';
+                });
+            }
+
+            function renderHerbResults(herbNormalData, herbCancerData) {
+                const herbNormalDiv = document.getElementById('herbNormalResults');
+                const herbCancerDiv = document.getElementById('herbCancerResults');
+                const herbNormalCount = document.getElementById('herbNormalCount');
+                const herbCancerCount = document.getElementById('herbCancerCount');
+
+                if (herbNormalData && herbNormalData.length) {
+                    herbNormalDiv.innerHTML = herbNormalData.map(herb =>
+                        `<span class="inline-block bg-accent/30 px-2 py-1 rounded m-1">${escapeHtml(herb)}</span>`
+                    ).join('、');
+                    herbNormalCount.innerText = herbNormalData.length;
+                } else {
+                    herbNormalDiv.innerHTML = '<p class="text-gray-500 text-center py-4">No herbs found</p>';
+                    herbNormalCount.innerText = '0';
+                }
+
+                if (herbCancerData && herbCancerData.length) {
+                    herbCancerDiv.innerHTML = herbCancerData.map(herb =>
+                        `<span class="inline-block bg-accent/30 px-2 py-1 rounded m-1">${escapeHtml(herb)}</span>`
+                    ).join('、');
+                    herbCancerCount.innerText = herbCancerData.length;
+                } else {
+                    herbCancerDiv.innerHTML = '<p class="text-gray-500 text-center py-4">No herbs found</p>';
+                    herbCancerCount.innerText = '0';
+                }
+            }
+
+            function renderResults(normalData, cancerData, herbNormalData, herbCancerData) {
+                const normalTbody = document.getElementById('normalResults');
+                const cancerTbody = document.getElementById('cancerResults');
+                const normalCount = document.getElementById('normalCount');
+                const cancerCount = document.getElementById('cancerCount');
+
+                renderHerbResults(herbNormalData, herbCancerData);
+
+                if (normalData && normalData.length) {
+                    let html = '';
+                    normalData.forEach(row => {
+                        html += '<tr class="hover:bg-accent/20">';
+                        html += `<td class="px-4 py-3">${escapeHtml(row.formula)}</td>`;
+                        html += `<td class="px-4 py-3">${escapeHtml(row.count)}</td>`;
+                        html += '</tr>';
+                    });
+                    normalTbody.innerHTML = html;
+                    normalCount.innerText = normalData.length;
+                } else {
+                    normalTbody.innerHTML = '<tr><td colspan="2" class="text-center py-6 text-gray-500">No formulas found</td></tr>';
+                    normalCount.innerText = '0';
+                }
+
+                if (cancerData && cancerData.length) {
+                    let html = '';
+                    cancerData.forEach(row => {
+                        html += '<tr class="hover:bg-accent/20">';
+                        html += `<td class="px-4 py-3">${escapeHtml(row.formula)}</td>`;
+                        html += `<td class="px-4 py-3">${escapeHtml(row.count)}</td>`;
+                        html += '</tr>';
+                    });
+                    cancerTbody.innerHTML = html;
+                    cancerCount.innerText = cancerData.length;
+                } else {
+                    cancerTbody.innerHTML = '<tr><td colspan="2" class="text-center py-6 text-gray-500">No formulas found</td></tr>';
+                    cancerCount.innerText = '0';
+                }
+            }
+
+            const runBtn = document.getElementById('runBtn');
+            const outputArea = document.getElementById('outputArea');
+
+            runBtn.addEventListener('click', function() {
+                this.innerHTML = 'Processing...';
+                this.disabled = true;
+
+                fetch('/run_herb_formula', {
+                    method: 'POST'
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(err => { throw new Error(err.error); });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    renderResults(data.normal, data.cancer, data.herb_normal, data.herb_cancer);
+                    outputArea.classList.remove('hidden');
+                })
+                .catch(error => {
+                    alert('Error: ' + error.message);
+                })
+                .finally(() => {
+                    runBtn.innerHTML = 'Run Herb and Formula Screening';
+                    runBtn.disabled = false;
+                });
+            });
+
+            const searchBtn = document.getElementById('searchBtn');
+            const herbInput = document.getElementById('herbInput');
+
+            searchBtn.addEventListener('click', function() {
+                const herbs = herbInput.value.trim();
+                if (!herbs) {
+                    alert('请输入中药名称');
+                    return;
+                }
+                
+                const encodedHerbs = encodeURIComponent(herbs);
+                window.open(`https://www.herbformula.cn/forms?herbs=${encodedHerbs}`, '_blank');
+            });
+
+            herbInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchBtn.click();
+                }
+            });
+        })();
+    </script>
+
+    <script src="./web_database_files/jquery-3.7.1.min.js.下载"></script>
+    <script src="./web_database_files/bootstrap.bundle.min.js.下载"></script>
+</body>
+</html>

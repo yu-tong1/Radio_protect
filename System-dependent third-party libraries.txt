@@ -1,0 +1,10 @@
+# System-dependent third-party libraries
+
+1. flask
+2. pandas
+3. rdkit
+4. joblib
+5. requests
+6. openai
+7. sklearn
+8. numpy

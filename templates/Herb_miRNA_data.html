@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herb miRNA Data - 动态加载 (miRNA Atlas)</title>
+    <!-- 沿用原有样式资源 (本地或CDN后备) -->
+    <link href="./web_database_files/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 (免费图标库，提升加载体验) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4A7A4A;
+            --secondary: #6B8E6E;
+            --accent: #B8D9B0;
+            --dark: #1F3B2C;
+            --light: #E9F3E6;
+        }
+        
+        body {
+            background-color: var(--light);
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--dark);
+        }
+        
+        .bg-primary { background-color: var(--primary) !important; }
+        .bg-secondary { background-color: var(--secondary) !important; }
+        .bg-accent { background-color: var(--accent) !important; }
+        .bg-light { background-color: var(--light) !important; }
+        .text-primary { color: var(--primary) !important; }
+        .text-secondary { color: var(--secondary) !important; }
+        .text-accent { color: var(--accent) !important; }
+        .text-dark { color: var(--dark) !important; }
+        .border-accent { border-color: var(--accent) !important; }
+        
+        .shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+        .rounded-xl { border-radius: 0.75rem !important; }
+        .rounded-2xl { border-radius: 1rem !important; }
+        .transition-all { transition: all 0.3s ease; }
+        .hover\:scale-105:hover { transform: scale(1.05); }
+        
+        .table-container {
+            max-height: 600px;
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+        
+        .scrollbar-thin::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+        .scrollbar-thin::-webkit-scrollbar-track { background: #d4e6d4; }
+        .scrollbar-thin::-webkit-scrollbar-thumb { background: #5a7e5a; border-radius: 10px; }
+        
+        .bg-subtle-pattern {
+            background-color: #e9f3e6;
+            background-image: radial-gradient(circle at 10% 20%, rgba(160, 200, 140, 0.2) 0%, transparent 30%),
+                              radial-gradient(circle at 90% 70%, rgba(120, 160, 110, 0.15) 0%, transparent 35%);
+        }
+        
+        .filter-input,
+        .filter-select {
+            width: 100%;
+            padding: 0.375rem 0.75rem;
+            border: 1px solid #ced4da;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        .filter-input:focus,
+        .filter-select:focus {
+            border-color: var(--primary);
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(74, 122, 74, 0.25);
+        }
+        /* 加载提示美化 */
+        .loading-overlay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3rem;
+            color: var(--primary);
+            gap: 0.75rem;
+            font-size: 1.1rem;
+        }
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1rem;
+            border-left: 5px solid #dc3545;
+        }
+        .data-status {
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body class="bg-light font-sans text-dark antialiased">
+
+<header class="bg-primary text-white shadow-md sticky top-0 z-10">
+    <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <h1 class="text-xl font-bold tracking-tight">RadioProtect<span class="text-accent font-light"> TCM</span></h1>
+        </div>
+        <nav>
+            <ul class="flex space-x-6 text-sm md:text-base">
+                <li><a href="./index.html" class="hover:text-accent transition-colors">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="bg-subtle-pattern text-dark border-b border-accent">
+    <div class="container mx-auto px-4 py-12 md:py-16 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Herb miRNA Data</h2>
+        <p class="text-lg mb-8 max-w-2xl mx-auto opacity-80">Comprehensive miRNA data from various herbs · 数据自 <strong>http://bencao.bmicc.cn/</strong></p>
+    </div>
+</section>
+
+<main class="container mx-auto px-4 py-12 max-w-6xl">
+    <section class="mb-12">
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-6 md:p-8 border border-accent">
+            <div class="flex justify-between items-center flex-wrap mb-4">
+                <h3 class="text-2xl font-semibold text-primary flex items-center gap-3">
+                    <i class="fas fa-database"></i> miRNA Atlas Results
+                </h3>
+                <div class="data-status text-sm text-secondary" id="dataLoadStatus">
+                    <i class="fas fa-spinner fa-pulse"></i> 正在加载 JSON 数据...
+                </div>
+            </div>
+            
+            <div class="table-container scrollbar-thin">
+                <table class="min-w-full text-sm">
+                    <thead class="bg-accent/40 text-dark/80 text-xs uppercase tracking-wider sticky top-0">
+                        <tr>
+                            <th class="px-4 py-3 text-left">
+                                Accession
+                                <select class="filter-select mt-1" data-column="0">
+                                    <option value="">全部 Accession</option>
+                                </select>
+                            </th>
+                            <th class="px-4 py-3 text-left">
+                                ID
+                                <select class="filter-select mt-1" data-column="1">
+                                    <option value="">全部 ID</option>
+                                </select>
+                            </th>
+                            <th class="px-4 py-3 text-left">
+                                Family
+                                <select class="filter-select mt-1" data-column="2">
+                                    <option value="">全部 Family</option>
+                                </select>
+                            </th>
+                            <th class="px-4 py-3 text-left">
+                                Species Latin
+                                <select class="filter-select mt-1" data-column="3">
+                                    <option value="">全部 拉丁名</option>
+                                </select>
+                            </th>
+                            <th class="px-4 py-3 text-left">
+                                Sequence
+                                <select class="filter-select mt-1" data-column="4">
+                                    <option value="">全部 Sequence</option>
+                                </select>
+                            </th>
+                            <th class="px-4 py-3 text-left">
+                                Species
+                                <select class="filter-select mt-1" data-column="5">
+                                    <option value="">全部 中文种名</option>
+                                </select>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="miRNATableBody">
+                        <!-- 动态渲染的数据会填充到这里，初始显示加载中占位符 -->
+                        <tr class="loading-placeholder">
+                            <td colspan="6" class="text-center py-8 text-muted">
+                                <i class="fas fa-leaf fa-spin me-2"></i> 加载 miRNA 数据中，请稍候...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-3 text-xs text-gray-500 border-t pt-2 flex justify-between">
+                <span><i class="fas fa-info-circle"></i> 数据来源: Herb Genomics Center (http://bencao.bmicc.cn/)</span>
+                <span id="recordCountDisplay">— 条记录</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-dark text-white py-8">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <div class="flex items-center gap-2">
+                    <h3 class="text-lg font-semibold">RadioProtect TCM · miRNA Database</h3>
+                </div>
+                <p class="text-gray-400 text-sm mt-1">动态加载</p>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-6 pt-4 text-center text-gray-400 text-sm">
+            &copy; 2026 Mengxiang Research Group. All rights reserved. Developer: Jiahua Ma, Shilong Qi, Yang Zhou.
+        </div>
+    </div>
+</footer>
+
+<script>
+    (function() {
+        // ---------- 全局变量 ----------
+        let masterMiRNAData = [];      // 存储从外部json加载的标准化二维数组数据 (每行6个字段)
+        let isDataLoaded = false;
+        
+        // DOM 元素
+        const tbody = document.getElementById('miRNATableBody');
+        const statusDiv = document.getElementById('dataLoadStatus');
+        const recordCountSpan = document.getElementById('recordCountDisplay');
+        
+        // 获取所有筛选元素
+        let filterElements = [];
+        
+        // ---------- 辅助函数：将对象记录标准化为二维数组 (6列) ----------
+        // 根据实际 JSON 键名映射：Accession, ID, Family, Species Latin (带空格), Sequence, Species
+        function normalizeRowFromObject(obj) {
+            // 处理 Species Latin: 可能键名为 "Species Latin" 或 "SpeciesLatin" 或 "species_latin"
+            let speciesLatinVal = '-';
+            if (obj['Species Latin'] !== undefined) speciesLatinVal = obj['Species Latin'];
+            else if (obj['SpeciesLatin'] !== undefined) speciesLatinVal = obj['SpeciesLatin'];
+            else if (obj['species_latin'] !== undefined) speciesLatinVal = obj['species_latin'];
+            else if (obj['latin_name'] !== undefined) speciesLatinVal = obj['latin_name'];
+            else speciesLatinVal = '-';
+            
+            // 处理其他字段
+            const accession = (obj.Accession !== undefined && obj.Accession !== null) ? String(obj.Accession) : '-';
+            const id = (obj.ID !== undefined && obj.ID !== null) ? String(obj.ID) : '-';
+            const family = (obj.Family !== undefined && obj.Family !== null) ? String(obj.Family) : '-';
+            const sequence = (obj.Sequence !== undefined && obj.Sequence !== null) ? String(obj.Sequence) : '-';
+            const species = (obj.Species !== undefined && obj.Species !== null) ? String(obj.Species) : '-';
+            
+            return [accession, id, family, speciesLatinVal, sequence, species];
+        }
+        
+        // 填充下拉菜单选项
+        function populateFilterSelects() {
+            if (!isDataLoaded || masterMiRNAData.length === 0) return;
+            
+            // 为每列收集唯一值
+            const columnValues = [];
+            for (let i = 0; i < 6; i++) {
+                const values = new Set();
+                masterMiRNAData.forEach(row => {
+                    if (Array.isArray(row) && row.length > i) {
+                        const value = (row[i] !== undefined && row[i] !== null) ? String(row[i]).trim() : '-';
+                        if (value && value !== '-') {
+                            values.add(value);
+                        }
+                    }
+                });
+                columnValues[i] = Array.from(values).sort();
+            }
+            
+            // 填充每个下拉菜单
+            filterElements = Array.from(document.querySelectorAll('.filter-select'));
+            filterElements.forEach(select => {
+                const colIndex = parseInt(select.getAttribute('data-column'), 10);
+                if (columnValues[colIndex]) {
+                    // 清空现有选项（保留第一个 "全部" 选项）
+                    const firstOption = select.options[0];
+                    select.innerHTML = '';
+                    select.appendChild(firstOption);
+                    
+                    // 添加新选项
+                    columnValues[colIndex].forEach(value => {
+                        const option = document.createElement('option');
+                        option.value = value;
+                        option.textContent = value;
+                        select.appendChild(option);
+                    });
+                }
+            });
+        }
+        
+        // ---------- 渲染表格 (基于master数据和过滤器) ----------
+        function renderTableWithFilters() {
+            if (!isDataLoaded || masterMiRNAData.length === 0) {
+                if (!isDataLoaded) {
+                    tbody.innerHTML = `<tr><td colspan="6" class="text-center py-8 text-secondary"><i class="fas fa-spinner fa-pulse"></i> 数据加载中，请稍后...</td></tr>`;
+                } else if (masterMiRNAData.length === 0 && isDataLoaded) {
+                    tbody.innerHTML = `<tr><td colspan="6" class="text-center py-8 text-warning"><i class="fas fa-exclamation-triangle"></i> 外部JSON文件无有效数据，请检查格式</td></tr>`;
+                }
+                recordCountSpan.textContent = `0 条记录`;
+                return;
+            }
+            
+            // 收集所有筛选条件 (基于data-column)
+            const filters = [];
+            filterElements.forEach(element => {
+                const colIndex = parseInt(element.getAttribute('data-column'), 10);
+                const filterValue = element.value.trim();
+                filters[colIndex] = filterValue;
+            });
+            
+            // 过滤数据 (每行6个字段)
+            const filtered = masterMiRNAData.filter(row => {
+                if (!Array.isArray(row) || row.length < 6) return false;
+                for (let i = 0; i < 6; i++) {
+                    const filterVal = filters[i];
+                    if (filterVal) {
+                        const cellValue = (row[i] !== undefined && row[i] !== null) ? String(row[i]).trim() : "";
+                        if (cellValue !== filterVal) {
+                            return false;
+                        }
+                    }
+                }
+                return true;
+            });
+            
+            // 更新记录数显示
+            recordCountSpan.textContent = `${filtered.length} 条记录 (共 ${masterMiRNAData.length} 条)`;
+            
+            // 渲染表格体
+            if (filtered.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="6" class="text-center py-8 text-muted"><i class="fas fa-search-minus"></i> 没有匹配的miRNA数据，请调整筛选条件</td></tr>`;
+                return;
+            }
+            
+            // 构建所有行 (转义HTML防止XSS)
+            let htmlRows = '';
+            for (let row of filtered) {
+                // 确保每一列有值，缺失则显示 '-'
+                const cols = [];
+                for (let i = 0; i < 6; i++) {
+                    let val = (row[i] !== undefined && row[i] !== null) ? row[i] : '-';
+                    cols.push(val);
+                }
+                htmlRows += `
+                    <tr class="hover:bg-accent/20 transition-colors">
+                        <td class="px-4 py-3 align-top break-all">${escapeHtml(cols[0])}</td>
+                        <td class="px-4 py-3 align-top break-all">${escapeHtml(cols[1])}</td>
+                        <td class="px-4 py-3 align-top">${escapeHtml(cols[2])}</td>
+                        <td class="px-4 py-3 align-top">${escapeHtml(cols[3])}</td>
+                        <td class="px-4 py-3 font-mono text-xs break-all">${escapeHtml(cols[4])}</td>
+                        <td class="px-4 py-3 align-top">${escapeHtml(cols[5])}</td>
+                    </tr>
+                `;
+            }
+            tbody.innerHTML = htmlRows;
+        }
+        
+        // 简单防XSS辅助函数
+        function escapeHtml(str) {
+            if (!str) return '';
+            return str.replace(/[&<>]/g, function(m) {
+                if (m === '&') return '&amp;';
+                if (m === '<') return '&lt;';
+                if (m === '>') return '&gt;';
+                return m;
+            });
+        }
+        
+        // 刷新表格 (由过滤器事件触发，以及加载完成后)
+        function refreshTable() {
+            renderTableWithFilters();
+        }
+        
+        // 绑定筛选元素事件
+        function bindFilterEvents() {
+            filterElements = Array.from(document.querySelectorAll('.filter-select'));
+            filterElements.forEach(element => {
+                // 移除之前的监听器，避免重复
+                element.removeEventListener('change', refreshTable);
+                element.addEventListener('change', refreshTable);
+            });
+        }
+        
+        // 从外部JSON文件加载数据 (固定文件名: miRNA_atlas_results.json)
+        async function loadExternalJSON(jsonPath = 'miRNA_atlas_results.json') {
+            try {
+                // 显示加载状态
+                statusDiv.innerHTML = `<i class="fas fa-spinner fa-pulse"></i> 正在加载 ${jsonPath} ...`;
+                statusDiv.classList.remove('text-danger');
+                statusDiv.classList.add('text-secondary');
+                
+                const response = await fetch(jsonPath, {
+                    cache: "no-cache", // 避免缓存导致开发时看不到更新
+                    headers: { 'Accept': 'application/json' }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: 无法获取JSON文件 (${jsonPath})`);
+                }
+                
+                let jsonData = await response.json();
+                
+                // 数据校验：期望一个数组 (对象数组或二维数组)
+                if (!Array.isArray(jsonData)) {
+                    throw new Error("JSON根结构应为数组 (对象数组格式或二维数组)");
+                }
+                
+                // 归一化数据: 转换为二维数组 (每行6个字段)
+                let normalizedData = [];
+                for (let i = 0; i < jsonData.length; i++) {
+                    let item = jsonData[i];
+                    if (Array.isArray(item)) {
+                        // 如果是二维数组，确保长度至少6，不足补 '-'
+                        if (item.length < 6) {
+                            const padded = [...item];
+                            while (padded.length < 6) padded.push('-');
+                            normalizedData.push(padded.slice(0,6));
+                        } else {
+                            normalizedData.push(item.slice(0,6));
+                        }
+                    } 
+                    else if (item && typeof item === 'object') {
+                        // 对象数组：按照映射规则标准化
+                        const mappedRow = normalizeRowFromObject(item);
+                        normalizedData.push(mappedRow);
+                    } 
+                    else {
+                        console.warn("跳过无效数据行:", item);
+                    }
+                }
+                
+                if (normalizedData.length === 0) {
+                    throw new Error("JSON文件中未包含有效的miRNA记录，请确保格式为对象数组 (包含Accession,ID等字段) 或二维数组");
+                }
+                
+                masterMiRNAData = normalizedData;
+                isDataLoaded = true;
+                
+                // 更新状态
+                statusDiv.innerHTML = `<i class="fas fa-check-circle text-success"></i> 数据加载成功 (${masterMiRNAData.length} 条记录)`;
+                statusDiv.classList.add('text-success');
+                setTimeout(() => {
+                    if (statusDiv) statusDiv.style.opacity = '0.8';
+                }, 2000);
+                
+                // 填充下拉菜单选项
+                populateFilterSelects();
+                
+                // 绑定筛选事件
+                bindFilterEvents();
+                
+                // 重要：数据加载完成后，重新应用当前筛选条件渲染表格
+                refreshTable();
+                
+            } catch (error) {
+                console.error("加载外部JSON失败:", error);
+                isDataLoaded = false;
+                masterMiRNAData = [];
+                statusDiv.innerHTML = `<i class="fas fa-exclamation-triangle text-danger"></i> 加载失败: ${error.message}`;
+                statusDiv.classList.add('text-danger');
+                // 显示详细错误提示到表格区域
+                tbody.innerHTML = `<tr><td colspan="6" class="text-center py-6"><div class="error-message text-start d-inline-block mx-auto"><i class="fas fa-database me-2"></i> 无法加载 miRNA_atlas_results.json 文件。<br>请确保在相同目录下存在有效的JSON文件，格式为对象数组或二维数组。<br><span class="text-sm">示例对象格式: {"Accession":"...","ID":"...","Family":"...","Species Latin":"...","Sequence":"...","Species":"..."}</span><br><small class="text-muted">详细: ${escapeHtml(error.message)}</small></div></td></tr>`;
+                recordCountSpan.textContent = `加载错误`;
+            }
+        }
+        
+        // 初始化函数: 绑定过滤器并开始加载外部数据
+        function init() {
+            // 先绑定事件，确保元素存在时能正确绑定
+            bindFilterEvents();
+            // 启动外部json加载 (固定文件名为 miRNA_atlas_results.json，与用户提供的文件一致)
+            loadExternalJSON('./web_database_files/miRNA_atlas_results.json');
+        }
+        
+        // 页面完全就绪后执行
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    })();
+</script>
+
+<!-- 备: 原页面引用了jQuery与bootstrap的本地下载文件，保留以避免潜在样式依赖 -->
+<script src="./web_database_files/jquery-3.7.1.min.js.下载"></script>
+<script src="./web_database_files/bootstrap.bundle.min.js.下载"></script>
+
+<!-- 
+    ======================= 使用说明 =======================
+    本页面已改为从外部 JSON 文件 "miRNA_atlas_results.json" 动态获取数据。
+    请确保相同目录下存在该文件，内容格式为对象数组，例如：
+    
+    [
+        {
+            "Accession": "B71987270",
+            "ID": "Bjl-miR92a",
+            "Family": "miR92",
+            "Species Latin": "-",
+            "Sequence": "AUUGCACUUGUCCCGGCCUGUA",
+            "Species": "焦榔"
+        },
+        ...
+    ]
+    
+    也支持二维数组格式（每行6列），代码会自动兼容。
+    筛选器基于 Accession, ID, Family, Species Latin, Sequence, Species 六列工作。
+    如果 Species Latin 字段在 JSON 中键名不同，代码已兼容 "Species Latin", "SpeciesLatin", "species_latin", "latin_name" 等多种形式。
+    ======================================================
+-->
+</body>
+</html>

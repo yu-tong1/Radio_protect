@@ -1,0 +1,617 @@
+﻿gene,gene_ID,pathway,dose,type_of_radiation,tissue_cell_line,time_after_irradiation
+CDC2,983,,1.5 Gy,α-particles,lung fibroblasts,24 h
+FAM64A,54478,,1.5 Gy,α-particles,lung fibroblasts,24 h
+NARG1,80155,,10 Gy,γ-rays,kidney,24h
+RAB1,6038,,10 Gy,γ-rays,brain,24h
+SLC5A4-AS1,110806273,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+PRC1-AS1,100507118,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+G3BP1P1,100422338,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+EEF1B2P7,100421756,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+KDM3AP1,100420666,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+ZNF887P,100419709,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+RPL23AP81,100271627,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+FAM72A,729533,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+GASK1A,729085,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+FAM72D,728833,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+OVOL3,728361,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+SNORA32,692063,,1.5 Gy,α-particles,keratinocytes,24 h
+ZNF732,654254,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+H3C13,653604,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+MCFD2P1,645927,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+SNORD96A,619571,,1.5 Gy,α-particles,keratinocytes,24 h
+HERC2P10,390561,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CENPW,387103,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+C5orf34,375444,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+FAM111B,374393,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TMPRSS7,344805,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+LRRC37A11P,342666,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+ANKRD34B,340120,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CLEC4D,338339,C-type lectin receptor signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+NLRP14,338323,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+GSDMA,284110,,1.5 Gy,α-particles,keratinocytes,24 h
+PYDC1,260434,NOD-like receptor signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+ASPM,259266,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+ASPM,259266,,1.5 Gy,α-particles,keratinocytes,24 h
+ASPM,259266,,1.5 Gy,α-particles,lung fibroblasts,24 h
+MEIOB,254528,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+SKA3,221150,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+SLC16A9,220963,,1.5 Gy,α-particles,keratinocytes,24 h
+SKA1,220134,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+DDIAS,220042,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+NRK,203447,,10 Gy,γ-rays,kidney,24h
+DCP1B,196513,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+DCP1B,196513,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+DCP1B,196513,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+APOBEC3H,164668,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+APOBEC3H,164668,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+APOBEC3H,164668,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+MAMDC4,158056,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+MAMDC4,158056,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+MAMDC4,158056,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+ESCO2,157570,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CDCA2,157313,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+SGO1,151648,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CKAP2L,150468,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+SPC24,147841,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+EME1,146956,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+KIF18B,146909,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+E2F7,144455,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+CMBL,134147,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+CMBL,134147,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+CMBL,134147,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+SPATA18,132671,,1.5 Gy,α-particles,keratinocytes,24 h
+MIX23,131076,,1.5 Gy,α-particles,keratinocytes,24 h
+IQGAP3,128239,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+C2CD4C,126567,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+FTSJ3,117246,,10 Gy,γ-rays,brain,24h
+TUBA3D,113457,,1.5 Gy,α-particles,lung fibroblasts,24 h
+CDCA5,113130,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+MTFR2,113115,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TP53INP1,94241,,1.5 Gy,α-particles,keratinocytes,24 h
+TP53INP1,94241,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+FRMD7,90167,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+SAPCD2,89958,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+H2BC12,85236,,1.5 Gy,α-particles,keratinocytes,24 h
+PSRC1,84722,,1.5 Gy,α-particles,keratinocytes,24 h
+ACRBP,84519,,4.56 Gy,γ-rays,liver,2 days
+MND1,84057,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+BRIP1,83990,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+HASPIN,83903,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+NUF2,83540,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+MXD3,83463,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CDCA3,83461,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CDCA3,83461,,1.5 Gy,α-particles,keratinocytes,24 h
+CDCA3,83461,,1.5 Gy,α-particles,lung fibroblasts,24 h
+KIF18A,81930,,10 Gy,γ-rays,kidney,24h
+DIAPH3,81624,,1.5 Gy,α-particles,lung fibroblasts,24 h
+CDT1,81620,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+FAM83D,81610,,1.5 Gy,α-particles,keratinocytes,24 h
+FIP1L1,81608,,10 Gy,γ-rays,kidney,24h
+SLC38A1,81539,,4.56 Gy,γ-rays,liver,2 days
+EGFL8,80864,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+DUSP16,80824,MAPK signaling pathway,4.56 Gy,γ-rays,liver,2 days
+MPIG6B,80739,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TRPM3,80036,,10 Gy,γ-rays,kidney,24h
+TRPM3,80036,,10 Gy,γ-rays,brain,24h
+PCNX2,80003,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PCNX2,80003,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+BORA,79866,,1.5 Gy,α-particles,keratinocytes,24 h
+SHCBP1,79801,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+SUGCT,79783,,1.5 Gy,α-particles,keratinocytes,24 h
+CENPU,79682,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+PAGR1,79447,,1.5 Gy,α-particles,keratinocytes,24 h
+BRME1,79173,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+DSCC1,79075,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CENPM,79019,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+DDX31,64794,,10 Gy,γ-rays,kidney,24h
+AEN,64782,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+AEN,64782,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+AEN,64782,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+NCAPG,64151,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+NCAPG,64151,,1.5 Gy,α-particles,keratinocytes,24 h
+CENPK,64105,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CLSPN,63967,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CCDC90B,60492,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+EDA2R,60401,NF-kappa B signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+NTN4,59277,,1.5 Gy,α-particles,lung fibroblasts,24 h
+ANKRA2,57763,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+ANKRA2,57763,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+ANKRA2,57763,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+SPC25,57405,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+KNL1,57082,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+PLSCR2,57047,,4.56 Gy,γ-rays,liver,2 days
+SMCO4,56935,,1.5 Gy,α-particles,keratinocytes,24 h
+TCIM,56892,,1.5 Gy,α-particles,lung fibroblasts,24 h
+PBK,55872,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+PBK,55872,,1.5 Gy,α-particles,lung fibroblasts,24 h
+DEPDC1B,55789,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+PRR11,55771,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TMEM30A,55754,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+ASF1B,55723,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+DEPDC1,55635,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+FERMT1,55612,,1.5 Gy,α-particles,keratinocytes,24 h
+ANKRD10,55608,,1.5 Gy,α-particles,lung fibroblasts,24 h
+ANKRD10,55608,,1.5 Gy,α-particles,lung fibroblasts,24 h
+CHST12,55501,,4.56 Gy,γ-rays,liver,2 days
+MCM10,55388,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+MEG3,55384,,1.5 Gy,α-particles,keratinocytes,24 h
+HJURP,55355,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+HJURP,55355,,1.5 Gy,α-particles,keratinocytes,24 h
+DRAM1,55332,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+NUDT15,55270,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+NEIL3,55247,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CEP55,55165,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CEP55,55165,,1.5 Gy,α-particles,keratinocytes,24 h
+CEP55,55165,,1.5 Gy,α-particles,lung fibroblasts,24 h
+CDCA8,55143,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+SLC6A15,55117,,1.5 Gy,α-particles,lung fibroblasts,24 h
+RETSAT,54884,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+RETSAT,54884,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+RETSAT,54884,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+ERCC6L,54821,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+HES2,54626,,1.5 Gy,α-particles,keratinocytes,24 h
+SMOX,54498,,1.5 Gy,α-particles,lung fibroblasts,24 h
+SMOX,54498,,1.5 Gy,α-particles,lung fibroblasts,24 h
+PIMREG,54478,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+PIMREG,54478,,1.5 Gy,α-particles,keratinocytes,24 h
+ANLN,54443,,1.5 Gy,α-particles,keratinocytes,24 h
+ANLN,54443,,1.5 Gy,α-particles,lung fibroblasts,24 h
+COQ3,51805,,10 Gy,γ-rays,brain,24h
+GINS2,51659,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+DTL,51514,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+GTSE1,51512,p53 signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TRIAP1,51499,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TRIAP1,51499,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TRIAP1,51499,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+CRNKL1,51340,,10 Gy,γ-rays,kidney,24h
+IER5,51278,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+IER5,51278,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+IER5,51278,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+NUSAP1,51203,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+NUSAP1,51203,,1.5 Gy,α-particles,lung fibroblasts,24 h
+ANGPTL4,51129,PPAR signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+RPS27L,51065,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+ARHGEF3,50650,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+ARHGEF3,50650,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+ARHGEF3,50650,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+G0S2,50486,,1.5 Gy,α-particles,lung fibroblasts,24 h
+SAC3D1,29901,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+SNX10,29887,,4.56 Gy,γ-rays,liver,2 days
+RACGAP1,29127,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+PHPT1,29085,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PHPT1,29085,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PHPT1,29085,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+DLL1,28514,Notch signaling pathway,1.5 Gy,α-particles,keratinocytes,24 h
+APOBEC3C,27350,,1.5 Gy,α-particles,keratinocytes,24 h
+TEKT2,27285,,4.56 Gy,γ-rays,liver,2 days
+SESN1,27244,p53 signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+GLS2,27165,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+GLS2,27165,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+GLS2,27165,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+BBC3,27113,p53 signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+BBC3,27113,p53 signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+BBC3,27113,p53 signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+TIMM9,26520,,10 Gy,γ-rays,brain,24h
+FBXO5,26271,,1.5 Gy,α-particles,keratinocytes,24 h
+FBXO22,26263,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+FBXO22,26263,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+ZNF337,26152,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+ZNF337,26152,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+ZNF337,26152,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+RIBC2,26150,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+RTL8A,26071,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+KIF4A,24137,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+PHLDA3,23612,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PHLDA3,23612,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PHLDA3,23612,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+ISCU,23479,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+TRAM1,23471,,10 Gy,γ-rays,brain,24h
+NCAPH,23397,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+ASTN2,23245,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+ASTN2,23245,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+ASTN2,23245,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+NUP210,23225,,4.56 Gy,γ-rays,liver,2 days
+TPX2,22974,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TRIM32,22954,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TRIM32,22954,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TRIM32,22954,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+RASA3,22821,Ras signaling pathway,4.56 Gy,γ-rays,liver,2 days
+OIP5,11339,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+B4GALT7,11285,,10 Gy,γ-rays,brain,24h
+BAZ2A,11176,,10 Gy,γ-rays,kidney,24h
+CORO1A,11151,,4.56 Gy,γ-rays,liver,2 days
+ZWINT,11130,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CIT,11113,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CIT,11113,,1.5 Gy,α-particles,lung fibroblasts,24 h
+KATNA1,11104,,10 Gy,γ-rays,kidney,24h
+UBE2C,11065,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+UBE2C,11065,,1.5 Gy,α-particles,lung fibroblasts,24 h
+UBE2C,11065,,1.5 Gy,α-particles,lung fibroblasts,24 h
+TENT4A,11044,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TENT4A,11044,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+KIF2C,11004,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+IMMT,10989,,10 Gy,γ-rays,kidney,24h
+RAB32,10981,,10 Gy,γ-rays,kidney,24h
+ASCC3,10973,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+ASCC3,10973,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+BTG3,10950,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+BTG3,10950,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+BTG3,10950,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+NMU,10874,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CCL27,10850,Chemokine signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+PLK4,10733,FoxO signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+RAD51AP1,10635,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+PITRM1,10531,,10 Gy,γ-rays,brain,24h
+NDC80,10403,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TRIM22,10346,,1.5 Gy,α-particles,keratinocytes,24 h
+TRIM22,10346,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+LAMC3,10319,PI3K-Akt signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+TRAIP,10293,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TOB1,10140,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TOB1,10140,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TOB1,10140,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+KIF20A,10112,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+KIF20A,10112,,1.5 Gy,α-particles,keratinocytes,24 h
+KIF20A,10112,,1.5 Gy,α-particles,lung fibroblasts,24 h
+TROAP,10024,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+FAM20B,9917,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+FAM20B,9917,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+FAM20B,9917,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+MELK,9833,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+ARHGAP11A,9824,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+DLGAP5,9787,,1.5 Gy,α-particles,keratinocytes,24 h
+ESPL1,9700,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+KIF20B,9585,,1.5 Gy,α-particles,lung fibroblasts,24 h
+GDF15,9518,,1.5 Gy,α-particles,lung fibroblasts,24 h
+GDF15,9518,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+KIF23,9493,,1.5 Gy,α-particles,keratinocytes,24 h
+MAP4K4,9448,MAPK signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+MAP4K4,9448,MAPK signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+MAP4K4,9448,MAPK signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+NRXN2,9379,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TRIP13,9319,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TRIP13,9319,,1.5 Gy,α-particles,lung fibroblasts,24 h
+PTTG1,9232,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+PTTG1,9232,,1.5 Gy,α-particles,lung fibroblasts,24 h
+DLGAP2,9228,,1.5 Gy,α-particles,keratinocytes,24 h
+NOLC1,9221,,10 Gy,γ-rays,brain,24h
+AURKB,9212,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+AURKB,9212,,1.5 Gy,α-particles,keratinocytes,24 h
+EXO1,9156,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CCNB2,9133,p53 signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CCNB2,9133,p53 signaling pathway,1.5 Gy,α-particles,keratinocytes,24 h
+CCNB2,9133,p53 signaling pathway,1.5 Gy,α-particles,keratinocytes,24 h
+CCNB2,9133,p53 signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+CCNB2,9133,p53 signaling pathway,4.56 Gy,γ-rays,liver,2 days
+PKMYT1,9088,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+SLC7A6,9057,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+SLC7A6,9057,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+SLC7A6,9057,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+PRC1,9055,,1.5 Gy,α-particles,lung fibroblasts,24 h
+KYNU,8942,,1.5 Gy,α-particles,lung fibroblasts,24 h
+TSC22D1,8848,,1.5 Gy,α-particles,lung fibroblasts,24 h
+TSC22D1,8848,,1.5 Gy,α-particles,lung fibroblasts,24 h
+TSC22D1,8848,,1.5 Gy,α-particles,lung fibroblasts,24 h
+CD84,8832,,10 Gy,γ-rays,kidney,24h
+SAP30,8819,,1.5 Gy,α-particles,keratinocytes,24 h
+IL18R1,8809,TNF signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+TNFRSF10B,8795,p53 signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TNFRSF10B,8795,p53 signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TNFRSF10B,8795,p53 signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+TNFRSF10D,8793,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TNFRSF10D,8793,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TNFRSF10D,8793,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+CTNNAL1,8727,,1.5 Gy,α-particles,keratinocytes,24 h
+COPS3,8533,,1.5 Gy,α-particles,keratinocytes,24 h
+PPM1D,8493,p53 signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PPM1D,8493,p53 signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PPM1D,8493,p53 signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+RGS5,8490,,1.5 Gy,α-particles,lung fibroblasts,24 h
+RAE1,8480,,10 Gy,γ-rays,kidney,24h
+H4C2,8366,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+H4C2,8366,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+H4C2,8366,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+H4C3,8364,,1.5 Gy,α-particles,keratinocytes,24 h
+H3C12,8356,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+H2AC6,8334,,1.5 Gy,α-particles,keratinocytes,24 h
+H2AC10P,8333,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+H2AC13,8329,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CDC45,8318,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+USP9X,8239,,10 Gy,γ-rays,kidney,24h
+SCG2,7857,,1.5 Gy,α-particles,lung fibroblasts,24 h
+BTG2,7832,,4.56 Gy,γ-rays,liver,2 days
+ZYX,7791,,4.56 Gy,γ-rays,liver,2 days
+ZNF79,7633,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+ZNF79,7633,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+ZNF79,7633,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+XPC,7508,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+XPC,7508,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+XPC,7508,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+TNFSF4,7292,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TNFSF4,7292,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TNFSF4,7292,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+TWIST1,7291,,1.5 Gy,α-particles,lung fibroblasts,24 h
+TULP2,7288,,4.56 Gy,γ-rays,liver,2 days
+TTK,7272,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TTK,7272,,1.5 Gy,α-particles,lung fibroblasts,24 h
+TSC2,7249,Thyroid hormone signaling pathway,4.56 Gy,γ-rays,liver,2 days
+TPM1,7168,,4.56 Gy,γ-rays,liver,2 days
+TOP2A,7153,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TOP2A,7153,,1.5 Gy,α-particles,lung fibroblasts,24 h
+TNXB,7148,PI3K-Akt signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TMSB4X,7114,,10 Gy,γ-rays,kidney,24h
+TK1,7083,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TK1,7083,,1.5 Gy,α-particles,lung fibroblasts,24 h
+THBS1,7057,TGF-beta signaling pathway,4.56 Gy,γ-rays,liver,2 days
+TCF19,6941,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TAF5,6877,,1.5 Gy,α-particles,keratinocytes,24 h
+AURKA,6790,,1.5 Gy,α-particles,keratinocytes,24 h
+AURKA,6790,,1.5 Gy,α-particles,keratinocytes,24 h
+AURKA,6790,,1.5 Gy,α-particles,lung fibroblasts,24 h
+AURKA,6790,,1.5 Gy,α-particles,lung fibroblasts,24 h
+STC1,6781,,1.5 Gy,α-particles,lung fibroblasts,24 h
+SRPK2,6733,,10 Gy,γ-rays,brain,24h
+SRPK2,6733,,10 Gy,γ-rays,brain,24h
+SPIB,6689,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+SPARC,6678,,1.5 Gy,α-particles,keratinocytes,24 h
+SLC22A2,6582,,4.56 Gy,γ-rays,liver,2 days
+SLC15A1,6564,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+TRA2B,6434,,1.5 Gy,α-particles,keratinocytes,24 h
+SEC13,6396,mTOR signaling pathway,10 Gy,γ-rays,brain,24h
+SAT1,6303,,1.5 Gy,α-particles,lung fibroblasts,24 h
+RRM2,6241,p53 signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+RPS6KB2,6199,TGF-beta signaling pathway,4.56 Gy,γ-rays,liver,2 days
+ROCK1,6093,TGF-beta signaling pathway,10 Gy,γ-rays,brain,24h
+RAD51,5888,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+PVT1,5820,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PVT1,5820,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PVT1,5820,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+PTPN2,5771,JAK-STAT signaling pathway,10 Gy,γ-rays,brain,24h
+PSMD10,5716,,10 Gy,γ-rays,kidney,24h
+PRNP,5621,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PRNP,5621,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PRNP,5621,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+MAP2K7,5609,Toll-like receptor signaling pathway,10 Gy,γ-rays,brain,24h
+PRKACB,5567,Wnt signaling pathway,4.56 Gy,γ-rays,liver,2 days
+PRKAB1,5564,Oxytocin signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PRKAB1,5564,Oxytocin signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PRKAB1,5564,Oxytocin signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+PPT1,5538,,10 Gy,γ-rays,brain,24h
+PPP6C,5537,,10 Gy,γ-rays,brain,24h
+PPP1R7,5510,,10 Gy,γ-rays,brain,24h
+PLK1,5347,FoxO signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+PLAT,5327,Apelin signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+PIK3C2G,5288,,10 Gy,γ-rays,brain,24h
+PEG3,5178,,10 Gy,γ-rays,brain,24h
+PDK4,5166,,1.5 Gy,α-particles,lung fibroblasts,24 h
+PCNA,5111,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PCNA,5111,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+PCNA,5111,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+PCNA,5111,,10 Gy,γ-rays,brain,24h
+CLDN11,5010,,1.5 Gy,α-particles,keratinocytes,24 h
+ORC1,4998,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+ODF2,4957,,4.56 Gy,γ-rays,liver,2 days
+NR4A2,4929,,1.5 Gy,α-particles,lung fibroblasts,24 h
+NR4A2,4929,,1.5 Gy,α-particles,lung fibroblasts,24 h
+NRGN,4900,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+NRAS,4893,VEGF signaling pathway,4.56 Gy,γ-rays,liver,2 days
+NFYB,4801,,4.56 Gy,γ-rays,liver,2 days
+NEK2,4751,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+NEK2,4751,,1.5 Gy,α-particles,keratinocytes,24 h
+NEK2,4751,,1.5 Gy,α-particles,lung fibroblasts,24 h
+NEFM,4741,,1.5 Gy,α-particles,keratinocytes,24 h
+NCAM2,4685,,10 Gy,γ-rays,brain,24h
+MYBL2,4605,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+MYB,4602,PI3K-Akt signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+MKI67,4288,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+MKI67,4288,,1.5 Gy,α-particles,keratinocytes,24 h
+MDM2,4193,Thyroid hormone signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+MDM2,4193,Thyroid hormone signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+MDM2,4193,Thyroid hormone signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+MCM7,4176,,1.5 Gy,α-particles,keratinocytes,24 h
+MCM6,4175,,1.5 Gy,α-particles,keratinocytes,24 h
+SMAD7,4092,TGF-beta signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+MAD2L1,4085,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+LYZ,4069,,4.56 Gy,γ-rays,liver,2 days
+LPL,4023,PPAR signaling pathway,10 Gy,γ-rays,kidney,24h
+LMNB1,4001,,1.5 Gy,α-particles,keratinocytes,24 h
+LAD1,3898,,10 Gy,γ-rays,brain,24h
+KTN1,3895,,10 Gy,γ-rays,brain,24h
+KIFC1,3833,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+KIF11,3832,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+KIF11,3832,,1.5 Gy,α-particles,lung fibroblasts,24 h
+KIF5B,3799,,10 Gy,γ-rays,brain,24h
+ITGA2,3673,PI3K-Akt signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+ISG20,3669,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+IRS1,3667,PI3K-Akt signaling pathway,10 Gy,γ-rays,kidney,24h
+IRAK2,3656,Neurotrophin signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+INPP5D,3635,Fc epsilon RI signaling pathway,1.5 Gy,α-particles,keratinocytes,24 h
+IL13RA2,3598,JAK-STAT signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+IL7R,3575,PI3K-Akt signaling pathway,1.5 Gy,α-particles,keratinocytes,24 h
+IGFBP4,3487,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+IGFBP2,3485,,1.5 Gy,α-particles,lung fibroblasts,24 h
+HSP90AA2P,3324,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+HSPA5,3309,,4.56 Gy,γ-rays,liver,2 days
+Heavy metalMR,3161,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+Heavy metalMR,3161,,1.5 Gy,α-particles,lung fibroblasts,24 h
+Heavy metalGB3,3149,,10 Gy,γ-rays,kidney,24h
+Heavy metalGB2,3148,,1.5 Gy,α-particles,keratinocytes,24 h
+Heavy metalGB2,3148,,1.5 Gy,α-particles,lung fibroblasts,24 h
+NRG1,3084,ErbB signaling pathway,1.5 Gy,α-particles,keratinocytes,24 h
+HELLS,3070,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+HBG2,3048,,1.5 Gy,α-particles,lung fibroblasts,24 h
+HBG1,3047,,1.5 Gy,α-particles,lung fibroblasts,24 h
+HBD,3045,,1.5 Gy,α-particles,lung fibroblasts,24 h
+H3-3B,3021,,4.56 Gy,γ-rays,liver,2 days
+H2BC5,3017,,1.5 Gy,α-particles,keratinocytes,24 h
+H1-5,3009,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+H1-3,3007,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+GPD2,2820,,4.56 Gy,γ-rays,liver,2 days
+GNAQ,2776,Sphingolipid signaling pathway,10 Gy,γ-rays,brain,24h
+GNAI2,2771,Sphingolipid signaling pathway,10 Gy,γ-rays,kidney,24h
+GEM,2669,,1.5 Gy,α-particles,lung fibroblasts,24 h
+GEM,2669,,1.5 Gy,α-particles,lung fibroblasts,24 h
+GDI1,2664,,10 Gy,γ-rays,brain,24h
+GBP2,2634,NOD-like receptor signaling pathway,4.56 Gy,γ-rays,liver,2 days
+FUT4,2526,,1.5 Gy,α-particles,keratinocytes,24 h
+FPR3,2359,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+FOXM1,2305,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+FHL2,2274,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+FHL2,2274,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+FGF2,2247,Signaling pathways regulating pluripotency of stem cells,1.5 Gy,α-particles,lung fibroblasts,24 h
+FDXR,2232,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+FDXR,2232,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+FDXR,2232,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+FDFT1,2222,,4.56 Gy,γ-rays,liver,2 days
+FASN,2194,Insulin signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+ACSL4,2182,PPAR signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+EMP3,2014,TGF-beta signaling pathway,4.56 Gy,γ-rays,liver,2 days
+EGR2,1959,C-type lectin receptor signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+EGR1,1958,GnRH signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+EEF1D,1936,,10 Gy,γ-rays,kidney,24h
+E2F2,1870,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+ECM2,1842,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+NQO1,1728,,4.56 Gy,γ-rays,liver,2 days
+DHX9P1,1661,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+DHX8,1659,,10 Gy,γ-rays,kidney,24h
+GADD45A,1647,p53 signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+GADD45A,1647,p53 signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+GADD45A,1647,p53 signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+DDB2,1643,p53 signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+DDB2,1643,p53 signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+DDB2,1643,p53 signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+DAPK1,1612,,1.5 Gy,α-particles,keratinocytes,24 h
+CYC1,1537,,10 Gy,γ-rays,brain,24h
+CST3,1471,,10 Gy,γ-rays,kidney,24h
+COX8A,1351,,10 Gy,γ-rays,brain,24h
+KLF6,1316,,4.56 Gy,γ-rays,liver,2 days
+CNN1,1264,,1.5 Gy,α-particles,lung fibroblasts,24 h
+CKS2,1164,,1.5 Gy,α-particles,lung fibroblasts,24 h
+CKS2,1164,,1.5 Gy,α-particles,lung fibroblasts,24 h
+CKS2,1164,,4.56 Gy,γ-rays,liver,2 days
+CHRM1,1128,PI3K-Akt signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CHEK1,1111,p53 signaling pathway,10 Gy,γ-rays,brain,24h
+CENPF,1063,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CENPE,1062,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CENPA,1058,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CENPA,1058,,1.5 Gy,α-particles,keratinocytes,24 h
+CLGN,1047,,10 Gy,γ-rays,brain,24h
+CDKN3,1033,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CDKN3,1033,,1.5 Gy,α-particles,keratinocytes,24 h
+CDKN2C,1031,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CDKN1A,1026,PI3K-Akt signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+CDKN1A,1026,PI3K-Akt signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+CDK6,1021,PI3K-Akt signaling pathway,10 Gy,γ-rays,kidney,24h
+CDC25C,995,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CDC20,991,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CDC20,991,,1.5 Gy,α-particles,keratinocytes,24 h
+CDC20,991,,1.5 Gy,α-particles,keratinocytes,24 h
+CDC20,991,,1.5 Gy,α-particles,lung fibroblasts,24 h
+CDC6,990,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CDK1,983,p53 signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CD70,970,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+CD70,970,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+CD70,970,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+CD69,969,,1.5 Gy,α-particles,lung fibroblasts,24 h
+TNFSF8,944,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TNFSF8,944,,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+TNFSF8,944,,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+CCNG1,900,p53 signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+CCNG1,900,p53 signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+CCNG1,900,p53 signaling pathway,10 Gy,γ-rays,kidney,24h
+CCNF,899,,1.5 Gy,α-particles,keratinocytes,24 h
+CCNB1,891,p53 signaling pathway,1.5 Gy,α-particles,keratinocytes,24 h
+CCNA2,890,AMPK signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+CCNA2,890,AMPK signaling pathway,1.5 Gy,α-particles,keratinocytes,24 h
+CCNA2,890,AMPK signaling pathway,10 Gy,γ-rays,kidney,24h
+BUB1,699,,1.5 Gy,α-particles,keratinocytes,24 h
+BUB1,699,,1.5 Gy,α-particles,keratinocytes,24 h
+BRCA2,675,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+BMP6,654,TGF-beta signaling pathway,1.5 Gy,α-particles,keratinocytes,24 h
+BMP2,650,TGF-beta signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+BAX,581,Sphingolipid signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+BAX,581,Sphingolipid signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+BAX,581,Sphingolipid signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+ADGRB1,575,p53 signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+AXL,558,,10 Gy,γ-rays,brain,24h
+ALDH7A1,501,,10 Gy,γ-rays,brain,24h
+ATP1B1,481,Thyroid hormone signaling pathway,10 Gy,γ-rays,brain,24h
+RHOG,391,,10 Gy,γ-rays,brain,24h
+RHOC,389,,4.56 Gy,γ-rays,liver,2 days
+BIRC5,332,Hippo signaling pathway,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+BIRC5,332,Hippo signaling pathway,1.5 Gy,α-particles,keratinocytes,24 h
+ALAS2,212,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+JAG1,182,TNF signaling pathway,10 Gy,γ-rays,kidney,24h
+PLIN2,123,PPAR signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+PLIN2,123,PPAR signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+ACTG2,72,,1.5 Gy,α-particles,lung fibroblasts,24 h
+ACTB,60,Thyroid hormone signaling pathway,4.56 Gy,γ-rays,liver,2 days
+ACTA2,59,Relaxin signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+ACTA2,59,Relaxin signaling pathway,5 Gy,X-rays,peripheral blood mononuclear cells,24 h
+ACTA2,59,Relaxin signaling pathway,1.5 Gy,α-particles,lung fibroblasts,24 h
+ACTA2,59,Relaxin signaling pathway,1.5 Gy,α-particles,peripheral blood mononuclear cells,24 h
+ACRV1,56,,5 Gy,X-rays,iPSC-derived cardiomyocytes,48 h
+AP3M2,10947,,,Heavy metal,,
+ASF1B,55723,,,Heavy metal,,
+BPI,671,,,Heavy metal,,
+C2orf50,130813,,,Heavy metal,,
+CAMP,820,NOD-like receptor signaling pathway,,Heavy metal,,
+CEACAM8,1088,,,Heavy metal,,
+CHI3L1,1116,,,Heavy metal,,
+CRYGS,1427,,,Heavy metal,,
+CYP4F3,4051,,,Heavy metal,,
+DEFA3,1668,NOD-like receptor signaling pathway,,Heavy metal,,
+DEFA4,1669,NOD-like receptor signaling pathway,,Heavy metal,,
+DOCK4,9732,Rap1 signaling pathway,,Heavy metal,,
+DUSP11,8446,,,Heavy metal,,
+FHL1,2273,JAK-STAT signaling pathway,,Heavy metal,,
+G0S2,50486,,,Heavy metal,,
+GAS6-AS1,650669,,,Heavy metal,,
+HSPB9,94086,,,Heavy metal,,
+IFI27,3429,,,Heavy metal,,
+INHBB,3625,TGF-beta signaling pathway,,Heavy metal,,
+ITLN1,55600,,,Heavy metal,,
+KCNK7,10089,,,Heavy metal,,
+KHDC1,80759,,,Heavy metal,,
+KRT72,140807,,,Heavy metal,,
+LCN2,3934,IL-17 signaling pathway,,Heavy metal,,
+LINC00381,100874151,,,Heavy metal,,
+LINC00632,286411,,,Heavy metal,,
+LINC01563,101060544,,,Heavy metal,,
+LINC01725,101927587,,,Heavy metal,,
+lnc-EPHA6-1,,,,Heavy metal,,
+lnc-EPHA6-1,,,,Heavy metal,,
+lnc-MYC-2,,,,Heavy metal,,
+lnc-TPTE-3,,,,Heavy metal,,
+lnc-TRPM7-1,,,,Heavy metal,,
+lnc-VWF-2,,,,Heavy metal,,
+LTF,4057,,,Heavy metal,,
+MRGPRG,386746,,,Heavy metal,,
+MYBPH,4608,,,Heavy metal,,
+N6AMT1,29104,,,Heavy metal,,
+NCAPD3,23310,,,Heavy metal,,
+NDUFAF4,29078,,,Heavy metal,,
+NKX2-5,1482,,,Heavy metal,,
+OLFM4,10562,,,Heavy metal,,
+PHACTR2,9749,,,Heavy metal,,
+PITHD1,57095,,,Heavy metal,,
+RASD2,23551,,,Heavy metal,,
+RNA18SN5,100008588,,,Heavy metal,,
+RNA28SN1,106632264,,,Heavy metal,,
+SALL3,27164,,,Heavy metal,,
+SIAH1,6477,Wnt signaling pathway,,Heavy metal,,
+SNAR-F,100126781,,,Heavy metal,,
+SNAR-G2,100170228,,,Heavy metal,,
+SNAR-H,100170221,,,Heavy metal,,
+SNRPA1,6627,,,Heavy metal,,
+SPATA2,9825,,,Heavy metal,,
+TCERG1L-AS1,101927489,,,Heavy metal,,
+TINAGL1,64129,,,Heavy metal,,
+TMEM187,8269,,,Heavy metal,,
+TMEM95,339168,,,Heavy metal,,
+TMTC1,83857,,,Heavy metal,,
+TNFRSF17,608,,,Heavy metal,,
+TRABD2B,388630,,,Heavy metal,,
+TTC16,158248,,,Heavy metal,,
+UCP3,7352,,,Heavy metal,,
+ZNF707,286075,,,Heavy metal,,

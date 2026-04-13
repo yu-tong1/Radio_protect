@@ -1,0 +1,1405 @@
+﻿gene,gene_ID,pathway,dose,type_of_radiation,tissue_cell_line,time_after_irradiation
+SOST,50964,Wnt signaling pathway,8 Gy,X-rays,pancreatic cancer cell line,4 h
+SERPINF1,5176,Wnt signaling pathway,9 Gy,protons,breast adenocarcinoma cells,24 h
+MYH10,4628,,2 Gy,X-rays,prostate cancer cell line,8 h
+APOBEC3H,164668,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+APOBEC3H,164668,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+APOBEC3H,164668,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+APOBEC3H,164668,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+APOBEC3H,164668,,9 Gy,protons,breast adenocarcinoma cells,24 h
+APOBEC3G,60489,,9 Gy,protons,TNBC cell line,24 h
+APOBEC3C,27350,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+APOBEC3C,27350,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+APOBEC3C,27350,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+APOBEC3C,27350,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ACTG2,72,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ACTG2,72,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ACTG2,72,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ACTG2,72,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ACTG2,72,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ACTA2,59,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ACTA2,59,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ACTA2,59,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ACTA2,59,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ACTA2,59,,9 Gy,protons,breast adenocarcinoma cells,24 h
+CHST9,83539,,9 Gy,protons,TNBC cell line,24 h
+SSX4B,548313,,9 Gy,protons,TNBC cell line,24 h
+BAIAP3,8938,,9 Gy,protons,TNBC cell line,24 h
+NR4A3,8013,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+TLR9,54106,Toll-like receptor signaling pathway,9 Gy,protons,breast adenocarcinoma cells,24 h
+CTTN,2017,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+CTTN,2017,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+CTTN,2017,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+CTTN,2017,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+CTTN,2017,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+DUOX2,50506,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ALPP,250,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ALPP,250,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ALPP,250,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ALPP,250,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ALPP,250,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+RUNX3,864,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+RUNX3,864,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+RUNX3,864,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+RUNX3,864,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+RUNX3,864,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ID2,3398,TGF-beta signaling pathway,9 Gy,protons,TNBC cell line,24 h
+FNTA,2339,,9 Gy,protons,TNBC cell line,24 h
+TAS2R10,50839,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TAS2R10,50839,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TAS2R10,50839,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TAS2R10,50839,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SRSF4,6429,,9 Gy,protons,TNBC cell line,24 h
+HSPA6,3310,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+BEAN1,146227,,9 Gy,protons,breast adenocarcinoma cells,24 h
+SPTLC1,10558,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SPTLC1,10558,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SPTLC1,10558,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+SPTLC1,10558,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SPTLC1,10558,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+STX11,8676,,9 Gy,protons,TNBC cell line,24 h
+PAX6,5080,Signaling pathways regulating pluripotency of stem cells,9 Gy,protons,TNBC cell line,24 h
+POLR3B,55703,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+POLR3B,55703,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+POLR3B,55703,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+POLR3B,55703,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+POLR3B,55703,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TOB1,10140,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TOB1,10140,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TOB1,10140,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+TOB1,10140,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TOB1,10140,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+BTG2,7832,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+BTG2,7832,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+BTG2,7832,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+BTG2,7832,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+FBLL1,345630,,9 Gy,protons,breast adenocarcinoma cells,24 h
+RETSAT,54884,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+RETSAT,54884,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+RETSAT,54884,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+RETSAT,54884,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+RETSAT,54884,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ARHGEF7,8874,,9 Gy,protons,TNBC cell line,24 h
+TBK1,29110,Ras signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TBK1,29110,Ras signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TBK1,29110,Ras signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TBK1,29110,Ras signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+RGL1,23179,Ras signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+RGL1,23179,Ras signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+RGL1,23179,Ras signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,3 h
+RGL1,23179,Ras signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+RGL1,23179,Ras signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+GAB2,9846,Ras signaling pathway,2 Gy,X-rays,prostate cancer cell line,8 h
+SIPA1L2,57568,Rap1 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SIPA1L2,57568,Rap1 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SIPA1L2,57568,Rap1 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+LPAR3,23566,Rap1 signaling pathway,9 Gy,protons,TNBC cell line,24 h
+GNAO1,2775,Rap1 signaling pathway,9 Gy,protons,breast adenocarcinoma cells,24 h
+DPYS,1807,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+DPYS,1807,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+DPYS,1807,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+DPYS,1807,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+DPYS,1807,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PDE4D,5144,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PDE4D,5144,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PDE4D,5144,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PDE4D,5144,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ENTPD1,953,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ANK1,286,,9 Gy,protons,breast adenocarcinoma cells,24 h
+PPP1R15A,23645,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+COL8A2,1296,,9 Gy,protons,TNBC cell line,24 h
+IFNG,3458,,9 Gy,protons,TNBC cell line,72 h
+CH25H,9023,,9 Gy,protons,TNBC cell line,24 h
+PLIN5,440503,PPAR signaling pathway,9 Gy,protons,TNBC cell line,24 h
+L3MBTL3,84456,,9 Gy,protons,breast adenocarcinoma cells,24 h
+BBC3,27113,,9 Gy,protons,breast adenocarcinoma cells,24 h
+TOP2B,7155,,2 Gy,X-rays,prostate cancer cell line,8 h
+REV3L,5980,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+REV3L,5980,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+REV3L,5980,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+REV3L,5980,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+REV3L,5980,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+REV3L,5980,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+REV3L,5980,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+REV3L,5980,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+POLH,5429,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+POLH,5429,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+POLH,5429,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+POLH,5429,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+POLH,5429,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+FAS,355,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+FAS,355,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+FAS,355,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+FAS,355,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+FAS,355,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+FAS,355,,9 Gy,protons,breast adenocarcinoma cells,24 h
+MYB,4602,PI3K-Akt signaling pathway,9 Gy,protons,TNBC cell line,24 h
+LAMC1,3915,PI3K-Akt signaling pathway,2 Gy,X-rays,prostate cancer cell line,8 h
+FN1,2335,PI3K-Akt signaling pathway,2 Gy,X-rays,prostate cancer cell line,8 h
+COL9A3,1299,PI3K-Akt signaling pathway,9 Gy,protons,TNBC cell line,24 h
+COL4A6,1288,PI3K-Akt signaling pathway,9 Gy,protons,TNBC cell line,24 h
+MRC2,9902,,9 Gy,protons,breast adenocarcinoma cells,24 h
+DYNC1I1,1780,,9 Gy,protons,TNBC cell line,24 h
+CROT,54677,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+CROT,54677,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+CROT,54677,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+CROT,54677,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+CROT,54677,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PIM2,11040,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PIM2,11040,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PIM2,11040,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+PIM2,11040,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PIM2,11040,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+WNK1,65125,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+WNK1,65125,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+WNK1,65125,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+WNK1,65125,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+WNK1,65125,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MMP15,4324,,9 Gy,protons,TNBC cell line,24 h
+PANK3,79646,,9 Gy,protons,TNBC cell line,24 h
+ZMAT3,64393,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZMAT3,64393,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZMAT3,64393,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZMAT3,64393,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZMAT3,64393,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZMAT3,64393,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZMAT3,64393,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZMAT3,64393,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZMAT3,64393,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ZMAT3,64393,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ZMAT3,64393,p53 signaling pathway,9 Gy,protons,breast adenocarcinoma cells,24 h
+SESN1,27244,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SESN1,27244,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SESN1,27244,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,3 h
+SESN1,27244,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SESN1,27244,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SESN1,27244,p53 signaling pathway,9 Gy,protons,breast adenocarcinoma cells,24 h
+TP53I3,9540,p53 signaling pathway,0.5 Gy,γ-rays,immortalized B lymphocytes,24 h
+TP53I3,9540,p53 signaling pathway,3 Gy,γ-rays,immortalized B lymphocytes,24 h
+TP53I3,9540,p53 signaling pathway,8 Gy,γ-rays,immortalized B lymphocytes,24 h
+PPM1D,8493,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PPM1D,8493,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PPM1D,8493,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,3 h
+PPM1D,8493,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PPM1D,8493,p53 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ATP6V0A4,50617,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ATP6V0A4,50617,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ATP6V0A4,50617,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ATP6V0A4,50617,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ATP6V0A4,50617,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ATP6V1C1,528,,9 Gy,protons,breast adenocarcinoma cells,24 h
+STAR,6770,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+STAR,6770,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+STAR,6770,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+STAR,6770,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+STAR,6770,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+LILRB3,11025,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+FOSB,2354,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+FOSB,2354,,9 Gy,protons,TNBC cell line,24 h
+SPDYE3,441272,,9 Gy,protons,TNBC cell line,24 h
+OR2T5,401993,,9 Gy,protons,TNBC cell line,24 h
+OR2W3,343171,,9 Gy,protons,breast adenocarcinoma cells,24 h
+OR10H3,26532,,9 Gy,protons,breast adenocarcinoma cells,24 h
+XPC,7508,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+XPC,7508,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+XPC,7508,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+XPC,7508,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+XPC,7508,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+DDB2,1643,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+DDB2,1643,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+DDB2,1643,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+DDB2,1643,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+DDB2,1643,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+DTX1,1840,Notch signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+DTX1,1840,Notch signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+DTX1,1840,Notch signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,3 h
+DTX1,1840,Notch signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+DTX1,1840,Notch signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ANTXR2,118429,NOD-like receptor signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ANTXR2,118429,NOD-like receptor signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ANTXR2,118429,NOD-like receptor signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ANTXR2,118429,NOD-like receptor signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ANTXR2,118429,NOD-like receptor signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+CA9,768,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+CA9,768,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+CA9,768,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+CA9,768,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+CA9,768,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+NMNAT2,23057,,9 Gy,protons,breast adenocarcinoma cells,24 h
+CD38,952,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+CD38,952,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+CD38,952,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TNFAIP3,7128,NF-kappa B signaling pathway,8 Gy,X-rays,pancreatic cancer cell line,4 h
+H4C15,554313,,9 Gy,protons,TNBC cell line,24 h
+H4C2,8366,,9 Gy,protons,TNBC cell line,24 h
+H4C8,8365,,9 Gy,protons,TNBC cell line,24 h
+H4C11,8363,,9 Gy,protons,TNBC cell line,24 h
+H4C12,8362,,9 Gy,protons,TNBC cell line,24 h
+H4C6,8361,,9 Gy,protons,TNBC cell line,24 h
+H4C4,8360,,9 Gy,protons,TNBC cell line,24 h
+H4C9,8294,,9 Gy,protons,TNBC cell line,24 h
+GALR2,8811,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+GALR2,8811,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+GALR2,8811,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+GALR2,8811,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+GALR2,8811,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PTGER4,5734,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PTGER4,5734,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PTGER4,5734,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+PTGER4,5734,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PTGER4,5734,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+GZMA,3001,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+GZMA,3001,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+GZMA,3001,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+GZMA,3001,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+GZMA,3001,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PRLHR,2834,,9 Gy,protons,breast adenocarcinoma cells,24 h
+GNRH1,2796,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+GNRH1,2796,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+GNRH1,2796,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+GNRH1,2796,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+GNRH1,2796,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SLC1A3,6507,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SLC1A3,6507,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SLC1A3,6507,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+SLC1A3,6507,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SLC1A3,6507,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+FZD4,8322,mTOR signaling pathway,9 Gy,protons,TNBC cell line,24 h
+FUS,2521,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+FUS,2521,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+FUS,2521,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+FUS,2521,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+FUS,2521,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MYO3B,140469,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MYO3B,140469,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MYO3B,140469,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MYO3B,140469,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MYO3B,140469,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+DNAI3,126820,,9 Gy,protons,breast adenocarcinoma cells,24 h
+MYH15,22989,,9 Gy,protons,TNBC cell line,24 h
+DNAH17,8632,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+DNAH17,8632,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+DNAH17,8632,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+DNAH17,8632,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+DNAH17,8632,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MYH3,4621,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MYH3,4621,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MYH3,4621,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MYH3,4621,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MYH3,4621,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MAP1LC3C,440738,,9 Gy,protons,TNBC cell line,24 h
+MT2A,4502,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MT2A,4502,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MT2A,4502,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MT2A,4502,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MT2A,4502,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MT1X,4501,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MT1X,4501,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MT1X,4501,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MT1X,4501,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MT1X,4501,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MT1H,4496,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MT1H,4496,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MT1H,4496,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MT1H,4496,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MT1H,4496,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MT1G,4495,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MT1G,4495,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MT1G,4495,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MT1G,4495,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MT1G,4495,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MT1F,4494,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MT1F,4494,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MT1F,4494,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MT1F,4494,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MT1F,4494,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MT1E,4493,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MT1E,4493,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MT1E,4493,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MT1E,4493,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MT1E,4493,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MT1A,4489,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MT1A,4489,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MT1A,4489,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MT1A,4489,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MT1A,4489,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ZEB2,9839,,9 Gy,protons,TNBC cell line,24 h
+TAOK1,57551,MAPK signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TAOK1,57551,MAPK signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TAOK1,57551,MAPK signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,3 h
+TAOK1,57551,MAPK signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TAOK1,57551,MAPK signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+GADD45B,4616,MAPK signaling pathway,8 Gy,X-rays,pancreatic cancer cell line,4 h
+NR4A1,3164,MAPK signaling pathway,8 Gy,X-rays,pancreatic cancer cell line,4 h
+NR4A1,3164,MAPK signaling pathway,9 Gy,protons,TNBC cell line,24 h
+EPHA2,1969,MAPK signaling pathway,9 Gy,protons,breast adenocarcinoma cells,24 h
+DDIT3,1649,MAPK signaling pathway,8 Gy,X-rays,pancreatic cancer cell line,4 h
+GADD45A,1647,MAPK signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+GADD45A,1647,MAPK signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+GADD45A,1647,MAPK signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,3 h
+GADD45A,1647,MAPK signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+GADD45A,1647,MAPK signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+GADD45A,1647,MAPK signaling pathway,9 Gy,protons,breast adenocarcinoma cells,24 h
+SLC17A5,26503,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SLC17A5,26503,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SLC17A5,26503,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+SLC17A5,26503,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SLC17A5,26503,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+LAPTM5,7805,,9 Gy,protons,breast adenocarcinoma cells,24 h
+HYKK,123688,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+HYKK,123688,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+HYKK,123688,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+HYKK,123688,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+HYKK,123688,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+NSD1,64324,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+NSD1,64324,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+NSD1,64324,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+NSD1,64324,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+NSD1,64324,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+OCRL,4952,,9 Gy,protons,TNBC cell line,24 h
+ITPKB,3707,,9 Gy,protons,breast adenocarcinoma cells,24 h
+INPP5D,3635,,9 Gy,protons,breast adenocarcinoma cells,24 h
+SH2D1B,117157,,9 Gy,protons,TNBC cell line,24 h
+MSN,4478,,9 Gy,protons,TNBC cell line,24 h
+ITGAX,3687,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ZFP36,7538,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+HES2,54626,,9 Gy,protons,breast adenocarcinoma cells,24 h
+SLC16A2,6567,,9 Gy,protons,TNBC cell line,24 h
+FTCD,10841,,9 Gy,protons,TNBC cell line,24 h
+RASSF4,83937,Hippo signaling pathway - multiple species,9 Gy,protons,breast adenocarcinoma cells,24 h
+PATJ,10207,Hippo signaling pathway,9 Gy,protons,TNBC cell line,24 h
+SNAI2,6591,Hippo signaling pathway,9 Gy,protons,breast adenocarcinoma cells,24 h
+EPAS1,2034,HIF-1 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+EPAS1,2034,HIF-1 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+EPAS1,2034,HIF-1 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+EPAS1,2034,HIF-1 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+EPAS1,2034,HIF-1 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,3 h
+EPAS1,2034,HIF-1 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,3 h
+EPAS1,2034,HIF-1 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+EPAS1,2034,HIF-1 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+EPAS1,2034,HIF-1 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+EPAS1,2034,HIF-1 signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+DISP1,84976,Hedgehog signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+DISP1,84976,Hedgehog signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+DISP1,84976,Hedgehog signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+DISP1,84976,Hedgehog signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SUFU,51684,Hedgehog signaling pathway,4 Gy,X-rays,breast adenocarcinoma cells,24 h
+SUFU,51684,Hedgehog signaling pathway,4 Gy,X-rays,breast adenocarcinoma cells,8 h
+SMO,6608,Hedgehog signaling pathway,4 Gy,X-rays,breast adenocarcinoma cells,24 h
+SHH,6469,Hedgehog signaling pathway,4 Gy,X-rays,breast adenocarcinoma cells,24 h
+GLI2,2736,Hedgehog signaling pathway,4 Gy,X-rays,breast adenocarcinoma cells,8 h
+SPAM1,6677,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SPAM1,6677,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SPAM1,6677,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PLA2G2D,26279,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PLA2G2D,26279,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PLA2G2D,26279,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+PLA2G2D,26279,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PLA2G2D,26279,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TIGAR,57103,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TIGAR,57103,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TIGAR,57103,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+TIGAR,57103,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TIGAR,57103,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TIGAR,57103,,9 Gy,protons,breast adenocarcinoma cells,24 h
+KLF2,10365,FoxO signaling pathway,0.5 Gy,γ-rays,immortalized B lymphocytes,24 h
+KLF2,10365,FoxO signaling pathway,3 Gy,γ-rays,immortalized B lymphocytes,24 h
+KLF2,10365,FoxO signaling pathway,8 Gy,γ-rays,immortalized B lymphocytes,24 h
+PRKAB1,5564,FoxO signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PRKAB1,5564,FoxO signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PRKAB1,5564,FoxO signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,3 h
+PRKAB1,5564,FoxO signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PRKAB1,5564,FoxO signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+HES1,3280,,9 Gy,protons,TNBC cell line,24 h
+ZFYVE16,9765,,9 Gy,protons,breast adenocarcinoma cells,24 h
+PTK2,5747,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PTK2,5747,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PTK2,5747,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PTK2,5747,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MDM2,4193,,9 Gy,protons,breast adenocarcinoma cells,24 h
+FOS,2353,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+HBEGF,1839,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+CDKN1A,1026,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+CDKN1A,1026,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+CDKN1A,1026,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+CDKN1A,1026,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+CDKN1A,1026,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+CDKN1A,1026,,9 Gy,protons,breast adenocarcinoma cells,24 h
+CCND1,595,,4 Gy,X-rays,breast adenocarcinoma cells,24 h
+VEGFA,7422,,4 Gy,X-rays,breast adenocarcinoma cells,24 h
+VEGFA,7422,,4 Gy,X-rays,breast adenocarcinoma cells,8 h
+STAT3,6774,,9 Gy,protons,TNBC cell line,24 h
+NF1,4763,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+NF1,4763,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+NF1,4763,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+NF1,4763,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+NF1,4763,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+IL6,3569,,9 Gy,protons,TNBC cell line,72 h
+BCL2,596,,4 Gy,X-rays,breast adenocarcinoma cells,8 h
+BAX,581,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+BAX,581,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+BAX,581,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+BAX,581,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+BAX,581,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SIRPA,140885,,9 Gy,protons,breast adenocarcinoma cells,24 h
+TMEM30A,55754,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TMEM30A,55754,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TMEM30A,55754,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TMEM30A,55754,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PROS1,5627,,2 Gy,X-rays,prostate cancer cell line,8 h
+RPA4,29935,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+RPA4,29935,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+RPA4,29935,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+RPA4,29935,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+RPA4,29935,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MYBPHL,343263,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MYBPHL,343263,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MYBPHL,343263,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MYBPHL,343263,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SYNPO2,171024,,9 Gy,protons,TNBC cell line,24 h
+MYOM3,127294,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MYOM3,127294,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MYOM3,127294,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MYOM3,127294,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+FMNL3,91010,,9 Gy,protons,TNBC cell line,24 h
+SYNE2,23224,,2 Gy,X-rays,prostate cancer cell line,8 h
+DTNA,1837,,9 Gy,protons,TNBC cell line,24 h
+COL5A1,1289,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+COL5A1,1289,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+COL5A1,1289,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+COL5A1,1289,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+EDA2R,60401,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+EDA2R,60401,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+EDA2R,60401,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+EDA2R,60401,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+EDA2R,60401,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+IL36G,56300,,9 Gy,protons,TNBC cell line,24 h
+TNFSF15,9966,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TNFSF15,9966,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TNFSF15,9966,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+TNFSF15,9966,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TNFSF15,9966,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TNFSF15,9966,,9 Gy,protons,breast adenocarcinoma cells,24 h
+GDF15,9518,,0.5 Gy,γ-rays,immortalized B lymphocytes,24 h
+GDF15,9518,,3 Gy,γ-rays,immortalized B lymphocytes,24 h
+GDF15,9518,,8 Gy,γ-rays,immortalized B lymphocytes,24 h
+GDF15,9518,,9 Gy,protons,breast adenocarcinoma cells,24 h
+TNFRSF10B,8795,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TNFRSF10B,8795,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TNFRSF10B,8795,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+TNFRSF10B,8795,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TNFRSF10B,8795,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TNFRSF10C,8794,,9 Gy,protons,breast adenocarcinoma cells,24 h
+TNFRSF6B,8771,,9 Gy,protons,breast adenocarcinoma cells,24 h
+TNFSF9,8744,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TNFSF9,8744,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TNFSF9,8744,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+TNFSF9,8744,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TNFSF9,8744,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TNFRSF25,8718,,9 Gy,protons,TNBC cell line,24 h
+TNFSF4,7292,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TNFSF4,7292,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TNFSF4,7292,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+TNFSF4,7292,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TNFSF4,7292,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+CCL2,6347,,9 Gy,protons,TNBC cell line,72 h
+MPL,4352,,9 Gy,protons,breast adenocarcinoma cells,24 h
+LIF,3976,,9 Gy,protons,breast adenocarcinoma cells,24 h
+LEP,3952,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+LEP,3952,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+LEP,3952,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+LEP,3952,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+LEP,3952,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+INHBA,3624,,9 Gy,protons,breast adenocarcinoma cells,24 h
+IL13,3596,,9 Gy,protons,TNBC cell line,72 h
+IL9R,3581,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+IL9R,3581,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+IL9R,3581,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+CXCL8,3576,,9 Gy,protons,TNBC cell line,72 h
+IL7,3574,,9 Gy,protons,TNBC cell line,72 h
+IL4,3565,,9 Gy,protons,TNBC cell line,72 h
+CSF3,1440,,9 Gy,protons,TNBC cell line,72 h
+CSF2,1437,,9 Gy,protons,TNBC cell line,72 h
+CCR7,1236,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+CCR7,1236,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+CCR7,1236,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+CCR7,1236,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+CCR7,1236,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+CD70,970,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+CD70,970,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+CD70,970,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+CD70,970,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+CD70,970,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+BMP8B,656,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+BMP8B,656,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+BMP8B,656,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+BMP8B,656,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+BMP8B,656,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TNFRSF17,608,,9 Gy,protons,TNBC cell line,24 h
+ACVR2A,92,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ACVR2A,92,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ACVR2A,92,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ACVR2A,92,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+EGR3,1960,C-type lectin receptor signaling pathway,8 Gy,X-rays,pancreatic cancer cell line,4 h
+EGR2,1959,C-type lectin receptor signaling pathway,8 Gy,X-rays,pancreatic cancer cell line,4 h
+SPRR2G,6706,,9 Gy,protons,breast adenocarcinoma cells,24 h
+S100A4,6275,,0.5 Gy,γ-rays,immortalized B lymphocytes,24 h
+S100A4,6275,,3 Gy,γ-rays,immortalized B lymphocytes,24 h
+S100A4,6275,,8 Gy,γ-rays,immortalized B lymphocytes,24 h
+KRT16,3868,,9 Gy,protons,breast adenocarcinoma cells,24 h
+SERPIND1,3053,,9 Gy,protons,TNBC cell line,24 h
+SULT1A1,6817,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SULT1A1,6817,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SULT1A1,6817,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+SULT1A1,6817,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SULT1A1,6817,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PIK3R5,23533,cGMP-PKG signaling pathway,9 Gy,protons,breast adenocarcinoma cells,24 h
+ROCK1,6093,cGMP-PKG signaling pathway,2 Gy,X-rays,prostate cancer cell line,8 h
+PRKCE,5581,cGMP-PKG signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PRKCE,5581,cGMP-PKG signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PRKCE,5581,cGMP-PKG signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,3 h
+PRKCE,5581,cGMP-PKG signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PRKCE,5581,cGMP-PKG signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TRAF3IP2,10758,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TRAF3IP2,10758,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TRAF3IP2,10758,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TRAF3IP2,10758,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ICOS,29851,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ICOS,29851,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ICOS,29851,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ICOS,29851,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ICOS,29851,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+CD34,947,,9 Gy,protons,TNBC cell line,24 h
+CD22,933,,9 Gy,protons,breast adenocarcinoma cells,24 h
+SSTR2,6752,cAMP signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SSTR2,6752,cAMP signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SSTR2,6752,cAMP signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,3 h
+SSTR2,6752,cAMP signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SSTR2,6752,cAMP signaling pathway,5 Gy,γ-rays,T-lymphoid cell line,6 h
+GLI3,2737,cAMP signaling pathway,4 Gy,X-rays,breast adenocarcinoma cells,24 h
+GLI3,2737,cAMP signaling pathway,4 Gy,X-rays,breast adenocarcinoma cells,8 h
+GLI1,2735,cAMP signaling pathway,4 Gy,X-rays,breast adenocarcinoma cells,24 h
+GLI1,2735,cAMP signaling pathway,4 Gy,X-rays,breast adenocarcinoma cells,8 h
+PPIF,10105,Calcium signaling pathway,9 Gy,protons,TNBC cell line,24 h
+ATP2A1,487,Calcium signaling pathway,9 Gy,protons,TNBC cell line,24 h
+TAF15,8148,,9 Gy,protons,breast adenocarcinoma cells,24 h
+TAF1,6872,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TAF1,6872,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TAF1,6872,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TAF1,6872,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+GTF2A1,2957,,9 Gy,protons,TNBC cell line,24 h
+SEPTIN8,23176,,9 Gy,protons,breast adenocarcinoma cells,24 h
+BLK,640,B cell receptor signaling pathway,9 Gy,protons,TNBC cell line,24 h
+RND1,27289,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+SEMA3E,9723,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SEMA3E,9723,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SEMA3E,9723,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+SEMA3E,9723,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SEMA3E,9723,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SEMA3E,9723,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ROBO1,6091,,2 Gy,X-rays,prostate cancer cell line,8 h
+PLXNB1,5364,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PLXNB1,5364,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PLXNB1,5364,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+L1CAM,3897,,2 Gy,X-rays,prostate cancer cell line,8 h
+H2AC1,221613,,9 Gy,protons,TNBC cell line,24 h
+H2AC20,8338,,9 Gy,protons,TNBC cell line,24 h
+H2AC17,8336,,9 Gy,protons,TNBC cell line,24 h
+GLS2,27165,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+GLS2,27165,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+GLS2,27165,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+GLS2,27165,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PRODH,5625,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PRODH,5625,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PRODH,5625,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PRODH,5625,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PTGR2,145482,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PTGR2,145482,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PTGR2,145482,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+PTGR2,145482,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PTGR2,145482,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PTGS1,5742,,9 Gy,protons,TNBC cell line,24 h
+EGR1,1958,Apelin signaling pathway,8 Gy,X-rays,pancreatic cancer cell line,4 h
+ABCC4,10257,,9 Gy,protons,breast adenocarcinoma cells,24 h
+TNF,7124,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+TNF,7124,,9 Gy,protons,TNBC cell line,72 h
+IL1B,3553,,9 Gy,protons,TNBC cell line,72 h
+ANXA11,311,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ARC,23237,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+SERPINB4,6318,,9 Gy,protons,TNBC cell line,24 h
+NR4A2,4929,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+ABCA12,26154,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ABCA10,10349,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ABCA10,10349,,9 Gy,protons,TNBC cell line,24 h
+ABCA4,24,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ABCA4,24,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ABCA4,24,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ABCA4,24,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ABCA1,19,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ABCA1,19,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ABCA1,19,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PITX1-AS1,100996485,,9 Gy,protons,TNBC cell line,24 h
+ANKRD20A12P,100874392,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ANKRD20A12P,100874392,,9 Gy,protons,TNBC cell line,24 h
+RNF157-AS1,100507218,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ELOVL2-AS1,100506409,,9 Gy,protons,TNBC cell line,24 h
+SMKR1,100287482,,9 Gy,protons,TNBC cell line,24 h
+LINC00421,100287114,,9 Gy,protons,TNBC cell line,24 h
+FAM223A,100132967,,9 Gy,protons,TNBC cell line,24 h
+SMIM6,100130933,,9 Gy,protons,breast adenocarcinoma cells,24 h
+UNC5B-AS1,728978,,9 Gy,protons,breast adenocarcinoma cells,24 h
+MROH1,727957,,9 Gy,protons,breast adenocarcinoma cells,24 h
+LRTM2,654429,,9 Gy,protons,breast adenocarcinoma cells,24 h
+POTEI,653269,,9 Gy,protons,breast adenocarcinoma cells,24 h
+SMIM10L2B,644596,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ECSCR,641700,,9 Gy,protons,TNBC cell line,24 h
+DUXAP9,503638,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+DUXAP9,503638,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+DUXAP9,503638,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+DUXAP9,503638,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+DUXAP9,503638,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+POTEE,445582,,9 Gy,protons,TNBC cell line,24 h
+BCL2L15,440603,,9 Gy,protons,TNBC cell line,24 h
+ANKRD20A5P,440482,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ANKRD20A5P,440482,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ANKRD20A5P,440482,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ANKRD20A5P,440482,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ANKRD20A5P,440482,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PRKCQ-AS1,439949,,9 Gy,protons,TNBC cell line,24 h
+SMIM10L2A,399668,,9 Gy,protons,breast adenocarcinoma cells,24 h
+RBM12B,389677,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+RBM12B,389677,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+RBM12B,389677,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+RBM12B,389677,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+RBM12B,389677,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MIR99AHG,388815,,9 Gy,protons,TNBC cell line,24 h
+CAPN8,388743,,9 Gy,protons,breast adenocarcinoma cells,24 h
+RNF207,388591,,9 Gy,protons,breast adenocarcinoma cells,24 h
+CYSRT1,375791,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+CYSRT1,375791,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+CYSRT1,375791,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+CYSRT1,375791,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+CYSRT1,375791,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MIA3,375056,,2 Gy,X-rays,prostate cancer cell line,8 h
+DRAXIN,374946,,9 Gy,protons,TNBC cell line,24 h
+ZNF568,374900,,9 Gy,protons,TNBC cell line,24 h
+MIR3667HG,348645,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MIR3667HG,348645,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MIR3667HG,348645,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MIR3667HG,348645,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MIR3667HG,348645,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+GPR149,344758,,9 Gy,protons,breast adenocarcinoma cells,24 h
+LINC00880,339894,,9 Gy,protons,TNBC cell line,24 h
+BRINP3,339479,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ARL16,339231,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ARL16,339231,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ARL16,339231,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ARL16,339231,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ARL16,339231,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TAFA2,338811,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TAFA2,338811,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TAFA2,338811,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+FFAR4,338557,,9 Gy,protons,TNBC cell line,24 h
+DDX51,317781,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+DDX51,317781,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+DDX51,317781,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+DDX51,317781,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+DDX51,317781,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+DTWD2,285605,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+DTWD2,285605,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+DTWD2,285605,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+DTWD2,285605,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+DTWD2,285605,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+DOK7,285489,,9 Gy,protons,TNBC cell line,24 h
+EPHA10,284656,,9 Gy,protons,TNBC cell line,24 h
+BLOC1S2,282991,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+BLOC1S2,282991,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+BLOC1S2,282991,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+BLOC1S2,282991,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+BLOC1S2,282991,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+NPAS4,266743,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+NPAS4,266743,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+NPAS4,266743,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+NPAS4,266743,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+NPAS4,266743,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+RNF144B,255488,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+RNF144B,255488,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+RNF144B,255488,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+RNF144B,255488,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TBC1D32,221322,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TBC1D32,221322,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TBC1D32,221322,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+TBC1D32,221322,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TBC1D32,221322,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+RASGEF1A,221002,,9 Gy,protons,TNBC cell line,24 h
+VWCE,220001,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+VWCE,220001,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+VWCE,220001,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+VWCE,220001,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+VWCE,220001,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+VWCE,220001,,9 Gy,protons,breast adenocarcinoma cells,24 h
+FOXD4L1,200350,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+FOXD4L1,200350,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+FOXD4L1,200350,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+FOXD4L1,200350,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+FOXD4L1,200350,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SPAG17,200162,,9 Gy,protons,breast adenocarcinoma cells,24 h
+PIANP,196500,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ZBTB49,166793,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZBTB49,166793,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZBTB49,166793,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZBTB49,166793,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZBTB49,166793,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+DQX1,165545,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ZNF600,162966,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF600,162966,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF600,162966,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZNF600,162966,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF600,162966,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+LINC00475,158314,,9 Gy,protons,breast adenocarcinoma cells,24 h
+MAMDC4,158056,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MAMDC4,158056,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MAMDC4,158056,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MAMDC4,158056,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MCMDC2,157777,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MCMDC2,157777,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MCMDC2,157777,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MCMDC2,157777,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MCMDC2,157777,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+FMC1,154791,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+FMC1,154791,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+FMC1,154791,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+FMC1,154791,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+FMC1,154791,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+NKAIN2,154215,,9 Gy,protons,TNBC cell line,24 h
+SPINK13,153218,,9 Gy,protons,TNBC cell line,24 h
+CDC42EP5,148170,,0.5 Gy,γ-rays,immortalized B lymphocytes,24 h
+CDC42EP5,148170,,3 Gy,γ-rays,immortalized B lymphocytes,24 h
+CDC42EP5,148170,,8 Gy,γ-rays,immortalized B lymphocytes,24 h
+ANKRD29,147463,,9 Gy,protons,breast adenocarcinoma cells,24 h
+CCBE1,147372,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+CCBE1,147372,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+CCBE1,147372,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+CCBE1,147372,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+CCBE1,147372,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+CMTM4,146223,,9 Gy,protons,TNBC cell line,24 h
+ARHGAP42,143872,,9 Gy,protons,breast adenocarcinoma cells,24 h
+SYT9,143425,,9 Gy,protons,TNBC cell line,24 h
+RIPOR3,140876,,9 Gy,protons,breast adenocarcinoma cells,24 h
+NOL4L,140688,,9 Gy,protons,TNBC cell line,24 h
+ZBTB46,140685,,9 Gy,protons,TNBC cell line,24 h
+C7orf57,136288,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+C7orf57,136288,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+C7orf57,136288,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+C7orf57,136288,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+C7orf57,136288,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ZNF786,136051,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF786,136051,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF786,136051,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZNF786,136051,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF786,136051,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TMEM139,135932,,9 Gy,protons,breast adenocarcinoma cells,24 h
+DNAJC21,134218,,9 Gy,protons,breast adenocarcinoma cells,24 h
+JMY,133746,,2 Gy,X-rays,prostate cancer cell line,8 h
+SPATA18,132671,,9 Gy,protons,breast adenocarcinoma cells,24 h
+LYG1,129530,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+LYG1,129530,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+LYG1,129530,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+LYG1,129530,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+EID2B,126272,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+EID2B,126272,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+EID2B,126272,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+EID2B,126272,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+EID2B,126272,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+NLRP8,126205,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+NLRP8,126205,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+NLRP8,126205,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+NLRP8,126205,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+NLRP8,126205,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+RN7SK,125050,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+RN7SK,125050,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+RN7SK,125050,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+RN7SK,125050,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+RN7SK,125050,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+DCUN1D3,123879,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+DCUN1D3,123879,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+DCUN1D3,123879,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+DCUN1D3,123879,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+DCUN1D3,123879,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+IKBIP,121457,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+IKBIP,121457,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+IKBIP,121457,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+IKBIP,121457,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+IKBIP,121457,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+CALHM3,119395,,9 Gy,protons,breast adenocarcinoma cells,24 h
+LEAP2,116842,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+LEAP2,116842,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+LEAP2,116842,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+LEAP2,116842,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+LEAP2,116842,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+C8orf34,116328,,9 Gy,protons,TNBC cell line,24 h
+ARL11,115761,,9 Gy,protons,breast adenocarcinoma cells,24 h
+DDIT4L,115265,,9 Gy,protons,TNBC cell line,24 h
+C1QTNF3,114899,,9 Gy,protons,TNBC cell line,24 h
+CROCCP3,114819,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ERMAP,114625,,9 Gy,protons,TNBC cell line,24 h
+CGB1,114335,,9 Gy,protons,breast adenocarcinoma cells,24 h
+TP53INP1,94241,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TP53INP1,94241,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TP53INP1,94241,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+TP53INP1,94241,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TP53INP1,94241,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TP53INP1,94241,,9 Gy,protons,breast adenocarcinoma cells,24 h
+SYAP1,94056,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SYAP1,94056,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SYAP1,94056,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+SYAP1,94056,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SYAP1,94056,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+GCNA,93953,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+ZNF561,93134,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF561,93134,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF561,93134,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZNF561,93134,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF561,93134,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TMEM169,92691,,9 Gy,protons,TNBC cell line,24 h
+TTC30A,92104,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ARRDC4,91947,,9 Gy,protons,breast adenocarcinoma cells,24 h
+C11orf52,91894,,9 Gy,protons,TNBC cell line,24 h
+CENPL,91687,,9 Gy,protons,breast adenocarcinoma cells,24 h
+CENPL,91687,,9 Gy,protons,TNBC cell line,24 h
+NEXN,91624,,2 Gy,X-rays,prostate cancer cell line,8 h
+ANKRD44,91526,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ANKRD44,91526,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ANKRD44,91526,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ANKRD44,91526,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ANKRD44,91526,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ZNF682,91120,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF682,91120,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF682,91120,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZNF682,91120,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF682,91120,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SHF,90525,,9 Gy,protons,TNBC cell line,24 h
+CCDC32,90416,,9 Gy,protons,breast adenocarcinoma cells,24 h
+CFAP74,85452,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+CFAP74,85452,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+CFAP74,85452,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+CFAP74,85452,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+CFAP74,85452,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+CFAP74,85452,,9 Gy,protons,TNBC cell line,24 h
+KNDC1,85442,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ZNF566,84924,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF566,84924,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF566,84924,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZNF566,84924,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF566,84924,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+RAX2,84839,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+RAX2,84839,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+RAX2,84839,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+RAX2,84839,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+RAX2,84839,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PLPP7,84814,,9 Gy,protons,TNBC cell line,24 h
+ZNF577,84765,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF577,84765,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF577,84765,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZNF577,84765,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF577,84765,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ZNF397,84307,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF397,84307,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF397,84307,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF397,84307,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+DNAJC30,84277,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+DNAJC30,84277,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+DNAJC30,84277,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+DNAJC30,84277,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+DNAJC30,84277,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ANKRD20A1,84210,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ANKRD20A1,84210,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ANKRD20A1,84210,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ANKRD20A1,84210,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ANKRD20A1,84210,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+LOXL4,84171,,9 Gy,protons,breast adenocarcinoma cells,24 h
+C19orf44,84167,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+C19orf44,84167,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+C19orf44,84167,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+C19orf44,84167,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+C19orf44,84167,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ACAD11,84129,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ACAD11,84129,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ACAD11,84129,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+USHBP1,83878,,9 Gy,protons,TNBC cell line,24 h
+EPPK1,83481,,9 Gy,protons,TNBC cell line,24 h
+CCDC70,83446,,9 Gy,protons,TNBC cell line,24 h
+NUAK2,81788,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+ACTL8,81569,,9 Gy,protons,breast adenocarcinoma cells,24 h
+KCNH6,81033,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+KCNH6,81033,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+KCNH6,81033,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+KCNH6,81033,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+KCNH6,81033,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SRCIN1,80725,,9 Gy,protons,TNBC cell line,24 h
+TSGA10,80705,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TSGA10,80705,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TSGA10,80705,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TSGA10,80705,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TSGA10,80705,,9 Gy,protons,TNBC cell line,24 h
+NUBPL,80224,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+NUBPL,80224,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+NUBPL,80224,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+NUBPL,80224,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+NUBPL,80224,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+CEP290,80184,,9 Gy,protons,TNBC cell line,24 h
+ARL14,80117,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+ZFP2,80108,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZFP2,80108,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZFP2,80108,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZFP2,80108,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PCNX2,80003,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PCNX2,80003,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PCNX2,80003,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PCNX2,80003,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ZNF767P,79970,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF767P,79970,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF767P,79970,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZNF767P,79970,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF767P,79970,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SLC35E1,79939,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SLC35E1,79939,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SLC35E1,79939,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+SLC35E1,79939,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SLC35E1,79939,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ZNF669,79862,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF669,79862,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF669,79862,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZNF669,79862,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF669,79862,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ZNF750,79755,,9 Gy,protons,breast adenocarcinoma cells,24 h
+NOL9,79707,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+NOL9,79707,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+NOL9,79707,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+NOL9,79707,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+NOL9,79707,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+GAL3ST4,79690,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+GAL3ST4,79690,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+GAL3ST4,79690,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+GAL3ST4,79690,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MSANTD2,79684,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MSANTD2,79684,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MSANTD2,79684,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MSANTD2,79684,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MSANTD2,79684,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SPAG16,79582,,9 Gy,protons,TNBC cell line,24 h
+TAF1D,79101,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TAF1D,79101,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TAF1D,79101,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TAF1D,79101,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PRRG4,79056,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PRRG4,79056,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PRRG4,79056,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+PRRG4,79056,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PRRG4,79056,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+EXO5,64789,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+EXO5,64789,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+EXO5,64789,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+EXO5,64789,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+EXO5,64789,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+AEN,64782,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+AEN,64782,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+AEN,64782,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+AEN,64782,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+AEN,64782,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TMEM267,64417,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TMEM267,64417,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TMEM267,64417,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+TMEM267,64417,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TMEM267,64417,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ARHGAP9,64333,,9 Gy,protons,TNBC cell line,24 h
+ERAP2,64167,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ERAP2,64167,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ERAP2,64167,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ERAP2,64167,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ERAP2,64167,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+EPB41L4A,64097,,9 Gy,protons,breast adenocarcinoma cells,24 h
+DMRTC1,63947,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ZBED8,63920,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZBED8,63920,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZBED8,63920,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZBED8,63920,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZBED8,63920,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PLEKHA1,59338,,9 Gy,protons,TNBC cell line,24 h
+INIP,58493,,9 Gy,protons,breast adenocarcinoma cells,24 h
+INIP,58493,,9 Gy,protons,TNBC cell line,24 h
+PLEKHB1,58473,,9 Gy,protons,TNBC cell line,24 h
+ANKRA2,57763,,9 Gy,protons,breast adenocarcinoma cells,24 h
+HOMEZ,57594,,9 Gy,protons,TNBC cell line,24 h
+SORCS2,57537,,9 Gy,protons,breast adenocarcinoma cells,24 h
+NYNRIN,57523,,9 Gy,protons,breast adenocarcinoma cells,24 h
+TRIM49,57093,,9 Gy,protons,breast adenocarcinoma cells,24 h
+PRDM8,56978,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PRDM8,56978,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PRDM8,56978,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+PRDM8,56978,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PRDM8,56978,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+OLFML3,56944,,9 Gy,protons,breast adenocarcinoma cells,24 h
+GRIPAP1,56850,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+GRIPAP1,56850,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+GRIPAP1,56850,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+GRIPAP1,56850,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+GRIPAP1,56850,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TCEAL7,56849,,9 Gy,protons,TNBC cell line,24 h
+NRIP3,56675,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+NRIP3,56675,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+NRIP3,56675,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+NRIP3,56675,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+NRIP3,56675,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TDRD1,56165,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TDRD1,56165,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TDRD1,56165,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+TDRD1,56165,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TDRD1,56165,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TEX14,56155,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+PCDHA11,56138,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PCDHA11,56138,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PCDHA11,56138,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+PCDHA11,56138,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PCDHA11,56138,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+INKA2,55924,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+INKA2,55924,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+INKA2,55924,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+INKA2,55924,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+INKA2,55924,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+N4BP2,55728,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+N4BP2,55728,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+N4BP2,55728,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+CCDC88A,55704,,2 Gy,X-rays,prostate cancer cell line,8 h
+RBM38,55544,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+RBM38,55544,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+RBM38,55544,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+RBM38,55544,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+RBM38,55544,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+RBM38,55544,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+RBM38,55544,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+RBM38,55544,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+RBM38,55544,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+RBM38,55544,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+DNAJA4,55466,,9 Gy,protons,TNBC cell line,24 h
+DRAM1,55332,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+DRAM1,55332,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+DRAM1,55332,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+DRAM1,55332,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+DRAM1,55332,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MNS1,55329,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MNS1,55329,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MNS1,55329,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MNS1,55329,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SLC47A1,55244,,9 Gy,protons,TNBC cell line,24 h
+EBLN2,55096,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+EBLN2,55096,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+EBLN2,55096,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+EBLN2,55096,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+EBLN2,55096,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+LRRC37A4P,55073,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+LRRC37A4P,55073,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+LRRC37A4P,55073,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+LRRC37A4P,55073,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+LRRC37A4P,55073,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SLC52A1,55065,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SLC52A1,55065,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SLC52A1,55065,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+C14orf119,55017,,9 Gy,protons,TNBC cell line,24 h
+HERC6,55008,,9 Gy,protons,TNBC cell line,24 h
+ELP6,54859,,9 Gy,protons,TNBC cell line,24 h
+PGPEP1,54858,,9 Gy,protons,breast adenocarcinoma cells,24 h
+MBTD1,54799,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MBTD1,54799,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MBTD1,54799,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MBTD1,54799,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MBTD1,54799,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+GRAMD1C,54762,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+PCDH18,54510,,9 Gy,protons,TNBC cell line,24 h
+ERRFI1,54206,,9 Gy,protons,TNBC cell line,24 h
+GPR87,53836,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ASB2,51676,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+TRIAP1,51499,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TRIAP1,51499,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TRIAP1,51499,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+TRIAP1,51499,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TRIAP1,51499,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ZNF589,51385,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF589,51385,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF589,51385,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZNF589,51385,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF589,51385,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+IER5,51278,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+IER5,51278,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+IER5,51278,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+IER5,51278,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+IER5,51278,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PACSIN1,29993,,9 Gy,protons,TNBC cell line,24 h
+SERTAD1,29950,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SERTAD1,29950,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SERTAD1,29950,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+SERTAD1,29950,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SERTAD1,29950,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PHPT1,29085,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PHPT1,29085,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PHPT1,29085,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PHPT1,29085,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+LHX6,26468,,9 Gy,protons,TNBC cell line,24 h
+ZBTB20,26137,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ZNF500,26048,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF500,26048,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF500,26048,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZNF500,26048,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF500,26048,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+OSBPL3,26031,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+OSBPL3,26031,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+OSBPL3,26031,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+OSBPL3,26031,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+NSMF,26012,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+NSMF,26012,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+NSMF,26012,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+NSMF,26012,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+NSMF,26012,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SNED1,25992,,9 Gy,protons,breast adenocarcinoma cells,24 h
+USP49,25862,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+USP49,25862,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+USP49,25862,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+USP49,25862,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+USP49,25862,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+FBXL2,25827,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+FBXL2,25827,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+FBXL2,25827,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+KIAA1549L,25758,,9 Gy,protons,TNBC cell line,24 h
+OSBP2,23762,,9 Gy,protons,TNBC cell line,24 h
+PHLDA3,23612,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PHLDA3,23612,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PHLDA3,23612,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+PHLDA3,23612,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PHLDA3,23612,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TTC9,23508,,9 Gy,protons,TNBC cell line,24 h
+NOMO1,23420,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+NOMO1,23420,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+NOMO1,23420,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+NOMO1,23420,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+NOMO1,23420,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MINAR1,23251,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MINAR1,23251,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MINAR1,23251,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MINAR1,23251,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MINAR1,23251,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ASTN2,23245,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ASTN2,23245,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ASTN2,23245,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ASTN2,23245,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+CUL9,23113,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+CUL9,23113,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+CUL9,23113,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF423,23090,,9 Gy,protons,breast adenocarcinoma cells,24 h
+CAND2,23066,,9 Gy,protons,TNBC cell line,24 h
+GOLGA8A,23015,,9 Gy,protons,TNBC cell line,24 h
+CEP152,22995,,9 Gy,protons,breast adenocarcinoma cells,24 h
+PCNX1,22990,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PCNX1,22990,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PCNX1,22990,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZP1,22917,,9 Gy,protons,TNBC cell line,24 h
+ZNF652,22834,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF652,22834,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF652,22834,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZNF652,22834,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF652,22834,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+AKAP10,11216,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+AKAP10,11216,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+AKAP10,11216,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+AKAP10,11216,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+AKAP10,11216,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+DMC1,11144,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+DMC1,11144,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+DMC1,11144,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+DMC1,11144,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+DMC1,11144,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+CNTRL,11064,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ASCC3,10973,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ASCC3,10973,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ASCC3,10973,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ASCC3,10973,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ACTL7B,10880,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ACTL7B,10880,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ACTL7B,10880,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ACTL7B,10880,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+CCT8,10694,,9 Gy,protons,TNBC cell line,24 h
+TSBP1,10665,,9 Gy,protons,TNBC cell line,24 h
+ENOX2,10495,,9 Gy,protons,TNBC cell line,24 h
+TRIM22,10346,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+TRIM22,10346,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+TRIM22,10346,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+TRIM22,10346,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+TRIM22,10346,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+LHFPL6,10186,,9 Gy,protons,breast adenocarcinoma cells,24 h
+LHFPL2,10184,,9 Gy,protons,breast adenocarcinoma cells,24 h
+SRA1,10011,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SRA1,10011,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SRA1,10011,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SRA1,10011,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SRA1,10011,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+SRA1,10011,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+SRA1,10011,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SRA1,10011,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SRA1,10011,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SRA1,10011,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+EXOG,9941,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+EXOG,9941,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+EXOG,9941,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+EXOG,9941,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+EXOG,9941,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SUSD6,9766,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SUSD6,9766,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SUSD6,9766,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SUSD6,9766,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+TBX4,9496,,9 Gy,protons,breast adenocarcinoma cells,24 h
+KCNK6,9424,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+KCNK6,9424,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+KCNK6,9424,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+KCNK6,9424,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+KCNK6,9424,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ZNF235,9310,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF235,9310,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF235,9310,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZNF235,9310,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF235,9310,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MFHAS1,9258,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MFHAS1,9258,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MFHAS1,9258,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MFHAS1,9258,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MFHAS1,9258,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+DCLK1,9201,,9 Gy,protons,breast adenocarcinoma cells,24 h
+TBX19,9095,,9 Gy,protons,TNBC cell line,24 h
+SLC7A6,9057,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SLC7A6,9057,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SLC7A6,9057,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SLC7A6,9057,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+IER3,8870,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+IER3,8870,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+IER3,8870,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+IER3,8870,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+IER3,8870,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ADAM7,8756,,9 Gy,protons,breast adenocarcinoma cells,24 h
+RGS20,8601,,9 Gy,protons,breast adenocarcinoma cells,24 h
+LY6D,8581,,9 Gy,protons,breast adenocarcinoma cells,24 h
+DENR,8562,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+DENR,8562,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+DENR,8562,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+DENR,8562,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+DENR,8562,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ENC1,8507,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ENC1,8507,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ENC1,8507,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ENC1,8507,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ENC1,8507,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+FKBP6,8468,,9 Gy,protons,breast adenocarcinoma cells,24 h
+CMAHP,8418,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+CMAHP,8418,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+CMAHP,8418,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+CMAHP,8418,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+EPM2A,7957,,9 Gy,protons,TNBC cell line,24 h
+ZNF165,7718,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+ZNF165,7718,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF165,7718,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF165,7718,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ZNF165,7718,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ZNF165,7718,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ZNF37A,7587,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ZNF37A,7587,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ZNF37A,7587,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+XG,7499,,9 Gy,protons,breast adenocarcinoma cells,24 h
+USH2A,7399,,9 Gy,protons,TNBC cell line,24 h
+TM4SF4,7104,,9 Gy,protons,breast adenocarcinoma cells,24 h
+TGM4,7047,,9 Gy,protons,TNBC cell line,24 h
+SORL1,6653,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SORL1,6653,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SORL1,6653,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+SORL1,6653,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SORL1,6653,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SNAPC1,6617,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+SNAPC1,6617,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+SNAPC1,6617,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+SNAPC1,6617,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+SNAPC1,6617,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ATXN7,6314,,9 Gy,protons,TNBC cell line,24 h
+RSC1A1,6248,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+RSC1A1,6248,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+RSC1A1,6248,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+RSC1A1,6248,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+RSC1A1,6248,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+RRAD,6236,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+RGS12,6002,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+RGS12,6002,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+RGS12,6002,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+RGS12,6002,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+RBM3,5935,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+RBM3,5935,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+RBM3,5935,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+RBM3,5935,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+RBM3,5935,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+MOK,5891,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+MOK,5891,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+MOK,5891,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+MOK,5891,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+MOK,5891,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+RAB3B,5865,,9 Gy,protons,TNBC cell line,24 h
+PTMA,5757,,9 Gy,protons,TNBC cell line,24 h
+PRKY,5616,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PRKY,5616,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PRKY,5616,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+PRKY,5616,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PRKY,5616,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PRKX,5613,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PRKX,5613,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PRKX,5613,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+PRKX,5613,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PRKX,5613,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+PLP1,5354,,9 Gy,protons,TNBC cell line,24 h
+NKG7,4818,,9 Gy,protons,breast adenocarcinoma cells,24 h
+MATN3,4148,,9 Gy,protons,TNBC cell line,24 h
+MAK,4117,,9 Gy,protons,TNBC cell line,24 h
+MAGEA8,4107,,9 Gy,protons,breast adenocarcinoma cells,24 h
+JCHAIN,3512,,0.5 Gy,γ-rays,immortalized B lymphocytes,24 h
+JCHAIN,3512,,3 Gy,γ-rays,immortalized B lymphocytes,24 h
+JCHAIN,3512,,8 Gy,γ-rays,immortalized B lymphocytes,24 h
+GFRA2,2675,,9 Gy,protons,breast adenocarcinoma cells,24 h
+GEM,2669,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+EN1,2019,,9 Gy,protons,TNBC cell line,24 h
+EGR4,1961,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+CYP4B1,1580,,9 Gy,protons,breast adenocarcinoma cells,24 h
+CSPG4,1464,,9 Gy,protons,TNBC cell line,24 h
+KLF6,1316,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+KLF6,1316,,9 Gy,protons,breast adenocarcinoma cells,24 h
+CNN1,1264,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+CNN1,1264,,9 Gy,protons,TNBC cell line,24 h
+CDH9,1007,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+CDH9,1007,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+CDH9,1007,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+CDH9,1007,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+CDH9,1007,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+SIGLEC6,946,,9 Gy,protons,TNBC cell line,24 h
+CALB2,794,,9 Gy,protons,TNBC cell line,24 h
+PRDM1,639,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+PRDM1,639,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+PRDM1,639,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+PRDM1,639,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+CEACAM1,634,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+CEACAM1,634,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+CEACAM1,634,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+CEACAM1,634,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ATF3,467,,8 Gy,X-rays,pancreatic cancer cell line,4 h
+ATF3,467,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+ATF3,467,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+ATF3,467,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+ATF3,467,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+ATF3,467,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+RND3,390,,5 Gy,γ-rays,T-lymphoid cell line,12 h
+RND3,390,,5 Gy,γ-rays,T-lymphoid cell line,24 h
+RND3,390,,5 Gy,γ-rays,T-lymphoid cell line,3 h
+RND3,390,,5 Gy,γ-rays,T-lymphoid cell line,48 h
+RND3,390,,5 Gy,γ-rays,T-lymphoid cell line,6 h
+ANXA1,301,,9 Gy,protons,breast adenocarcinoma cells,24 h
+ACR,49,,9 Gy,protons,TNBC cell line,24 h
