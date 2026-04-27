@@ -1,65 +1,12 @@
 <!DOCTYPE html>
-
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RadioProtect Herbs Compound Filter System</title>
-    
-<link rel="stylesheet" href="./web_database_files/fonts.css">    
-	
-	
-    <!-- Bootstrap CSS -->
     <link href="./web_database_files/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="./web_database_files/all.min.css">
-    <style>
-    /* 自定义悬停提示样式 */
-    .photo-tooltip {
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-    .photo-tooltip:hover {
-      transform: translateY(-5px);
-    }
-    .photo-tooltip::after {
-      content: attr(data-description);
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(0,0,0,0.85);
-      color: #fff;
-      padding: 1.2rem;
-      font-size: 0.95rem;
-      transform: translateY(100%);
-      opacity: 0;
-      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-      z-index: 10;
-    }
-    .photo-tooltip:hover::after {
-      transform: translateY(0);
-      opacity: 1;
-    }
+    <link rel="stylesheet" href="./web_database_files/fonts.css">
     
-    /* 图片遮罩增强 */
-    .photo-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 50%);
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-    .photo-tooltip:hover .photo-overlay {
-      opacity: 1;
-    }
-    </style>
-    <!-- Custom CSS -->
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -88,15 +35,21 @@
         .navbar {
             background-color: var(--primary-color);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1020;
             padding: 0.75rem 0;
         }
-
         .navbar-brand {
             font-family: 'Lora', serif;
             font-weight: 700;
             font-size: 1.5rem;
-            letter-spacing: 0.5px;
+            color: white;
         }
+        .navbar-brand:hover { color: #f8f9fa; }
+
+        .nav-link, .dropdown-item { font-weight: 500; transition: all 0.2s; }
+        .nav-link:hover, .dropdown-item:hover { background-color: rgba(255,255,255,0.1); }
 
         .page {
             background-color: white;
@@ -106,6 +59,11 @@
             margin: 1.5rem auto;
             max-width: 1400px;
             border: 1px solid var(--border-color);
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .card {
@@ -114,983 +72,232 @@
             margin-bottom: 1.5rem;
             transition: all 0.3s ease;
         }
-
         .card:hover {
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             transform: translateY(-2px);
         }
-
         .card-header {
             background-color: var(--primary-color);
             color: white;
             font-weight: 500;
             padding: 1rem 1.25rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .form-control, .form-select {
-            padding: 0.75rem 1rem;
-            border-radius: 0.25rem;
-            border: 1px solid var(--border-color);
-            font-size: 0.95rem;
-        }
-
-        .form-control:focus, .form-select:focus {
-            border-color: var(--secondary-color);
-            box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.15);
         }
 
         .btn-primary {
             background-color: var(--primary-color);
             border-color: var(--primary-color);
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            padding: 0.75rem 1.5rem;
         }
-
         .btn-primary:hover {
             background-color: #233140;
             border-color: #233140;
         }
 
-        .btn-outline-secondary {
-            color: var(--text-light);
-            border-color: var(--text-light);
-            padding: 0.75rem 1.5rem;
-        }
-
-        .btn-outline-secondary:hover {
-            color: white;
-            background-color: var(--text-light);
-            border-color: var(--text-light);
-        }
-
-/* 表格整体样式 - 匹配页面学术风格 */
-.table {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid var(--border-color);
-}
-
-/* 表头样式 - 匹配导航栏配色 */
-.table th {
-    position: sticky;
-    top: 0;
-    background-color: var(--primary-color); /* 使用主色调 */
-    color: white;
-    padding: 12px 15px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border: none;
-    font-family: 'Lora', serif;
-}
-
-/* 单元格样式 - 匹配卡片内容风格 */
-.table td {
-    padding: 12px 15px;
-    font-size: 0.95rem;
-    color: var(--text-color);
-    border: 1px solid var(--border-color);
-    line-height: 1.5;
-}
-
-/* 斑马条纹 - 使用页面配色 */
-.table tr:nth-child(even) {
-    background-color: rgba(52, 152, 219, 0.05); /* 主色调淡色 */
-}
-.table tr:nth-child(odd) {
-    background-color: white;
-}
-
-/* 悬停效果 - 匹配交互元素 */
-.table-hover tbody tr:hover {
-    background-color: rgba(52, 152, 219, 0.1); /* 加深悬停色 */
-    transition: background-color 0.2s ease;
-}
-
-/* 边框样式 - 匹配卡片边框 */
-.table, .table th, .table td {
-    border: 1px solid var(--border-color);
-}
-
-/* 响应式调整 */
-@media (max-width: 768px) {
-    .table td, .table th {
-        padding: 8px 10px;
-        font-size: 0.85rem;
-    }
-}
-
-/* 特殊强调 - 匹配强调色 */
-.table .highlight {
-    background-color: var(--secondary-color);
-    color: white;
-}
-
-/* 固定表头滚动区域 */
-.table-container {
-    max-height: 600px;
-    overflow-y: auto;
-    scrollbar-width: thin;
-}
-
-/* 自定义滚动条 - 匹配页面风格 */
-.table-container::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-}
-.table-container::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 3px;
-}
-.table-container::-webkit-scrollbar-thumb {
-    background: var(--secondary-color);
-    border-radius: 3px;
-}
-.table-container::-webkit-scrollbar-thumb:hover {
-    background: #2980b9;
-}
-
-        #loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.9);
-            z-index: 9999;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .spinner-border {
-            width: 3rem;
-            height: 3rem;
-        }
-
-        .main-container {
-            display: flex;
-            gap: 20px;
-            height: 80vh;
-        }
-
-        .control-panel {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            flex: 1;
-            height: 100%;
-            border: 1px solid var(--border-color);
-        }
-
-        #cy {
-            flex: 2;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            height: 100%;
-            background-color: white;
-            border: 1px solid var(--border-color);
-        }
-
-        .image-container {
-            width: 100%;
-            border-radius: 8px;
+        .photo-tooltip {
+            position: relative;
             overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-            border: 1px solid var(--border-color);
-        }
-
-        .image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Academic paper style for content */
-        .academic-content {
-            font-family: 'Lora', serif;
-            line-height: 1.8;
-            color: #444;
-        }
-
-        .academic-content p {
-            margin-bottom: 1.5rem;
-        }
-
-        /* Improved navigation */
-        .nav-item {
-            margin: 0 0.25rem;
-        }
-
-        .nav-link {
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: all 0.2s;
-        }
-
-        .nav-link:hover {
-            background-color: rgba(255,255,255,0.1);
-        }
-
-        .dropdown-menu {
-            border: 1px solid var(--border-color);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .dropdown-item {
-            padding: 0.5rem 1.25rem;
-            transition: all 0.2s;
-        }
-
-        /* Responsive improvements */
-        @media (max-width: 992px) {
-            .main-container {
-                flex-direction: column;
-            }
-            
-            .control-panel {
-                order: 2;
-                margin-top: 20px;
-            }
-            
-            #cy {
-                order: 1;
-                height: 500px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .page {
-                padding: 1.5rem;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-            }
-            
-            .form-row {
-                flex-direction: column;
-            }
-            
-            .col-md-6 {
-                width: 100%;
-            }
-        }
-
-        /* Animation for page transitions */
-        .page {
-            animation: fadeIn 0.3s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Tooltip styling */
-        [data-bs-toggle="tooltip"] {
+            border-radius: 8px;
+            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
             cursor: pointer;
         }
-
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
+        .photo-tooltip:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        .info-layer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);
+            color: white;
+            padding: 1.5rem;
+            transform: translateY(100%);
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .photo-tooltip:hover .info-layer {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .scientific-name {
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .description {
+            font-size: 0.9rem;
+            line-height: 1.5;
         }
 
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
+        .database-features {
+            padding: 2rem;
+            background-color: white;
+            border-radius: 12px;
+            margin-bottom: 3rem;
         }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--secondary-color);
-            border-radius: 4px;
+        .section-title {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: 600;
         }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #2980b9;
-        }
-
-        /* Search result highlighting */
-        .highlight {
-            background-color: #fffde7;
-            padding: 0 2px;
-            border-radius: 2px;
-        }
-
-        /* Improved modal styling */
-        .modal-content {
-            border: none;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-        }
-
-        .modal-header {
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .modal-footer {
-            border-top: 1px solid var(--border-color);
-        }
-
-        /* Better table styling */
-        .table-responsive {
-            border-radius: 8px;
+        .feature-card {
+            background: white;
             border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            height: 100%;
         }
-
-        /* Improved input group styling */
-        .input-group-text {
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             background-color: #f8f9fa;
-            border-color: var(--border-color);
         }
-/* 固定导航栏 */
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-}
+        .card-icon { text-align: center; margin-bottom: 1.2rem; color: var(--secondary-color); }
+        .card-title { font-size: 1.25rem; font-weight: 600; text-align: center; margin-bottom: 0.8rem; }
+        .card-text { font-size: 0.95rem; text-align: center; }
 
-/* 表格样式 */
-.table {
-    border-collapse: collapse;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-}
+        .academic-content { font-family: 'Lora', serif; line-height: 1.8; color: #444; }
+        .footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2rem;
+            width: 100%;
+        }
+        .footer a { color: #ffd966; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
 
-.table th, .table td {
-    border: 1px solid var(--border-color);
-    padding: 12px 15px;
-    text-align: left;
-}
-
-/* 固定表头 */
-.table-container {
-    max-height: 600px;
-    overflow-y: auto;
-    position: relative;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-}
-
-.table-container table {
-    width: 100%;
-    margin-bottom: 0;
-}
-
-.table-container thead th {
-    position: sticky;
-    top: 0;
-    background-color: var(--primary-color);
-    color: white;
-    font-weight: 500;
-    z-index: 10;
-    border-bottom: 1px solid var(--border-color);
-}
-
-/* 斑马条纹 */
-.table tr:nth-child(even) {
-    background-color: rgba(52, 152, 219, 0.05);
-}
-
-/* 悬停效果 */
-.table-hover tbody tr:hover {
-    background-color: rgba(52, 152, 219, 0.1);
-    transition: background-color 0.2s ease;
-}
-.footer {
-  background-color: var(--primary-color);
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-size: 24px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%; /* 或者您也可以使用百分比或其他适当的单位 */
-  height: 100px;
-}
-
-/* 移动端和小屏幕优化CSS */
-@media (max-width: 992px) {
-    /* 1. 响应式布局改进 */
-    .navbar-brand {
-        font-size: 1.2rem;
-    }
-    
-    .page, .card {
-        padding: 1rem;
-    }
-    
-    /* 2. 导航栏优化 */
-    .navbar-collapse {
-        max-height: 80vh;
-        overflow-y: auto;
-    }
-    
-    .navbar-nav {
-        margin-top: 1rem;
-    }
-    
-    .dropdown-menu {
-        position: static;
-        float: none;
-    }
-    
-    /* 3. 表格优化 */
-    .table-responsive {
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    .table th, .table td {
-        padding: 8px;
-        font-size: 0.85rem;
-    }
-    
-    /* 4. 功能卡片优化 */
-    .database-features .row {
-        flex-direction: column;
-    }
-    
-    .feature-card {
-        margin-bottom: 1rem;
-        padding: 1rem;
-    }
-    
-    .card-icon i {
-        font-size: 2rem;
-    }
-    
-    .card-title {
-        font-size: 1.1rem;
-    }
-    
-    /* 5. 共表达网络图优化 */
-    #cy {
-        height: 400px;
-        order: 1;
-    }
-    
-    .control-panel {
-        order: 2;
-        margin-top: 1rem;
-        width: 100%;
-    }
-    
-    .main-container {
-        height: auto;
-        flex-direction: column;
-    }
-    
-    /* 6. 表单元素优化 */
-    .form-control, .form-select, .btn {
-        font-size: 1rem;
-        padding: 0.75rem;
-    }
-    
-    textarea.form-control {
-        min-height: 150px;
-    }
-    
-    /* 7. 图片和图表优化 */
-    .image-container img {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    #heatmap, #chart_div {
-        height: 400px;
-    }
-    
-    /* 8. 页脚优化 */
-    .footer {
-        width: 100%;
-        padding: 15px;
-        font-size: 0.9rem;
-        height: auto;
-    }
-    
-    /* 9. 加载动画优化 */
-    #loading .spinner-border {
-        width: 2rem;
-        height: 2rem;
-    }
-    
-    #loading p {
-        font-size: 1rem;
-    }
-    
-    #loading .progress {
-        width: 200px;
-    }
-    
-    /* 10. 模态框优化 */
-    .modal-dialog {
-        margin: 0;
-        max-width: 100%;
-        height: 100%;
-    }
-    
-    .modal-content {
-        height: 100%;
-        border-radius: 0;
-    }
-    
-    .modal-body {
-        overflow-y: auto;
-        max-height: calc(100vh - 200px);
-    }
-}
-
-/* 更小屏幕的额外优化 */
-@media (max-width: 576px) {
-    /* 调整基因信息模态框布局 */
-    #geneInfoModal .row {
-        flex-direction: column;
-    }
-    
-    #geneInfoModal .col-md-4, 
-    #geneInfoModal .col-md-8 {
-        width: 100%;
-    }
-    
-    /* 调整表格容器 */
-    .table-container {
-        max-height: 300px;
-    }
-    
-    /* 调整按钮大小 */
-    .btn {
-        padding: 0.5rem;
-        font-size: 0.9rem;
-    }
-    
-    /* 调整标题大小 */
-    h1, h2, h3 {
-        font-size: 1.5rem;
-    }
-    
-    /* 调整卡片标题 */
-    .card-header h2, .card-header h4 {
-        font-size: 1.2rem;
-    }
-    
-    /* 调整边距 */
-    .mb-4, .mb-5, .mt-4, .mt-5 {
-        margin-bottom: 1rem !important;
-        margin-top: 1rem !important;
-    }
-    
-    /* 调整表单元素间距 */
-    .form-group, .form-row {
-        margin-bottom: 0.5rem;
-    }
-    
-    /* 调整基因表达热图 */
-    #heatmap {
-        height: 300px;
-    }
-    
-    /* 调整网络图控制面板 */
-    .control-panel {
-        padding: 0.5rem;
-    }
-    
-    .control-panel .form-control, 
-    .control-panel .form-select, 
-    .control-panel .btn {
-        padding: 0.5rem;
-    }
-    
-    /* 调整时间线样式 */
-    .timeline-item {
-        margin-bottom: 1rem;
-    }
-    
-    .timeline-panel {
-        padding: 0.5rem;
-    }
-    
-    /* 调整基因搜索表单 */
-    #textSearchform .col-md-6 {
-        margin-bottom: 0.5rem;
-    }
-    
-    /* 调整序列下载区域 */
-    #cds, #pep {
-        font-size: 0.8rem;
-    }
-    
-    /* 调整JBrowse iframe */
-    #JBrowse_frame {
-        height: 500px;
-    }
-}
-
-/* 超小屏幕优化 (小于400px) */
-@media (max-width: 400px) {
-    /* 调整导航栏品牌标志 */
-    .navbar-brand {
-        font-size: 1rem;
-    }
-    
-    /* 调整导航链接 */
-    .nav-link {
-        padding: 0.5rem;
-        font-size: 0.9rem;
-    }
-    
-    /* 调整卡片内边距 */
-    .card-body {
-        padding: 0.75rem;
-    }
-    
-    /* 调整表格字体大小 */
-    .table th, .table td {
-        font-size: 0.8rem;
-        padding: 6px;
-    }
-    
-    /* 调整基因表达热图 */
-    #heatmap {
-        height: 250px;
-    }
-    
-    /* 调整网络图 */
-    #cy {
-        height: 300px;
-    }
-    
-    /* 调整模态框标题 */
-    .modal-title {
-        font-size: 1.2rem;
-    }
-    
-    /* 调整页脚字体 */
-    .footer {
-        font-size: 0.8rem;
-        padding: 10px;
-    }
-}
-
+        @media (max-width: 768px) {
+            .page { padding: 1.5rem; }
+            .feature-card { padding: 1rem; }
+            .card-title { font-size: 1.1rem; }
+            .navbar-brand { font-size: 1.2rem; }
+        }
+        @media (max-width: 576px) {
+            .info-layer { padding: 0.8rem; }
+            .scientific-name { font-size: 0.9rem; }
+            .description { font-size: 0.75rem; }
+        }
     </style>
-    <style>
-    /* 悬停提示卡片样式 */
-    .photo-tooltip {
-      position: relative;
-      overflow: hidden;
-      border-radius: 8px;
-      transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    .photo-tooltip:hover {
-      transform: translateY(-8px) scale(1.03);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
-    }
-    /* 信息层动画 */
-    .info-layer {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);
-      color: white;
-      padding: 1.5rem;
-      transform: translateY(100%);
-      opacity: 0;
-      transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-    }
-    .photo-tooltip:hover .info-layer {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    /* 拉丁名样式 */
-    .scientific-name {
-      font-family: 'Times New Roman', serif;
-      font-style: italic;
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-      letter-spacing: 0.5px;
-    }
-    /* 简介文字 */
-    .description {
-      font-size: 0.9rem;
-      line-height: 1.5;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.6s ease;
-    }
-    .photo-tooltip:hover .description {
-      max-height: 100px;
-    }
-    </style>
-    <!-- Cytoscape CSS -->
-    <link rel="stylesheet" type="text/css" href="./web_database_files/pviz-core.css">
-    <script src="./web_database_files/bundle.min.js.下载"></script>
-
-    <!-- jQuery -->
-    <script src="./web_database_files/jquery-3.7.1.min.js.下载"></script>
-    
-    <!-- Bootstrap JS -->
-    <script src="./web_database_files/bootstrap.bundle.min.js.下载"></script>
-    
-    <!-- Plotly -->
-    <script src="./web_database_files/plotly-latest.min.js.下载"></script><style id="plotly.js-style-global"></style>
-    
-    <!-- Google Charts -->
-    <script type="text/javascript" src="./web_database_files/loader.js.下载"></script>
-    
-    <!-- PhyloView -->
-    <!-- <script src="http://www.phyloview.cc/cdn/phyloview.main.js"></script>-->
-    <script src="./web_database_files/phylocanvas.min.js.下载"></script>
-    <!-- Cytoscape -->
-    <script src="./web_database_files/cytoscape.min.js.下载"></script>
-    <script src="./web_database_files/layout-base.js.下载"></script>
-    <script src="./web_database_files/cose-base.js.下载"></script>
-    <script src="./web_database_files/cytoscape-fcose.js.下载"></script>
-    
-    <!-- PViz -->
-    <script type="text/javascript" src="./web_database_files/pviz-bundle.min.js.下载"></script>
+    <script src="./web_database_files/jquery-3.7.1.min.js"></script>
+    <script src="./web_database_files/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand">
-                <i></i>Mengxiang Research Group
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link home active" href="" data-page="home">
-                            <i></i>Home
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="toolsDropdown" role="button" data-bs-toggle="dropdown">
-                            <i></i>Tools
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item blast" href="Compound_screening.html" data-page="blast">
-                                <i></i>RadioProtect Compound Screening
-                            </a>
-                            <a class="dropdown-item coExpersion" href="Herb_and_Formula_screening.html" data-page="coExpersion">
-                                <i></i>RadioProtect Formula Screening
-                            </a>
-                            <a class="dropdown-item coExpersionModule" href="Heavy_Metal_Decorationation.html" data-page="coExpersionModule">
-                                <i></i>Heavy Metal Decorporation Compound Screening
-                            </a>
-                            <a class="dropdown-item Enrichment" href="Herb_miRNA_data.html" data-page="Enrichment">
-                                <i></i>Herb miRNA
-                            </a>
-							
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link seqDownload" href="" data-page="seqDownload">
-                            <i></i>Download
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link help" href="" data-page="help">
-                            <i></i>Help
-                        </a>
-                    </li>
-                </ul>
-                <div class="d-flex">
-                    <button class="btn btn-outline-light btn-sm me-2" data-bs-toggle="modal" data-bs-target="#updateModal">
-                        <i></i>News Updates
-                    </button>
 
-    <button class="btn btn-outline-light btn-sm me-2" onclick="location.href=&#39;mailto:jiahuama@swust.edu.cn&#39;">
-        <i></i> Contact Us
-    </button>
-	    <div class="dropdown me-2">
-	        <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" id="linksDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-	            <i></i> Links
-	        </button>
-	        <ul class="dropdown-menu" aria-labelledby="linksDropdown">
-	            <!-- Institutional Links -->
-	            <li><h6 class="dropdown-header">Institutions</h6></li>
-	            <li><a class="dropdown-item" href="https://www.swust.edu.cn/" target="_blank">Southwest University of Science and Technology</a></li>
-                <li><a class="dropdown-item" href="https://www.caep.cn/" target="_blank">China Academy of Engineering physics</a></li>
-                <li><a class="dropdown-item" href="https://www.suda.edu.cn/" target="_blank">Soochow University</a></li>
-                <li><a class="dropdown-item" href="https://fyxy.suda.edu.cn/" target="_blank">Soochow University: State Key Laboratory of Radiation Medicine and protection</a></li>
-	            
-	            <!-- Database Links -->
-	            <li><hr class="dropdown-divider"></li>
-	            <li><h6 class="dropdown-header">Databases</h6></li>
-	            <li><a class="dropdown-item" href="https://www.genome.jp/kegg/" target="_blank">KEGG</a></li>
-	            <li><a class="dropdown-item" href="http://geneontology.org/" target="_blank">Gene Ontology (GO)</a></li>
-	            <li><a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a></li>
-	            <li><a class="dropdown-item" href="https://radbiodb.physics.ntua.gr/" target="_blank">RadBioBase</a></li>
-                <li><a class="dropdown-item" href="https://pubchem.ncbi.nlm.nih.gov/idexchange/idexchange.cgi" target="_blank">Get SMILES by PubChem ID(CID)</a></li>
-	            <li><a class="dropdown-item" href="http://swisstargetprediction.ch/" target="_blank">SwissTargetPrediction</a></li>
-                <li><a class="dropdown-item" href="https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/index.php" target="_blank">miRTarBase</a></li>
-
-	        </ul>
-	    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-          
-    <!-- Update Modal -->
-    <div class="modal fade" id="updateModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title">
-                        <i></i>Recent Updates
-                    </h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-badge bg-success">
-                                <i></i>check
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h6 class="timeline-title">2026/4/2</h6>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Delete excess codes.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h6 class="timeline-title">2026/4/1</h6>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Add Heavy Metal Decorporation Compound Screening function.</p>
-                                    <p>Creat an application for the program.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h6 class="timeline-title">2026/3/30</h6>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Change mapping base on Gene name when data from Batman by API.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h6 class="timeline-title">2026/3/16</h6>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Add RadioProtect Formula Screening function.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h6 class="timeline-title">2026/3/14</h6>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Add RadioProtect TCM compound screening function.</p>
-                                </div>
-                            </div>
-                        </div>
-						</div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
-                        <i></i>Got it!
-                    </button>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand">Mengxiang Research Group</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto"></ul>
+            <div class="d-flex">
+                <button class="btn btn-outline-light btn-sm me-2" data-bs-toggle="modal" data-bs-target="#updateModal">News Updates</button>
+                <button class="btn btn-outline-light btn-sm me-2" onclick="location.href='mailto:jiahuama@swust.edu.cn'">Contact Us</button>
+                <div class="dropdown me-2">
+                    <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">Links</button>
+                    <ul class="dropdown-menu">
+                        <li><h6 class="dropdown-header">Institutions</h6></li>
+                        <li><a class="dropdown-item" href="https://www.swust.edu.cn/" target="_blank">Southwest University of Science and Technology</a></li>
+                        <li><a class="dropdown-item" href="https://www.caep.cn/" target="_blank">China Academy of Engineering physics</a></li>
+                        <li><a class="dropdown-item" href="https://www.suda.edu.cn/" target="_blank">Soochow University</a></li>
+                        <li><a class="dropdown-item" href="https://fyxy.suda.edu.cn/" target="_blank">Soochow University: State Key Laboratory of Radiation Medicine</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><h6 class="dropdown-header">Databases</h6></li>
+                        <li><a class="dropdown-item" href="https://www.genome.jp/kegg/" target="_blank">KEGG</a></li>
+                        <li><a class="dropdown-item" href="http://geneontology.org/" target="_blank">Gene Ontology (GO)</a></li>
+                        <li><a class="dropdown-item" href="https://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a></li>
+                        <li><a class="dropdown-item" href="https://radbiodb.physics.ntua.gr/" target="_blank">RadBioBase</a></li>
+                        <li><a class="dropdown-item" href="https://pubchem.ncbi.nlm.nih.gov/idexchange/idexchange.cgi" target="_blank">Get SMILES by PubChem ID(CID)</a></li>
+                        <li><a class="dropdown-item" href="http://swisstargetprediction.ch/" target="_blank">SwissTargetPrediction</a></li>
+                        <li><a class="dropdown-item" href="https://mirtarbase.cuhk.edu.cn/~miRTarBase/miRTarBase_2025/php/index.php" target="_blank">miRTarBase</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-<!-- Main Content -->
+</nav>
+
+<div class="modal fade" id="updateModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Recent Updates</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="timeline-item">
+                    <h6>2026/4/12</h6><p>Add AI Analysis Compound Screening Result function.</p>
+                    <h6>2026/4/1</h6><p>Add Heavy Metal Decorporation Compound Screening function.<br>Create an application for the program.</p>
+                    <h6>2026/3/30</h6><p>Change mapping base on Gene name when data from Batman by API.</p>
+                    <h6>2026/3/16</h6><p>Add RadioProtect Formula Screening function.</p>
+                    <h6>2026/3/14</h6><p>Add RadioProtect TCM compound screening function.</p>
+                </div>
+            </div>
+            <div class="modal-footer"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button></div>
+        </div>
+    </div>
+</div>
+
 <div class="container-fluid py-4">
-    <!-- Home Page -->
     <div id="home" class="page" style="display: block;">
         <div class="text-center mb-5">
             <h1 class="display-4 mb-3">Welcome to the Mengxiang Research Group</h1>
-            <p class="lead text-muted">A research group which affiliated with Southwest University of Science and Technology</p>
-    <div class="photo-wall mt-4 mb-5">
-      <div class="row g-3">
-        <!-- 滇黄精 -->
-        <div class="col-6 col-md-3 photo-tooltip">
-          <div class="ratio ratio-4x3 position-relative">
-            <img src="./web_database_files/1.jpg" class="img-fluid rounded shadow object-fit-cover" alt="滇黄精">
-            <div class="info-layer">
-              <div class="scientific-name">Polygonatum kingianum</div>
-              <div class="description">
-                	滇黄精是百合科黄精属草本植物，产中国云南、四川、贵州。甘，平。补气养阴，健脾，润肺，益肾。用于脾胃虚弱，体倦乏力，口干食少，肺虚燥咳，精血不足，内热消渴。
-              </div>
+            <p class="lead text-muted">A research group affiliated with Southwest University of Science and Technology</p>
+            
+            <div class="photo-wall mt-4 mb-5">
+                <div class="row g-3">
+                    <div class="col-6 col-md-3 photo-tooltip">
+                        <div class="ratio ratio-4x3 position-relative">
+                            <img src="./web_database_files/1.jpg" class="img-fluid rounded shadow object-fit-cover" alt="滇黄精">
+                            <div class="info-layer">
+                                <div class="scientific-name">Polygonatum kingianum</div>
+                                <div class="description">滇黄精：百合科黄精属草本植物。甘，平。补气养阴，健脾，润肺，益肾。</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 photo-tooltip">
+                        <div class="ratio ratio-4x3 position-relative">
+                            <img src="./web_database_files/2.jpg" class="img-fluid rounded shadow object-fit-cover" alt="白及">
+                            <div class="info-layer">
+                                <div class="scientific-name">Common Bletilla Rubber</div>
+                                <div class="description">白及：兰科植物白及的干燥块茎。收敛止血、消肿生肌。</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 photo-tooltip">
+                        <div class="ratio ratio-4x3 position-relative">
+                            <img src="./web_database_files/3.jpg" class="img-fluid rounded shadow object-fit-cover" alt="麦冬">
+                            <div class="info-layer">
+                                <div class="scientific-name">Ophiopogon japonicus</div>
+                                <div class="description">麦冬：百合科植物麦冬的干燥块根。养阴润肺，益胃生津，清心除烦。</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 photo-tooltip">
+                        <div class="ratio ratio-4x3 position-relative">
+                            <img src="./web_database_files/4.jpg" class="img-fluid rounded shadow object-fit-cover" alt="蜣螂">
+                            <div class="info-layer">
+                                <div class="scientific-name">Catharsius molossus</div>
+                                <div class="description">蜣螂：金龟子科动物屎壳螂的全虫。破瘀，定惊，通便，散结，拔毒去腐。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-    
-        <!-- 白及 -->
-        <div class="col-6 col-md-3 photo-tooltip">
-          <div class="ratio ratio-4x3 position-relative">
-            <img src="./web_database_files/2.jpg" class="img-fluid rounded shadow object-fit-cover" alt="白及">
-            <div class="info-layer">
-              <div class="scientific-name">Common Bletilla Rubber</div>
-              <div class="description">
-                白及是一种常用的止血药材，来源于兰科植物白及的干燥块茎。主产于贵州、四川、湖南、湖北。具有收敛止血、消肿生肌的功效。用于治疗咯血、吐血、外伤出血、疮疡肿毒、皮肤皲裂。
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <!-- 麦冬 -->
-        <div class="col-6 col-md-3 photo-tooltip">
-          <div class="ratio ratio-4x3 position-relative">
-            <img src="./web_database_files/3.jpg" class="img-fluid rounded shadow object-fit-cover" alt="麦冬">
-            <div class="info-layer">
-              <div class="scientific-name">Ophiopogon japonicus</div>
-              <div class="description">
-                麦冬，中药名。为百合科植物麦冬的干燥块根。具有养阴润肺，益胃生津，清心除烦的功效。主治肺燥干咳、阴虚劳嗽、喉痹咽痛、津伤口渴、内热消渴、心烦失眠、肠燥便秘等症。
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <!-- 蜣螂 -->
-        <div class="col-6 col-md-3 photo-tooltip">
-          <div class="ratio ratio-4x3 position-relative">
-            <img src="./web_database_files/4.jpg" class="img-fluid rounded shadow object-fit-cover" alt="蜣螂">
-            <div class="info-layer">
-              <div class="scientific-name">Catharsiusmolossus(Linnaeus)</div>
-              <div class="description">
-                蜣螂，中药名。为金龟子科动物屎壳螂的全虫。分布于全国各地。具有破瘀，定惊，通便，散结，拔毒去腐之功效。常用于癓瘕，惊痫，噎膈反胃，腹胀便秘，痔漏，疔肿，恶疮。
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-	</div>
-		<!-- 照片墙 -->
 
-        <div class="container">
-            <!-- 数据库功能模块介绍 -->
-            <div class="card database-features">
-                <h2 class="section-title">Functional Modules</h2>
-                <div class="row g-4">
-                    <!-- 第1行 -->
-                    <div class="col-md-6 col-lg-4">
+        <div class="card database-features">
+            <h2 class="section-title">Functional Modules</h2>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
                         <div class="feature-card h-100" onclick="window.open('/Compound_screening.html')" style="cursor: pointer;">
                             <div class="card-icon">
                                 <i></i>
@@ -1132,7 +339,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- 第2行 -->
+
                     <div class="col-md-6 col-lg-4">
                         <div class="feature-card h-100" onclick="window.open('/Herb_miRNA_data.html')" style="cursor: pointer;">
                             <div class="card-icon">
@@ -1216,1758 +423,54 @@
                             </div>
                         </div>
                     </div>
+            </div>
         </div>
 
-        </div>
-        
-        <style>
-            /* 卡片样式 */
-            .database-features {
-                padding: 2rem;
-                background-color: var(--card-bg);
-                border-radius: 12px;
-                box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-                margin-bottom: 3rem;
-            }
-        
-            .section-title {
-                color: var(--primary-color);
-                text-align: center;
-                margin-bottom: 2rem;
-                font-weight: 600;
-            }
-        
-            .feature-card {
-                background: white;
-                border: 1px solid var(--border-color);
-                border-radius: 10px;
-                padding: 1.5rem;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
-        
-            .feature-card:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-                background-color: #f8f9fa; /* 添加悬停背景色 */
-            }
-        
-            .card-icon {
-                text-align: center;
-                margin-bottom: 1.2rem;
-                color: var(--secondary-color);
-            }
-        
-            .card-title {
-                color: var(--heading-color);
-                font-size: 1.25rem;
-                font-weight: 600;
-                margin-bottom: 0.8rem;
-                text-align: center;
-            }
-        
-            .card-text {
-                color: var(--text-color);
-                font-size: 0.95rem;
-                line-height: 1.6;
-                text-align: center;
-            }
-        
-            /* 响应式调整 */
-            @media (max-width: 768px) {
-                .feature-card {
-                    padding: 1.2rem;
-                }
-                .card-title {
-                    font-size: 1.1rem;
-                }
-            }
-        </style>
         <div class="row mb-5">
             <div class="col-lg-10 mx-auto">
                 <div class="card academic-content">
                     <div class="card-body">
                         <h4 class="card-title text-center mb-4">About Mengxiang Research Group</h4>
-                        <i><strong>Team Leader</strong></i>
-                        <p class="card-text">Ma Jiahua, male, Ph. D. , Professor, Ph. D. Supervisor, postdoctoral supervisor, Sichuan overseas high-level talents, winner of the 13th Sichuan Youth Science and Technology Award, the first Mianzhou talent program“Mianzhou Science and Technology Elite” honorary title winner, visiting scholar of the University of Maryland, dissertation review expert of the degree center of the Ministry of Education, Senior Member of the Chinese Pharmaceutical Association, senior Member of China Association of Traditional Chinese Medicine, standing committee member of Pharmaceutical Engineering Branch of traditional Chinese medicine, licensed pharmacist, tutor of innovation and entrepreneurship of college students in Sichuan Province, provincial expert of science and technology going to the countryside in Sichuan province, famous teacher of Southwest University of Science and technology.</p>
-                        <i><strong>Article</strong></i>
-                        <ol class="space-y-4">
-                            <li class="flex gap-4">
-                            <div><span class="font-semibold">Hongmei Zhao, Xi He, Chengjia Tan, Ali Murad Jakhar, Fuyuan He, Jiahua Ma*. Chitosan-melanin complex microsphere: A potential colonic delivery system for protein drugs[J]. Carbohyd Polym, 2025,348(Part B):122886. (SCI 1区, Top期刊, IF 10.7)</div>
-                            </li>
-                            <li class="flex gap-4">
-                            <div><span class="font-semibold">Zhaoxia Tang, Jiali Luo, Yahya Faqir, Yu Zhang, Wenqian Xue, Hongmei Zhao, Ali Murad Jakhar, Chengjia Tan, Jiahua Ma*. Berberine hydrochloride-loaded dung beetle chitosan/sodium alginate microspheres ameliorate DSS-induced colitis and regulate gut microorganisms in mice[J]. Int J Biol Macromol, 2024,255:128219. (SCI 1区, Top期刊, IF 7.7)</div>
-                            </li>
-                            <li class="flex gap-4">
-                            <div><span class="font-semibold">Yahya Faqir, Yunlong Chai, Ali Murad Jakhar, Tong Luo, Shiyu Liao, Mohammad Talib Kalhoro, Chengjia Tan, Sumbal Sajid, Shiqi Hu, Jiali Luo, Shutong Liu, Niaz Umer, Jiahua Ma*. Chitosan microspheres-based controlled-release nitrogen fertilizers improve the biological characteristics of Brassica rapa ssp. pekinensis and the soil[J]. Int J Biol Macromol, 2023,253(Part 6):127124. (SCI 1区, Top期刊, IF 7.7)</div>
-                            </li>
-                            <li class="flex gap-4">
-                            <div><span class="font-semibold">Jiahua Ma*, Yahya Faqir, Chengjia Tan, Ghulam Khaliq. Terrestrial insects as a promising source of chitosan and recent developments in its application for various industries[J]. Food Chem, 2022,373,Part A:131407. (SCI 1区, Top期刊, IF 8.8)</div>
-                            </li>
-                            <li class="flex gap-4">
-                            <div><span class="font-semibold">Wenjing Li, Libing Yu, Bo Fu, Jian Chu, Chun Chen, Xijian Li, Jiahua Ma*, Wei Tang*. Protective effects of Polygonatum kingianum polysaccharides and aqueous extract on uranium-induced toxicity in human kidney (HK-2) cells[J]. Int J Biol Macromol, 2022,202:68-79. (SCI 1区, Top期刊, IF 8.2)</div>
-                            </li>
-                            <li class="flex gap-4">
-                            <div><span class="font-semibold">Jiahua Ma*, Yahya Faqir, Yunlong Chai, Sanmei Wu, Tong Luo, Shiyu Liao, Abdul Rasheed Kaleri, Chengjia Tan, Yuxin Qing, Mohammad Talib Kalhoro, Niaz Umer, Wazir Hadir.Chitosan microspheres-based controlled release nitrogen fertilizers enhance the growth, antioxidant, and metabolite contents of Chinese cabbage[J]. Sci Hortic, 2023,308:111542. (SCI 2区, Top期刊, IF 4.3) </div>
-                            </li>
+                        <p><strong>Team Leader:</strong> Ma Jiahua, Ph.D., Professor, Doctoral Supervisor. Sichuan overseas high-level talents, winner of Sichuan Youth Science and Technology Award, visiting scholar at University of Maryland, Senior Member of Chinese Pharmaceutical Association.</p>
+                        <p><strong>Selected Publications:</strong></p>
+                        <ol>
+                            <li>Hongmei Zhao, Xi He, Chengjia Tan, et al. Chitosan-melanin complex microsphere: A potential colonic delivery system for protein drugs. <em>Carbohyd Polym</em>, 2025,348:122886. (IF 10.7)</li>
+                            <li>Zhaoxia Tang, Jiali Luo, Yahya Faqir, et al. Berberine hydrochloride-loaded dung beetle chitosan/sodium alginate microspheres ameliorate DSS-induced colitis. <em>Int J Biol Macromol</em>, 2024,255:128219. (IF 7.7)</li>
+                            <li>Yahya Faqir, Yunlong Chai, Ali Murad Jakhar, et al. Chitosan microspheres-based controlled-release nitrogen fertilizers improve biological characteristics. <em>Int J Biol Macromol</em>, 2023,253:127124. (IF 7.7)</li>
+                            <li>Jiahua Ma*, Yahya Faqir, Chengjia Tan, et al. Terrestrial insects as a promising source of chitosan. <em>Food Chem</em>, 2022,373:131407. (IF 8.8)</li>
+                            <li>Wenjing Li, Libing Yu, Bo Fu, et al. Protective effects of Polygonatum kingianum polysaccharides on uranium-induced toxicity. <em>Int J Biol Macromol</em>, 2022,202:68-79. (IF 8.2)</li>
                         </ol>
-        </div>
-    </div>
-	    </div>
-		    </div>
-</div>
-
-<style>
-    /* 添加自定义样式 */
-    .wiki-content {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    
-    .wiki-section {
-        background-color: #f8f9fa;
-        border-radius: 8px;
-        padding: 1rem;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    
-    .wiki-section h4 {
-        color: #2c3e50;
-        margin-bottom: 1rem;
-        padding-bottom: 0.5rem;
-        border-bottom: 1px solid #dee2e6;
-    }
-    
-    .table-responsive {
-        max-height: 300px;
-        overflow-y: auto;
-    }
-    
-    textarea.form-control {
-        background-color: #f8f9fa;
-        font-size: 0.9rem;
-        line-height: 1.5;
-    }
-</style>
-
-<!-- Help Page -->
-<div id="help" class="page" style="display:none">
-	<!-- 加载动画 -->
-	<div id="loadingOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999;">
-	    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center;">
-	        <div class="spinner-border text-light" style="width:3rem; height:3rem;"></div>
-	        <p class="text-white mt-3">Loading gene information...</p>
-	    </div>
-	</div>
-	
-	
-    <div class="card">
-        <div class="card-header">
-            <h2><i></i>Help &amp; Documentation</h2>
-        </div>
-        <div class="card-body p-0">
-            <iframe src="./web_database_files/help.html" width="100%" height="1200px" style="border: none;"></iframe>
-        </div>
-    </div>
-    </div>
-	    
-<div class="footer" style="text-align: center; font-size: 1.2rem;">
-    2026@Aba-SWUST Industrial Technology Innovation Center of Genuine Medicinal Materials, 
-    <a href="https://www.swust.edu.cn/" target="_blank">SWUST</a>. All Rights Reserved.
-</div>
-	   <link rel="stylesheet" type="text/css" href="./web_database_files/pviz-core.css">
-	<script>
-	    // Get modal elements
-	    var modal = document.getElementById("updateModal");
-	    var btn = document.getElementById("updateBtn");
-	    var span = document.getElementsByClassName("close")[0];
-	
-	    // Open modal when button is clicked
-	    btn.onclick = function() {
-	        modal.style.display = "block";
-	    }
-	
-	    // Close modal when close button is clicked
-	    span.onclick = function() {
-	        modal.style.display = "none";
-	    }
-	
-	    // Close modal when clicking outside of the modal content
-	    window.onclick = function(event) {
-	        if (event.target == modal) {
-	            modal.style.display = "none";
-	        }
-	    }
-	</script>
-	
-	<script typr="text/javascript">
-		
-	//使用排他思想
-	//home
-	//textSearch
-	//geneExpersion
-	//locusSearch
-	//syntelog
-	//ortholog
-	//coExpersion
-	//seqDownload
-	
-//共表达模块信息，逻辑开发
-//数据库选择界面
-			var NetWork = {};
-	        //定义每个字母对应的第二个下拉框
-	        NetWork['AkBac'] = ['black','blue','brown','cyan','darkred','green','greenyellow','grey60','lightcyan','lightgreen','lightyellow','magenta','midnightblue','pink','purple','red','royalblue','salmon','tan','turquoise','yellow'];
-			NetWork['AkCorm'] =['black','blue','brown','cyan','green','greenyellow','lightcyan','magenta','midnightblue','pink','purple','red','salmon','tan','turquoise','yellow'];
-			NetWork['SpH']=['blue','brown','turquoise','yellow'];
-			NetWork['SpP']=['black','blue','brown','green','red','turquoise','yellow'];
-			NetWork['LmR']=['black','blue','brown','green','greenyellow','red','magenta','pink','purple','turquoise','yellow'];
-			//往后面还可以添加内容
-	        //first_keywords['C'] = ['c1', 'c2', 'c3'];
-	        function Change_second_selectwords2() {
-	            //根据id找到两个下拉框对象
-	            var target3 = document.getElementById("NetWork");
-	            var target4 = document.getElementById("Module");
-	            //得到第一个下拉框的内容
-	            var selected_initial = target3.options[target3.selectedIndex].value;
-	
-	            //清空第二个下拉框
-	            while (target4.options.length) {
-	                target4.remove(0);
-	            }
-	        //根据第一个下拉框的内容找到对应的列表
-	        var initial_list = NetWork[selected_initial];
-	        if (initial_list) {
-	            for (var i = 0; i < initial_list.length; i++) {
-	                var item = new Option(initial_list[i], initial_list[i]);
-	                //将列表中的内容加入到第二个下拉框
-	                target4.options.add(item);
-	            }
-	        }
-	} 
-//
-
-	
-//getexpersion功能 逻辑开发
-//数据库选择界面
-	        var first_keywords = {
-	            'DF': [
-	                {
-	                    value: 'tissue',
-	                    comment: `Gene Expression Data Across Konjac (Amorphophallus konjac) Tissues
-	                             Tissue abbreviations:
-	                             - T: Corm (underground storage organ)
-	                             - L: Leaf blade
-	                             - R: Root system
-	                             - S: Petiole (leaf stalk)`
-	                }
-	            ],
-	            'AK': [
-	                {
-	                    value: 'tissue',
-	                    comment: `Gene Expression Data Across Konjac (Amorphophallus konjac) Tissues
-	                             Tissue abbreviations:
-	                             - T: Corm (underground storage organ)
-	                             - L: Leaf blade
-	                             - R: Root system
-	                             - S: Petiole (leaf stalk)`
-	                },
-	                {
-	                    value: 'bac',
-	                    comment: `Konjac's Defense Mechanisms Against Soft Rot Pathogens
-	                             Treatment groups:
-	                             - H: Hydration protection (water control)
-	                             - B: Bacillus spp. biocontrol treatment`
-	                },
-	                {
-	                    value: 'Corm',
-	                    comment: `The four developmental stages of konjac corm are as follows:
-	                             - Dormancy Stage
-	                             - Transition Stage
-	                             - Expansion Stage
-	                             - Maturation Stage`
-	                }
-	            ],
-	            'CE': [
-	                { value: 'GSE191235', comment: 'Transcriptome of four taro samples from apex leaves were sequenced' }
-	            ],
-	            'SP': [
-	                { value: 'GSE226143', comment: 'Spirodela polyrhiza root and frond phosphate starvation RNA-Seq' },
-	                { value: 'Heat', comment: 'The response of Spirodela polyrhiza to high temperature' }
-	            ],
-	            'LM': [
-	                { value: 'PRJNA300548', comment: 'The response of Lemna minor to ionizing radiation' }
-	            ]
-	        };
-	        
-	        function Change_second_selectwords() {
-	            var target1 = document.getElementById("species");
-	            var target2 = document.getElementById("expersion");
-	            var selected_initial = target1.options[target1.selectedIndex].value;
-	        
-	            while (target2.options.length) {
-	                target2.remove(0);
-	            }
-	        
-	            var initial_list = first_keywords[selected_initial];
-	            if (initial_list) {
-	                for (var i = 0; i < initial_list.length; i++) {
-	                    var item = new Option(initial_list[i].value, initial_list[i].value);
-	                    target2.options.add(item);
-	                }
-	        
-	                target2.onchange = function() {
-	                    const selectedValue = this.value;
-	                    const comment = initial_list.find(item => item.value === selectedValue)?.comment;
-	                    document.getElementById("comment-area").innerText = comment || "";
-	                };
-	        
-	                if (initial_list.length) {
-	                    target2.dispatchEvent(new Event('change'));
-	                }
-	            }
-	        }
-//前后端数据交互代码开发
-
-var JsonData;
-
-
- $(document).ready(function() {//ajax 实现数据的上载于接收
-		const exampleData = {
-		        textSearch: {
-		            species: 'AK',
-		            text: 'CSL'
-		        },
-		        geneExpersion: {
-		            species: 'AK',
-		            table: 'tissue',
-		            IDs: 'evm.model.HIC_ASM_9.9655_Akon\nevm.model.HIC_ASM_8.3536_Akon\nevm.model.HIC_ASM_6.460_Akon\nevm.model.HIC_ASM_5.9052_Akon\nevm.model.HIC_ASM_5.9027_Akon\nevm.model.HIC_ASM_5.11009_Akon\nevm.model.HIC_ASM_4.3391_Akon\nevm.model.HIC_ASM_4.3380_Akon'
-		        },
-		        locusSearch: {
-		            species: 'AK',
-		            IDs: 'evm.model.HIC_ASM_9.9655_Akon\nevm.model.HIC_ASM_8.3536_Akon\nevm.model.HIC_ASM_6.460_Akon\nevm.model.HIC_ASM_5.9052_Akon\nevm.model.HIC_ASM_5.9027_Akon\nevm.model.HIC_ASM_5.11009_Akon\nevm.model.HIC_ASM_4.3391_Akon\nevm.model.HIC_ASM_4.3380_Akon'
-		        },
-		        ortholog: {
-		            ID: 'evm.model.HIC_ASM_9.9655_Akon'
-		        },
-		        coExpersion: {
-		            species: 'AK_corm',
-		            IDs: 'evm.model.HIC_ASM_10.2727_evm.model.HIC_ASM_10.2728_Akon',
-		            Weight: '0.01'
-		        },
-		        coExpersionModule: {
-		            NetWork: 'AkCorm',
-		            Module: 'brown'
-		        },
-		        seqDownload: {
-		            ID: 'evm.model.HIC_ASM_10.2727_evm.model.HIC_ASM_10.2728_Akon'
-		        },
-		        Enrichment: {
-		            species: 'AK',
-		            table: 'GO',
-		            IDs: 'evm.model.HIC_ASM_5.11009_Akon\nevm.model.HIC_ASM_3.110.2_Akon\nevm.model.HIC_ASM_2.12.6_Akon\nevm.model.HIC_ASM_8.1217_Akon\nevm.model.HIC_ASM_7.1085_Akon\nevm.model.HIC_ASM_6.7487_Akon\nevm.model.HIC_ASM_5.8797_Akon\nevm.model.HIC_ASM_5.2674_Akon\nevm.model.HIC_ASM_4.13956_Akon\nevm.model.HIC_ASM_4.13920_Akon\nevm.model.HIC_ASM_3.9028_Akon\nevm.model.HIC_ASM_3.9002_Akon\nevm.model.HIC_ASM_3.8822_Akon\nevm.model.HIC_ASM_0.5239_Akon\nevm.model.HIC_ASM_10.859_Akon\nevm.model.HIC_ASM_10.858_Akon\nevm.model.HIC_ASM_10.856_Akon\nevm.model.HIC_ASM_10.857_Akon\nevm.model.HIC_ASM_10.2727_evm.model.HIC_ASM_10.2728_Akon\nevm.model.CTG_1299.1.1_Akon\nevm.model.HIC_ASM_9.1382_Akon\nevm.model.HIC_ASM_9.1366_Akon\nevm.model.HIC_ASM_6.8548_Akon\nevm.model.HIC_ASM_5.9052_Akon\nevm.model.HIC_ASM_5.9027_Akon\nevm.model.HIC_ASM_4.13957_Akon\nevm.model.HIC_ASM_4.13922_Akon\nevm.model.HIC_ASM_3.7375_Akon\nevm.model.HIC_ASM_2.131_Akon\nevm.model.HIC_ASM_11.4300_Akon\nevm.model.HIC_ASM_11.1677_Akon\nevm.model.HIC_ASM_1.922_Akon\nevm.model.HIC_ASM_1.3737_Akon\nevm.model.HIC_ASM_1.2156_Akon\nevm.model.HIC_ASM_1.10265_Akon\nevm.model.HIC_ASM_1.10266_Akon\nevm.model.CTG_7555.1_Akon\nevm.model.CTG_17747.12_Akon\nevm.model.CTG_14293.11_Akon\nevm.model.HIC_ASM_9.9655_Akon\nevm.model.HIC_ASM_6.460_Akon\nevm.model.HIC_ASM_4.3391_Akon\nevm.model.HIC_ASM_4.3380_Akon\nevm.model.HIC_ASM_11.1912_Akon\nevm.model.HIC_ASM_8.478_Akon\nevm.model.HIC_ASM_8.3536_Akon\nevm.model.HIC_ASM_6.7491_Akon\nevm.model.HIC_ASM_6.7486_Akon\nevm.model.HIC_ASM_5.2676_Akon\nevm.model.HIC_ASM_5.12135_Akon\nevm.model.HIC_ASM_5.12124_Akon\nevm.model.HIC_ASM_12.4280_Akon\nevm.model.HIC_ASM_11.3759_Akon\nevm.model.HIC_ASM_10.868_Akon\nevm.model.HIC_ASM_10.861_Akon\nevm.model.HIC_ASM_10.2122_Akon\nevm.model.HIC_ASM_1.2054_Akon\nevm.model.HIC_ASM_1.1911_Akon\nevm.model.CTG_6052.7_Akon\nevm.model.CTG_5793.3.1_Akon\nevm.model.CTG_19470.2_Akon\nevm.model.CTG_19329.1_Akon\nevm.model.CTG_10650.2.1_Akon'
-		        }
-		    };
-		
-		    // 为每个页面添加示例按钮
-		    $('.page').each(function() {
-		        const pageId = $(this).attr('id');
-		        if (exampleData[pageId]) {
-		            // 创建Example按钮
-		            const exampleBtn = $(`<button type="button" class="btn btn-outline-secondary me-2" id="${pageId}-example-btn">
-		                <i class="fas fa-lightbulb me-1"></i>Example
-		            </button>`);
-		            
-		            // 找到提交按钮的父元素，在提交按钮前插入示例按钮
-		            const submitBtn = $(this).find('button[type="button"]').last();
-		            submitBtn.before(exampleBtn);
-		            
-		            // 绑定点击事件
-		            exampleBtn.on('click', function() {
-		                fillExampleData(pageId);
-		            });
-		        }
-		    });
-		
-		    // 填充示例数据函数
-		    function fillExampleData(pageId) {
-		        if (!exampleData[pageId]) return;
-		
-		        console.log(`Filling example data for ${pageId}`);
-		
-		        // 填充表单数据
-		        switch(pageId) {
-		            case 'textSearch':
-		                $('#textSearchform select[name="species"]').val(exampleData.textSearch.species);
-		                $('#textSearchform input[name="text"]').val(exampleData.textSearch.text);
-		                break;
-		                
-		            case 'geneExpersion':
-		                $('#species').val(exampleData.geneExpersion.species).trigger('change');
-		                setTimeout(() => {
-		                    $('#expersion').val(exampleData.geneExpersion.table);
-		                    $('#getExpersionform textarea[name="ID"]').val(exampleData.geneExpersion.IDs);
-		                }, 300);
-		                break;
-		                
-		            case 'locusSearch':
-		                $('#locusSearchform select[name="species"]').val(exampleData.locusSearch.species);
-		                $('#locusSearchform textarea[name="ID"]').val(exampleData.locusSearch.IDs);
-		                break;
-		                
-		            case 'ortholog':
-		                $('#orthologform input[name="ID"]').val(exampleData.ortholog.ID);
-		                break;
-		                
-		            case 'coExpersion':
-		                $('#cotExpersionform select[name="species"]').val(exampleData.coExpersion.species);
-		                $('#cotExpersionform textarea[name="ID"]').val(exampleData.coExpersion.IDs);
-		                $('#cotExpersionform input[name="Weight"]').val(exampleData.coExpersion.Weight);
-		                break;
-		                
-		            case 'coExpersionModule':
-		                $('#NetWork').val(exampleData.coExpersionModule.NetWork).trigger('change');
-		                setTimeout(() => {
-		                    $('#Module').val(exampleData.coExpersionModule.Module);
-		                }, 300);
-		                break;
-		                
-		            case 'seqDownload':
-		                $('#seqDownloadform input[name="ID"]').val(exampleData.seqDownload.ID);
-		                break;
-		                
-		            case 'Enrichment':
-		                $('#Enrichmentform select[name="species"]').val(exampleData.Enrichment.species);
-		                $('#Enrichmentform select[name="table"]').val(exampleData.Enrichment.table);
-		                $('#Enrichmentform textarea[name="ID"]').val(exampleData.Enrichment.IDs);
-		                break;
-		        }
-		    }
-			
-        $("#getExpersionbutton").click(function() {
-			document.getElementById('loading').style.display = 'block';
-            var frm = $("#getExpersionform");
-			
-            $.ajax({
-				dataType:"json",
-                url : frm.attr("action"),
-                type : frm.attr("method"),
-                async : true,
-                data : frm.serialize(),
-                success : function(res) {
-					document.getElementById('loading').style.display = 'none';
-					
-					jsonData = JSON.parse(res)
-					console.log(res);
-					JsonData = jsonData;
-					
-					generateTable('table-container', jsonData);
-					
-					let data = [];
-					
-					// 遍历原始数据
-					jsonData.forEach(obj => {
-					  // 提取 ID 和剩余的键值对
-					  const { ID, ...rest } = obj;
-					  
-					  // 将剩余的键名存储在 label 数组中
-					  const labels = Object.keys(rest);
-					  
-					  // 将剩余的键值存储在 values 数组中
-					  const values = Object.values(rest);
-					  
-					  // 将 ID、labels 和 values 存储在新对象中
-					  data.push({
-					    genes: ID,
-					    samples: labels,
-					    expression_matrix: values
-					  });
-					});
-					// 解析 JSON 数据
-					// 创建热图的数据
-					const genes = data.map(item => item.genes);
-					const samples = data[0].samples; // 假设所有数据的样本都相同
-					const expressionMatrix = data.map(item => item.expression_matrix);
-					const logExpressionMatrix = expressionMatrix.map(row => row.map(value => Math.log(value+1)));
-					const heatmapData = [{
-					    z: logExpressionMatrix,
-					    x: samples,
-					    y: genes,
-					    type: 'heatmap',
-					    colorscale: 'Viridis' // 可以更改颜色主题
-					}];
-					
-					// 设置热图的布局
-					const layout = {
-					    title: 'Gene Expression Heatmap(log2(fpkm+1))',
-						titlefont: { size: 40 },
-						xaxis: {  automargin: true, tickfont: { size: 20 } },
-						yaxis: { automargin: true, tickfont: { size: 20 } }
-					};
-					
-					// 绘制热图
-					Plotly.newPlot('heatmap', heatmapData, layout);
-				
-					
-					
-					
-					
-                },
-                error : function(res) {
-					document.getElementById('loading').style.display = 'none';
-                    alert(res);
-                }
-            });
-        });
-		
-        $("#locusSearchbutton").click(function() {
-			document.getElementById('loading').style.display = 'block';
-            var frm = $("#locusSearchform");
-			
-            $.ajax({
-				dataType:"json",
-                url : frm.attr("action"),
-                type : frm.attr("method"),
-                async : true,
-                data : frm.serialize(),
-                success : function(res) {
-					document.getElementById('loading').style.display = 'none';
-					//window.alert(res)
-					jsonData = JSON.parse(res)
-					
-					JsonData = jsonData;
-					generateTable('table-container1', jsonData);
-	
-                   
-                },
-                error : function(res) {
-					document.getElementById('loading').style.display = 'none';
-                    alert(res);
-                }
-            });
-        });
-		
-		$("#textSearchbutton").click(function() {
-			document.getElementById('loading').style.display = 'block';
-		    var frm = $("#textSearchform");
-			
-		    $.ajax({
-				dataType:"json",
-		        url : frm.attr("action"),
-		        type : frm.attr("method"),
-		        async : true,
-		        data : frm.serialize(),
-		        success : function(res) {
-					document.getElementById('loading').style.display = 'none';
-					//window.alert(res)
-					jsonData = JSON.parse(res)
-					
-					JsonData = jsonData;
-					generateTable('table-container2', jsonData);
-
-		            
-		        },
-		        error : function(res) {
-					document.getElementById('loading').style.display = 'none';
-		            alert(res);
-		        }
-		    });
-		});
-		
-		$("#Enrichmentbutton").click(function() {
-			document.getElementById('loading').style.display = 'block';
-
-		    var frm = $("#Enrichmentform");
-			
-		    $.ajax({
-				dataType:"json",
-		        url : frm.attr("action"),
-		        type : frm.attr("method"),
-		        async : true,
-		        data : frm.serialize(),
-		        success : function(response) {
-					document.getElementById('loading').style.display = 'none';
-					var jsonData = JSON.parse(response);
-					
-					JsonData = jsonData;//赋值给全局变量
-                    // 处理图像数据\					    // 添加数据到 DataTable
-					jsonData.sort(function(a, b) {
-						return a["P-value"] - b["P-value"]; // 根据 "P-value" 属性进行升序排序
-						});
-					
-					google.charts.load('current', {'packages':['corechart']});
-					 google.charts.setOnLoadCallback(drawBarChart);
-					google.charts.load('current', { 'packages': ['bar'] });
-					google.charts.setOnLoadCallback(drawBarChart);
-					var top = jsonData;
-					for (var i = 0; i < top.length; i++) {
-					// 如果 columnName 为 0，则从数组中移除当前元素
-					if (top[i]["P-value"] === 0) {
-						top.splice(i, 1);
-						i--; // 因为删除了一个元素，所以需要将索引减一
-						}
-							}
-
-					
-					var top10 = top.slice(0, 10);
-					
-					function drawBarChart() {
-					  // 创建数据表
-					  var data = new google.visualization.DataTable();
-					  data.addColumn('string', 'Go Term');
-					  data.addColumn('number', '-Log(P-value)');
-					  data.addColumn({ type: 'string', role: 'style' });
-					
-					  // 示例数据
-					 
-					
-					  // 计算最小值和最大值
-					  var minValue = Infinity;
-					  var maxValue = -Infinity;
-					  for (var i = 0; i < top10.length; i++) {
-					    var a = -Math.log(top10[i]["Adjusted P-value"]);
-					    minValue = Math.min(minValue, a);
-					    maxValue = Math.max(maxValue, a);
-					  }
-					
-					  // 颜色生成函数
-					  function getColor(value) {
-					    var normalized = (value - minValue) / (maxValue - minValue);
-					    var r = Math.round(255 * normalized);
-					    var b = Math.round(255 * (1 - normalized));
-					    return `rgb(${r}, 0, ${b})`;
-					  }
-					
-					  // 添加数据
-					  for (var i = 0; i < top10.length; i++) {
-					    var a = -Math.log(top10[i]["Adjusted P-value"]);
-					    var color = getColor(a);
-					    data.addRow([top10[i].Term, a, color]);
-					  }
-					
-					  // 配置图表选项
-					  var options = {
-					    title: 'Go Enrichment',
-					    legend: { position: 'none' },
-					    backgroundColor: { fill: 'transparent' },
-					    chartArea: {
-					      left: 200,
-					      top: 50,
-					      width: '60%',
-					      height: '70%'
-					    },
-					    hAxis: {
-					      title: '-Log(P-value)',
-					      titleTextStyle: {
-					        fontSize: 16,
-					        bold: true
-					      },
-					      gridlines: {
-					        color: '#E0E0E0'
-					      }
-					    },
-					    vAxis: {
-					      title: 'Go Term',
-					      titleTextStyle: {
-					        fontSize: 16,
-					        bold: true
-					      }
-					    },
-					    bar: { groupWidth: '80%' },
-					    tooltip: {
-					      textStyle: {
-					        fontSize: 14
-					      },
-					      showColorCode: true
-					    },
-					    animation: {
-					      duration: 1000,
-					      easing: 'out',
-					      startup: true
-					    }
-					  };
-					
-					  // 创建图表实例
-					  var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-					  chart.draw(data, options);
-					}
-					
-                  
-
-		
-		            
-		        },
-		        error : function(res) {
-					document.getElementById('loading').style.display = 'none';
-					
-		            alert(res);
-		        }
-		    });
-		});
-		$("#orthologbutton").click(function() {
-			document.getElementById('loading').style.display = 'block';
-		    var frm = $("#orthologform");
-			
-		    $.ajax({
-				dataType:"json",
-		        url : frm.attr("action"),
-		        type : frm.attr("method"),
-		        async : true,
-		        data : frm.serialize(),
-		        success : function(res) {
-					document.getElementById('loading').style.display = 'none';
-					treeData = res.tree
-					         const tree = new phylocanvas.PhylocanvasGL(
-					           document.querySelector('#dendrogram'),
-					           {
-					             size: { width: 800, height: 600 },
-					             source: treeData,
-					             type: phylocanvas.TreeTypes.Rectangular,
-					             zoom: true,
-					             pan: true,
-					             showLabels: true,
-					             nodeSize: 5,
-					             branchWidth: 2
-					           }
-					         );
-					      
-					         // 交互事件
-					         
-				jsonData= JSON.parse(res.annotation)
-				
-				JsonData = jsonData
-				generateTable('table-container4', jsonData);
-							 
-				
-		        },
-		        error : function(res) {
-					document.getElementById('loading').style.display = 'none';
-		            alert(res);
-					$("#dendrogram").empty();
-					window.alert("no_Result!!")
-		        }
-		    });
-		});
-		
-	$("#cotExpersionhbutton").click(function() {
-		document.getElementById('loading').style.display = 'block';
-	    var frm = $("#cotExpersionform");
-		
-	    $.ajax({
-			dataType:"json",
-	        url : frm.attr("action"),
-	        type : frm.attr("method"),
-	        async : true,
-	        data : frm.serialize(),
-	        success : function(res) {
-				document.getElementById('loading').style.display = 'none';
-				//window.alert(res)
-				jsonData = JSON.parse(res)
-				
-				JsonData = jsonData;
-				//generateTable('table-container6', jsonData);
-				var nodes = [];
-				
-				// 遍历 JSON 数据并创建节点
-				jsonData.forEach(function(item) {
-				    // 检查起始节点是否已存在于节点数组中
-				    var fromNodeIndex = nodes.findIndex(function(node) {
-				        return node.data.id === item.fromNode;
-				    });
-				
-				    // 如果起始节点不存在，则添加到节点数组中
-				    if (fromNodeIndex === -1) {
-				        nodes.push({
-				            data: { id: item.fromNode }
-				        });
-				    }
-				
-				    // 检查目标节点是否已存在于节点数组中
-				    var toNodeIndex = nodes.findIndex(function(node) {
-				        return node.data.id === item.toNode;
-				    });
-				
-				    // 如果目标节点不存在，则添加到节点数组中
-				    if (toNodeIndex === -1) {
-				        nodes.push({
-				            data: { id: item.toNode }
-				        });
-				    }
-				});
-				
-				var cy = window.cy = cytoscape({
-                        container: document.getElementById('cy'),
-                        elements: {
-                            // 将 JSON 数据转换为 Cytoscape.js 所需的格式
-                            nodes: nodes,
-                            edges: jsonData.map(function (edge) {
-                                return {
-                                    data: {
-                                        id: edge.fromNode + '-' + edge.toNode,
-                                        source: edge.fromNode,
-                                        target: edge.toNode,
-                                        weight: edge.weight
-                                    }
-                                };
-                            })
-                        },
-                        style: [
-                            {
-                                selector: 'node',
-                                style: {
-                                    'background-color': '#5CB85C',
-                                    'border-color': '#388E3C',
-                                    'border-width': '2px',
-                                    'width': '30px',
-                                    'height': '30px',
-                                    'label': 'data(id)',
-                                    'text-valign': 'center',
-                                    'text-halign': 'center',
-                                    'font-size': '14px',
-                                    'color': 'black',
-                                    'shape': 'ellipse'
-                                }
-                            },
-                            {
-                                selector: 'edge',
-                                style: {
-                                    'width': '2px',
-                                    'line-color': '#ccc',
-                                    'target-arrow-color': '#ccc',
-                                    'target-arrow-shape': 'triangle',
-                                    'curve-style': 'bezier'
-                                }
-                            }
-                        ],
-                        layout: {
-                            name: 'cose', // 使用 Cytoscape.js 提供的一种布局算法
-                            idealEdgeLength: 100, // 边的理想长度
-                            nodeOverlap: 20, // 节点重叠时的间距
-                            refresh: 20, // 布局刷新频率
-                            fit: true, // 是否自动缩放布局以适应容器
-                            padding: 30, // 网络边缘与容器边缘的间距
-                            randomize: false, // 是否随机初始化节点位置
-                            componentSpacing: 100, // 节点组件之间的间距
-                            nodeRepulsion: 400000, // 节点之间的斥力
-                            edgeElasticity: 0.45, // 边的弹性系数
-                            nestingFactor: 0.1, // 嵌套因子
-                            gravity: 0.25, // 节点的重力
-                            numIter: 1000, // 迭代次数
-                            initialTemp: 200, // 初始温度
-                            coolingFactor: 0.95, // 冷却因子
-                            minTemp: 1.0 // 最小温度
-                        },
-                        // 添加交互功能
-                        userZoomingEnabled: true,
-                        userPanningEnabled: true,
-                        boxSelectionEnabled: true
-                    });
-					  
-		
-
-                    // 控制面板按钮点击事件
-                      // 控制面板按钮点击事件
-                    $('#applyLayout').click(function () {
-                        var nodeRepulsion = parseInt($('#nodeRepulsion').val());
-                        var idealEdgeLength = parseInt($('#idealEdgeLength').val());
-
-                        var layout = cy.layout({
-                            name: 'cose',
-                            nodeRepulsion: nodeRepulsion,
-                            idealEdgeLength: idealEdgeLength,
-                            animate: true,
-                            randomize: false
-                        });
-
-                        layout.run();
-                    });
-
-                    // 节点形状选择事件
-                    $('#nodeShape').on('change', function () {
-                        var shape = $(this).val();
-                        cy.nodes().style('shape', shape);
-                    });
-
-                    // 节点背景颜色选择事件
-                    $('#nodeBackgroundColor').on('change', function () {
-                        var color = $(this).val();
-                        cy.nodes().style('background-color', color);
-                    });
-
-                    // 边宽度滑动条事件
-                    $('#edgeWidth').on('input', function () {
-                        var width = $(this).val();
-                        cy.edges().style('width', width);
-                    });
-
-                    // 字体大小滑动条事件
-                    $('#fontSize').on('input', function () {
-                        var size = $(this).val();
-                        cy.nodes().style('font-size', size);
-					$('#deleteNode').click(function () {
-					                            var selectedNode = cy.$(':selected');
-					                            if (selectedNode.length > 0) {
-					                                selectedNode.remove();
-					                            } else {
-					                                alert('请先选择一个节点。');
-					                            }
-					                        });
-
-					
-					
-                    });
-	
-// Node Editor Variables
-let currentNode = null;
-const nodeModal = document.getElementById('nodeModal');
-const modalNodeShape = document.getElementById('modalNodeShape');
-const modalNodeName = document.getElementById('modalNodeName');
-const modalNodeColor = document.getElementById('modalNodeColor');
-const saveNodeChanges = document.getElementById('saveNodeChanges');
-const deleteThisNode = document.getElementById('deleteThisNode');
-
-// Initialize Bootstrap Modal
-const bsModal = new bootstrap.Modal(nodeModal, {
-    backdrop: 'static', // Prevent closing by clicking outside
-    keyboard: false     // Disable ESC key closing
-});
-
-// Single Event Binding for Node Click
-cy.off('click', 'node'); // Remove any existing handlers
-cy.on('click', 'node', function(evt) {
-    // Prevent event bubbling
-    evt.stopPropagation();
-    evt.preventDefault();
-    
-    currentNode = evt.target;
-    
-    // Populate modal fields
-    modalNodeShape.value = currentNode.style('shape') || 'ellipse';
-    modalNodeName.value = currentNode.data('id') || '';
-    modalNodeColor.value = currentNode.style('background-color') || '#666666';
-    
-    // Show modal
-    bsModal.show();
-});
-
-// Save Changes (Single binding)
-saveNodeChanges.onclick = function() {
-    if (currentNode) {
-        try {
-            // Update node properties
-            currentNode.style({
-                'shape': modalNodeShape.value,
-                'background-color': modalNodeColor.value,
-                'label': modalNodeName.value
-            });
-            
-            // Update node data
-            currentNode.data('id', modalNodeName.value);
-            
-            // Close modal
-            bsModal.hide();
-        } catch (error) {
-            console.error('Error saving node changes:', error);
-            alert('Failed to save changes. Please check your inputs.');
-        }
-    }
-};
-
-// Delete Node (Single binding)
-deleteThisNode.onclick = function() {
-    if (currentNode && confirm('Are you sure you want to delete this node? This cannot be undone!')) {
-        try {
-            // Get connected edges
-            const connectedEdges = currentNode.connectedEdges();
-            
-            // Remove edges first, then node
-            cy.remove(connectedEdges);
-            cy.remove(currentNode);
-            
-            // Close modal
-            bsModal.hide();
-        } catch (error) {
-            console.error('Error deleting node:', error);
-            alert('Failed to delete node');
-        }
-    }
-};
-
-// Modal close button
-document.querySelector('#nodeModal .btn-close').onclick = function() {
-    bsModal.hide();
-};
-
-// Prevent closing by clicking outside
-nodeModal.addEventListener('click', function(event) {
-    event.stopPropagation();
-});
-	        },
-	        error : function(res) {
-				document.getElementById('loading').style.display = 'none';
-	            alert(res);
-	        }
-	    });
-	});	
-			$("#seqDownloadbutton").click(function() {
-				document.getElementById('loading').style.display = 'block';
-			    var frm = $("#seqDownloadform");
-				
-			    $.ajax({
-					dataType:"json",
-			        url : frm.attr("action"),
-			        type : frm.attr("method"),
-			        async : true,
-			        data : frm.serialize(),
-			        success : function(res) {
-						document.getElementById('loading').style.display = 'none';
-						//window.alert(res)
-						var cds = document.getElementById("cds");
-						var pep = document.getElementById("pep");
-						jsonData= JSON.parse(res)
-						cds.value = "";
-						pep.value= "";
-						var cds_text = jsonData[0]["cds"];
-						var pep_text = jsonData[0]["pep"];
-						cds.value = cds_text;
-						pep.value= pep_text;
-  
-			        },
-			        error : function(res) {
-						document.getElementById('loading').style.display = 'none';
-						var cds = document.getElementById("cds");
-						var pep = document.getElementById("pep");
-						cds.value = "";
-						pep.value=  "";
-			            alert(res);
-			        }
-			    });
-			});	
-        $("#getModulebutton").click(function() {
-			document.getElementById('loading').style.display = 'block';
-            var frm = $("#getModuleform");
-			
-            $.ajax({
-				dataType:"json",
-                url : frm.attr("action"),
-                type : frm.attr("method"),
-                async : true,
-                data : frm.serialize(),
-                success : function(res) {
-
-					document.getElementById('loading').style.display = 'none';
-					//window.alert(res)
-					var hiddenElement = document.getElementById('ModuleDiv');
-					 if (hiddenElement.style.display === 'none') {
-					         hiddenElement.style.display = 'block';
-					} 
-					
-					var jsonData = res;
-					
-					var KEGGImgBase64 = jsonData.KEGGPng;
-					//KEGGPng
-					
-					var GOImgBase64  = jsonData.GOPng;
-					//GOPng
-					var HeatMapImgBase64 = jsonData.HMPng;
-					//ModulePheatmap
-					var keggImg = new Image();
-					keggImg.src = "data:image/png;base64," + KEGGImgBase64;
-					KEGGPng.innerHTML = '';
-					KEGGPng.appendChild(keggImg);
-					
-					var goImg = new Image();
-					goImg.src = "data:image/png;base64," + GOImgBase64;
-					GOPng.innerHTML = '';
-					GOPng.appendChild(goImg);
-					
-					var heatmapImg = new Image();
-					heatmapImg.src = "data:image/png;base64," + HeatMapImgBase64;
-					ModulePheatmap.innerHTML = '';
-					ModulePheatmap.appendChild(heatmapImg);
-
-					var KEGGTable = JSON.parse(jsonData.KEGGTable)
-					//table-container7
-					generateTable('table-container7', KEGGTable);
-					
-					var GOTable = JSON.parse(jsonData.GOTable);
-					//table-container8
-					generateTable('table-container8', GOTable);
-					var HeatMapTable = JSON.parse(jsonData.HMTable);
-					//table-container9
-					generateTable('table-container9', HeatMapTable);
- 
-                },
-                error : function(res) {
-					document.getElementById('loading').style.display = 'none';
-                    alert(res);
-                }
-            });
-        });
-		
-    });
-	
-$("#compoundSearchButton").click(function() {
-    document.getElementById('loading').style.display = 'block';
-    var frm = $("#compoundSearchForm");
-    
-    $.ajax({
-        dataType:"json",
-        url : frm.attr("action"),
-        type : frm.attr("method"),
-        async : true,
-        data : frm.serialize(),
-        success : function(res) {
-            document.getElementById('loading').style.display = 'none';
-            jsonData = JSON.parse(res);
-            
-           generatecompoundTable('compoundResultsBody', jsonData);
-        },
-        error : function(res) {
-            document.getElementById('loading').style.display = 'none';
-            alert(res);
-        }
-    });
-});
-
-function generatecompoundTable(tableId, data) {
-    const tableBody = document.getElementById(tableId);
-    
-    // Clear existing content
-    tableBody.innerHTML = '';
-    
-    // Handle empty data case
-    if (!data || data.length === 0) {
-        tableBody.innerHTML = `
-            <tr>
-                <td colspan="8" class="text-center py-5 text-muted">
-                    <i class="fas fa-flask fa-3x mb-3"></i>
-                    <p>No results found for your query.</p>
-                </td>
-            </tr>
-        `;
-        return;
-    }
-    
-    // Process each data item
-    data.forEach(item => {
-        const row = document.createElement('tr');
-        const moleculeId = item.Molecule || '';
-        
-        // Extract numeric portion from Molecule ID (e.g., MOL008159 → 8159)
-        const numericId = moleculeId.replace(/\D/g, '');
-        
-        row.innerHTML = `
-            <td>
-                ${moleculeId ? 
-                    `<a href="https://www.tcmsp-e.com/target.php?qt=${numericId}" 
-                      target="_blank"
-                      class="tcmsp-link"
-                      title="View on TCMSP">
-                        ${moleculeId}
-                        <i class="fas fa-external-link-alt ms-1"></i>
-                    </a>` 
-                    : ''}
-            </td>
-            <td>${item.Name || ''}</td>
-            <td>${item.InChIKey || ''}</td>
-            <td>${item.PubchemID || ''}</td>
-            <td>${item.CAS || ''}</td>
-            <td>${item.PinyinName || ''}</td>
-            <td>${item.Species || ''}</td>
-            <td>
-                <button class="btn btn-sm btn-outline-primary target-btn" 
-                        data-molecule="${moleculeId}">
-                    target
-                </button>
-            </td>
-        `;
-        
-        tableBody.appendChild(row);
-    });
-    
-    // 添加target按钮点击事件
-// 将模态框HTML移到页面初始加载时添加（不要放在函数内部）
-$(document).ready(function() {
-    // 初始化模态框（确保只添加一次）
-    if ($('#targetModal').length === 0) {
-        $('body').append(`
-        <div class="modal fade" id="targetModal" tabindex="-1" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Target Information</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body" id="targetModalBody">
-                <!-- 空容器，动态填充内容 -->
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id="downloadTargetCSV">
-                  <i class="fas fa-download me-1"></i>Download CSV
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        `);
-    }
-
-    // 点击事件处理
-    $(document).on('click', '.target-btn', function() {
-        const molecule = $(this).data('molecule');
-        
-        // 显示模态框和加载状态
-        $('#targetModal').modal('show');
-        $('#targetModalBody').html(`
-            <div class="text-center py-4" id="loadingIndicator">
-                <div class="spinner-border text-primary" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                </div>
-                <p class="mt-2">Loading...</p>
-            </div>
-        `);
-
-        // 发送请求
-        $.ajax({
-            url: 'http://150.158.144.134:443/target',
-            type: 'POST',
-            contentType: 'application/json',
-            data: JSON.stringify({ molecule: molecule }),
-            dataType: 'json',
-            success: function(response) {
-                console.log("服务器响应:", response);
-                response = JSON.parse(response)
-                // 处理数据
-                const data = response.results || response.data || 
-                            (Array.isArray(response) ? response : [response]);
-                
-                // 准备表格HTML（在内存中构建）
-                const tableHTML = `
-                    <div class="table-responsive">
-                        <table class="table table-hover" id="targetTable">
-                            <thead></thead>
-                            <tbody></tbody>
-                        </table>
                     </div>
-                `;
-                
-                // 一次性更新模态框内容
-                $('#targetModalBody').html(tableHTML);
-                
-                // 渲染表格
-                renderTargetTable(data);
-            },
-            error: function(xhr) {
-                const errorMsg = xhr.responseJSON?.message || 
-                               xhr.responseText || 
-                               'Request failed';
-                showError(errorMsg);
-            }
-        });
-    });
-});
-
-// 改进的渲染函数
-
-function renderTargetTable(data) {
-    try {
-        const $table = $('#targetTable');
-        
-        if (!$table.length) {
-            throw new Error("Target table element not found");
-        }
-        
-        // Clear existing table content
-        $table.find('thead, tbody').empty();
-        
-        // Validate input data
-        if (!Array.isArray(data) || data.length === 0) {
-            throw new Error("No data available for display");
-        }
-        
-        // Generate table headers
-        const headers = Object.keys(data[0]);
-        const $headerRow = $('<tr>');
-        
-        headers.forEach(header => {
-            $headerRow.append(`<th>${header}</th>`);
-        });
-        
-        $table.append($('<thead>').append($headerRow));
-        
-        // Populate table body
-        const $tbody = $('<tbody>');
-        
-        data.forEach(item => {
-            const $row = $('<tr>');
-            
-            headers.forEach(header => {
-                const cellValue = item[header] ?? '';
-                
-                // Special handling for UniProt IDs
-                if (header === 'UniprotID' && cellValue) {
-                    $row.append(`
-                        <td>
-                            <a href="https://www.uniprot.org/uniprotkb/${cellValue}/entry" 
-                               target="_blank" 
-                               class="uniprot-link"
-                               title="View in UniProtKB"
-                               data-uniprot-id="${cellValue}">
-                                ${cellValue}
-                                <i class="fas fa-external-link-alt ms-1"></i>
-                            </a>
-                        </td>
-                    `);
-                } else {
-                    // Default cell rendering
-                    $row.append(`<td>${cellValue}</td>`);
-                }
-            });
-            
-            $tbody.append($row);
-        });
-        
-        $table.append($tbody);
-        
-        // Store clean data for export
-        $table.data('csv-export', {
-            filename: 'target_data_export',
-            headers: headers,
-            data: data.map(item => ({
-                ...item,
-                // Ensure exported data doesn't contain HTML
-                UniprotID: item.UniprotID ? item.UniprotID.replace(/<[^>]+>/g, '') : ''
-            }))
-        });
-        
-        // Initialize tooltips for interactive elements
-        $('[data-toggle="tooltip"]').tooltip();
-        
-    } catch (error) {
-        console.error("Table rendering error:", error);
-        displayErrorMessage(`Failed to render table: ${error.message}`);
-    }
-}
-
-
-function showError(message) {
-    $('#targetModalBody').html(`
-        <div class="alert alert-danger">
-            <i class="fas fa-exclamation-triangle me-2"></i>
-            ${message}
+                </div>
+            </div>
         </div>
-    `);
-}
+    </div>
 
-// CSV下载功能
-$('#targetModal').on('click', '#downloadTargetCSV', function() {
-    const $table = $('#targetTable');
-    const csvData = $table.data('csv-export');
-    
-    if (!csvData || !csvData.data || csvData.data.length === 0) {
-        alert('No data to download');
-        return;
-    }
-    
-    // 准备CSV内容
-    const headers = csvData.headers;
-    const csvRows = csvData.data.map(item => {
-        return headers.map(header => {
-            let value = item[header] || '';
-            // 转义特殊字符
-            if (typeof value === 'string') {
-                value = value.replace(/"/g, '""');
-                if (value.includes(',') || value.includes('"') || value.includes('\n')) {
-                    value = `"${value}"`;
-                }
-            }
-            return value;
-        }).join(',');
-    });
-    
-    const csvContent = [
-        headers.join(','),
-        ...csvRows
-    ].join('\n');
-    
-    // 创建下载
-    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.setAttribute('href', url);
-    link.setAttribute('download', `${csvData.title}_${new Date().toISOString().slice(0,10)}.csv`);
-    link.style.visibility = 'hidden';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
-	
-}
+</div>
+
+<div class="footer">
+    2026 © 梦翔课题组.
+</div>
 
 
-// CSV下载按钮事件
-$("#downloadCompoundCSV").click(function() {
-    // 获取表格中的所有数据行（跳过空状态行）
-    const rows = $("#compoundResultsBody tr").not(':has(td[colspan])');
-    
-    // 检查是否有数据
-    if (rows.length === 0) {
-        alert("没有可导出的数据");
-        return;
-    }
-    
-    // 准备表头
-    const headers = [];
-    $("#compoundResultsBody").closest("table").find("thead th").each(function() {
-        headers.push($(this).text().trim());
-    });
-    
-    // 准备数据行
-    const csvRows = [];
-    rows.each(function() {
-        const rowData = [];
-        $(this).find("td").each(function(i) {
-            // 处理target按钮特殊情况
-            if ($(this).find(".target-btn").length) {
-                rowData.push($(this).find(".target-btn").data("molecule") || "");
-            } else {
-                // 转义特殊字符（逗号、引号等）
-                let text = $(this).text().trim();
-                text = text.replace(/"/g, '""'); // 转义双引号
-                if (text.includes(',') || text.includes('"') || text.includes('\n')) {
-                    text = `"${text}"`; // 包裹特殊值
-                }
-                rowData.push(text);
-            }
-        });
-        csvRows.push(rowData.join(","));
-    });
-    
-    // 构建完整的CSV内容
-    const csvContent = [
-        headers.join(","),  // 表头行
-        ...csvRows          // 数据行
-    ].join("\n");
-    
-    // 创建下载链接
-    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.setAttribute("href", url);
-    link.setAttribute("download", `compound_results_${new Date().toISOString().slice(0,10)}.csv`);
-    link.style.visibility = "hidden";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
-	
-                            // 监听鼠标经过效果
-                            document.addEventListener("mouseover", function(event) {
-                                if (event.target.classList.contains("highlightable")) {
-                                    event.target.style.color = "red"; // 鼠标经过时文字变色
-									
-                                }
-                            });
-                            
-                            // 监听鼠标离开效果
-                            document.addEventListener("mouseout", function(event) {
-                                if (event.target.classList.contains("highlightable")) {
-                                    event.target.style.color = ""; // 鼠标离开时恢复正常颜色
-                                }
-                            });
-                            
-                            //
-							
-							//表格生成代码
-// 修改表格生成函数中的点击事件处理
-// 修改后的表格生成函数
-function generateTable(containerId, data) {
-    var container = document.getElementById(containerId);
-    container.innerHTML = '';
-    var table = document.createElement('table');
-
-    // 创建表头
-    var thead = document.createElement('thead');
-    var headerRow = document.createElement('tr');
-    var keys = Object.keys(data[0]);
-    keys.forEach(function(key) {
-        var th = document.createElement('th');
-        th.textContent = key;
-        headerRow.appendChild(th);
-    });
-    thead.appendChild(headerRow);
-    table.appendChild(thead);
-
-    // 创建表格内容
-    var tbody = document.createElement('tbody');
-    data.forEach(function(item) {
-        var row = document.createElement('tr');
-        keys.forEach(function(key) {
-            var td = document.createElement('td');
-            td.textContent = item[key];
-            
-            if (key === "ID" || key === "fromNode" || key === "toNode") {
-                td.classList.add('highlightable');
-                
-                // 修复后的点击事件处理
-                td.addEventListener('click', function() {
-                    // 显示加载动画
-                    document.getElementById('loading').style.display = 'block';
-                    
-                    var idValue = td.textContent;
-                    var xhr = new XMLHttpRequest();
-                    xhr.open('POST', 'http://150.158.144.134:443/GeneWiki', true);
-                    xhr.setRequestHeader('Content-Type', 'application/json');
-                    
-                    // 请求开始前显示加载动画
-                    xhr.onloadstart = function() {
-                        document.getElementById('loading').style.display = 'block';
-                    };
-                    
-xhr.onreadystatechange = function() {
-    if (xhr.readyState === XMLHttpRequest.DONE) {
-        // 始终隐藏加载动画（安全访问）
-        const loader = document.getElementById('loading');
-        if (loader) loader.style.display = 'none';
-
-        if (xhr.status === 200) {
-            let responseText;
-            try {
-                // 主响应安全解析
-                responseText = JSON.parse(xhr.responseText);
-            } catch (error) {
-                console.error('主响应JSON解析失败:', error);
-                alert('服务器返回了无效的JSON格式');
-                return;
-            }
-
-            // 安全解析函数（防止子JSON解析失败）
-            const safeParse = (data, fallback = []) => {
-                try {
-                    return data ? JSON.parse(data) : fallback;
-                } catch (e) {
-                    console.warn('子JSON解析失败:', e.message);
-                    return fallback;
-                }
-            };
-
-            // 安全解析各数据集
-            const pep = safeParse(responseText.pep);
-            const domain = safeParse(responseText.Domains);
-            const uniport = safeParse(responseText.Uniport);
-            const KEGG = safeParse(responseText.KEGG);
-            const GO = safeParse(responseText.GO);
-
-            // 安全数据填充（防undefined访问）
-            const firstPep = pep?.[0] || {};
-            document.getElementById("wcds").value = firstPep.cds || "";
-            document.getElementById("wpep").value = firstPep.pep || "";
-            document.querySelector("#wikiID").innerHTML = firstPep.ID || idValue || "N/A";
-
-            // 表格生成（关键加固点）
-            const safeGenerateTable = (containerId, data) => {
-                try {
-                    generateTable(containerId, data);
-                } catch (tableError) {
-                    console.error(`表格${containerId}渲染失败:`, tableError);
-                    const container = document.getElementById(containerId);
-                    if (container) {
-                        container.innerHTML = `<div class="error-notice">数据渲染异常</div>`;
-                    }
-                }
-            };
-            
-            // 安全调用表格生成（互相隔离）
-            safeGenerateTable('uniport', uniport);
-            safeGenerateTable('KEGG', KEGG);
-            safeGenerateTable('GO', GO);
-
-            // 安全渲染蛋白质结构域
-            try {
-                const domains = (domain || []).map(entry => ({
-                    category: entry?.DB || "Unknown",
-                    type: "bar",
-                    start: parseInt(entry?.Start) || 0,
-                    end: parseInt(entry?.End) || 0,
-                    text: entry?.Domain || ""
-                }));
-                renderSequenceWithDomains(firstPep.pep || "", domains);
-            } catch (renderError) {
-                console.error('结构域渲染失败:', renderError);
-                // 降级处理：清空渲染区域
-                const domainContainer = document.getElementById('domain-container');
-                if (domainContainer) domainContainer.innerHTML = "";
-            }
-
-            // 最终切换到详情页（不受前面错误影响）
-            try {
-                switchPage('wiki');
-            } catch (pageError) {
-                console.error('页面切换失败:', pageError);
-                alert('界面跳转异常，请手动刷新');
-            }
-        } else {
-            console.error(`请求失败: ${xhr.status} ${xhr.statusText}`);
-            alert(`服务器错误: ${xhr.statusText || '未知错误'}`);
-        }
-    }
-};
-                    
-xhr.onerror = function() {
-                        document.getElementById('loading').style.display = 'none';
-                        console.error('Request failed');
-                    };
-                    
-                    xhr.send(JSON.stringify({ id: idValue }));
-                });
-            }
-            row.appendChild(td);
-        });
-        tbody.appendChild(row);
-    });
-
-    table.appendChild(tbody);
-    container.appendChild(table);
-}
-
-							
-							//下载json数据
-						    function downloadCSV() {
-						        // 提取 JSON 数据的键作为表头
-						        var headers = Object.keys(JsonData[0]);
-						        // 将表头转换为 CSV 格式
-						        var csvHeader = headers.join(',') + '\n';
-						        // 将每个 JSON 对象的值连接成 CSV 格式的行，并用换行符分隔
-						        var csvRows = JsonData.map(item => headers.map(header => item[header]).join(',')).join('\n');
-						        // 将表头和行合并为完整的 CSV 数据
-						        var csv = csvHeader + csvRows;
-						        // 创建 Blob 对象
-						        var blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-						        // 创建下载链接
-						        var link = document.createElement('a');
-						        var url = URL.createObjectURL(blob);
-						        link.setAttribute('href', url);
-						        link.setAttribute('download', 'data.csv');
-						        // 将链接添加到页面并触发点击事件进行下载
-						        document.body.appendChild(link);
-						        link.click();
-						        // 下载完成后移除链接
-						        document.body.removeChild(link);
-						    }
-							//下载共表达网络图
-							 document.getElementById('downloadBtn').addEventListener('click', function () {
-							            // 创建隐藏的链接元素
-							            var link = document.createElement('a');
-							            link.setAttribute('download', 'network.png');
-							            link.setAttribute('href', cy.png());
-							            document.body.appendChild(link);
-							            // 模拟点击链接实现下载
-							            link.click();
-							            // 清除链接元素
-							            document.body.removeChild(link);
-							        });
-							//下载树图
-							
-							function renderSequenceWithDomains(seq, domains) {
-							    // 检查 pviz 是否已加载
-							    if (typeof pviz === 'undefined') {
-							        console.error('pviz library is not loaded.');
-							        return;
-							    }
-							    
-							    // 创建 SeqEntry 对象
-							    var seqEntry = new pviz.SeqEntry({ sequence: seq });
-							    
-							    // 创建 SeqEntryAnnotInteractiveView，并渲染到指定的元素
-							    var seqView = new pviz.SeqEntryAnnotInteractiveView({
-							        model: seqEntry,
-							        el: '#domain'
-							    }).render();
-							    
-							    // 添加特征到 SeqEntry 对象
-							    seqEntry.addFeatures(domains);
-							}
-							function Loading() {
-							    document.getElementById('loading').style.display = 'block';
-							}
-							function hideLoading() {
-							    document.getElementById('loading').style.display = 'none';
-							}
-							// 修改导航栏点击事件监听方式
-
-// 页面切换函数
-function switchPage(pageId) {
-    // 隐藏所有页面
-    document.querySelectorAll('.page').forEach(page => {
-        page.style.display = 'none';
-    });
-    
-    // 显示目标页面
-    const targetPage = document.getElementById(pageId);
-    if (targetPage) {
-        targetPage.style.display = 'block';
+<script>
+    function switchPage(pageId) {
+        document.querySelectorAll('.page').forEach(page => page.style.display = 'none');
+        const target = document.getElementById(pageId);
+        if (target) target.style.display = 'block';
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    
-    // 更新导航菜单激活状态
-    updateNavActiveState(pageId);
-}
 
-// 更新导航激活状态
-function updateNavActiveState(pageId) {
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('data-page') === pageId) {
-            link.classList.add('active');
-        }
-    });
-}
+    document.addEventListener('DOMContentLoaded', function() {
+        switchPage('home');
 
-// 初始化 - 默认显示首页
-document.addEventListener('DOMContentLoaded', function() {
-    switchPage('home');
-    
-    // 绑定主导航点击事件
-    document.querySelectorAll('.nav-link[data-page]').forEach(link => {
-        link.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            const pageId = this.getAttribute('data-page');
-            
-            // 检查是否为内部链接（以http://www.araceaedb.com/#开头）
-            if (href && href.startsWith('http://www.araceaedb.com/#')) {
-                e.preventDefault();
-                switchPage(pageId);
+        document.querySelectorAll('.dropdown-item[href]').forEach(item => {
+            let href = item.getAttribute('href');
+            if (href && (href.startsWith('http') || href.endsWith('.html'))) {
+                item.setAttribute('target', '_blank');
             }
-            // 外部链接让其正常跳转
         });
     });
-    
-    // 绑定下拉菜单项点击事件
-    document.querySelectorAll('.dropdown-item[data-page]').forEach(item => {
-        item.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            const pageId = this.getAttribute('data-page');
-            
-            // 检查是否为内部链接（以http://www.araceaedb.com/#开头）
-            if (href && href.startsWith('http://www.araceaedb.com/#')) {
-                e.preventDefault();
-                e.stopPropagation();
-                switchPage(pageId);
-                
-                // 关闭下拉菜单 - 使用更可靠的方法
-                const dropdownToggle = this.closest('.dropdown').querySelector('.dropdown-toggle');
-                if (dropdownToggle) {
-                    dropdownToggle.click();
-                }
-            }
-            // 外部链接让其正常跳转
-        });
-    });
-});
-	        </script>
-			
-        
-    
-
-</body></html>
+</script>
+</body>
+</html>
