@@ -24,7 +24,7 @@ def safe_get_column(df, column_names):
 #Match and output the results.
 def match_pathways(file_name1, file_name2, file_name3,file_name4, original_filename):
     file1 = pd.read_csv(file_name1)
-    file2 = pd.read_csv(file_name2)
+    file2 = pd.read_csv(file_name2,low_memory=False)
     file3 = pd.read_csv(file_name3)
     file4 = pd.read_csv(file_name4)
 
@@ -45,16 +45,16 @@ def match_pathways(file_name1, file_name2, file_name3,file_name4, original_filen
 
     else:
         matched1 = pd.merge(file1, file4, left_on=used_col2, right_on='gene', how='inner')
-        matched_tar = matched1[used_col1].unique()
-        unmap_origin = file1[~file1[used_col1].isin(matched_tar)]
+        matched_tar = matched1[used_col2].unique()
+        unmap_origin = file1[~file1[used_col2].isin(matched_tar)]
 
-        if used_col1 in unmap_origin.columns:
+        if used_col1 is not None and used_col1 in unmap_origin.columns:
             matched2 = pd.merge(unmap_origin, file3, left_on=used_col1, right_on='PubChem_id', how='left')
             #matched2 = matched2.drop('PubChem_id', axis=1)
         else:
             matched2 = unmap_origin
 
-        if used_col1 in matched1.columns:
+        if used_col1 is not None and used_col1 in matched1.columns:
             matched1 = pd.merge(matched1, file3, left_on=used_col1, right_on='PubChem_id', how='left')
 
         base_name = os.path.splitext(original_filename)[0]
